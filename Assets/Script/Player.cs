@@ -1,131 +1,82 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    GameObject lastCol;
+    int colorID;
 
-    Material origin;
-
-    Renderer rend;
-
-    Rigidbody rb;
-
-    bool canMove;
-    bool isClimbing;
-    
-    float camoLeft;
-
-    public GameObject ink;
-    public Text textCamo;
-    public Text textInk;
-    public bool camoActive;
-    public float CAMO_MAX;
-    public int inkCount;
+    Renderer playerRender;
+    GameObject attachedObject;
+    public Material material0;
+    public Material material1;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rend = GetComponent<Renderer>();
-
-        origin = rend.material;
-        canMove = true;
-        camoLeft = CAMO_MAX;
+        colorID = 0;
+        playerRender = GetComponent<Renderer>();
     }
-    
+
     void Update()
     {
         float posx = Input.GetAxis("Horizontal");
         float posy = Input.GetAxis("Vertical");
 
-        if (canMove)
+        transform.Translate(0, 0, posy / 5);
+        transform.Translate(posx / 5, 0, 0);
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            rb.useGravity = true;
-            rb.constraints = RigidbodyConstraints.None;
+            playerRender.enabled = true;
+            attachedObject.transform.parent = null;
+        }
 
-            transform.Translate(0, 0, posy / 5);
-            //transform.Translate(posx / 5, 0, 0);
-            transform.Rotate(0, posx, 0);
-
-            if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if(colorID == 0)
             {
-                rb.AddForce(new Vector3(0, 500, 0));
+                playerRender.material = material1;
+                colorID = 1;
             }
-
-            if (Input.GetKeyDown(KeyCode.LeftAlt) && inkCount > 0)
+            else
             {
-                GameObject clone;
-                clone = Instantiate(ink, transform.position, transform.rotation);
-
-                inkCount--;
+                playerRender.material = material0;
+                colorID = 0;
             }
         }
 
-        if (isClimbing)
-        {
-            rb.useGravity = false;
-            rb.constraints = RigidbodyConstraints.FreezeRotation;
-            rb.constraints = RigidbodyConstraints.FreezePositionZ;
-            transform.Translate(0, posy / 5, 0);
-            transform.Translate(posx / 5, 0, 0);
-        }
-
-        string camoString = camoLeft.ToString("F0");
-        textCamo.text = camoString + "s";
-
-        textInk.text = inkCount.ToString();
-
-        if (camoActive)
-        {
-            camoLeft -= 1 * Time.deltaTime;
-        }
-        else if (camoLeft < CAMO_MAX)
-        {
-            camoLeft += 0.6f * Time.deltaTime;
-        }
-
-        if(camoLeft > CAMO_MAX)
-        {
-            camoLeft = CAMO_MAX;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Tab) && camoLeft > 0)
-        {
-            rend.material = lastCol.GetComponent<Renderer>().material;
-
-            canMove = false;
-            camoActive = true;
-        }
-
-        if (Input.GetKeyUp(KeyCode.Tab) || camoLeft <= 0)
-        {
-            rend.material = origin;
-
-            canMove = true;
-            camoActive = false;
-        }
-
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        Debug.Log(attachedObject);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        lastCol = collision.gameObject;
-
-        if (collision.gameObject.CompareTag("Climbable"))
+        /*Checks player color, it attaches collision object if it matches and disables player object rendering*/
+        if (colorID == 0)
         {
-            canMove = false;
-            isClimbing = true;
+            if (collision.gameObject.CompareTag("color0"))
+            {
+                Morph(collision);
+            }
+        }
+
+        else
+        {
+            if (collision.gameObject.CompareTag("color1"))
+            {
+                Morph(collision);
+            }
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    public void Morph(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Climbable"))
-        {
-            canMove = true;
-            isClimbing = false;
-        }
+        attachedObject = collision.gameObject;
+        playerRender.enabled = false;
+        attachedObject.transform.parent = transform;
+    }
+
+    public void RaycastCheck()
+    {
+        
     }
 }

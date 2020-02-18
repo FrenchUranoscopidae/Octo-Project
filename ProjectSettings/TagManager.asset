@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ink
-  - Climbable
+  - color0
+  - color1
   layers:
   - Default
   - TransparentFX
