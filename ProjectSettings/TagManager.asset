@@ -6,14 +6,8 @@ TagManager:
   tags:
   - Ink
   - Climbable
-  - MagentaSwitch
-  - YellowSwitch
-  - YellowPressurePlate
-  - MagentaPressurePlate
-  - YellowObject
-  - MagentaObject
-  - YellowPlayer
-  - MagentaPlayer
+  - ColorSwap
+  - Controllable
   layers:
   - Default
   - TransparentFX

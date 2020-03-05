@@ -1,35 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public GameObject door;
-    public YellowPressurePlate yellowPressurePlate;
-    public MagentaPressurePlate magentaPressurePlate;
-    bool doorIsOpen = false;
+    private bool doorIsOpen = false;
+    private float alpha;
+    private Vector3 startDoorEulers;
+    private Vector3 endDoorEulers;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        startDoorEulers = transform.eulerAngles;
+        endDoorEulers = new Vector3(startDoorEulers.x, startDoorEulers.y + 90f, startDoorEulers.z);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (yellowPressurePlate.isActive && magentaPressurePlate.isActive)
+        if(doorIsOpen)
         {
-            doorIsOpen = true;
+            alpha += Time.deltaTime;
+            alpha = Mathf.Clamp(alpha, 0f, 1f);
+            transform.eulerAngles = Vector3.Lerp(startDoorEulers, endDoorEulers, alpha);
+            if (alpha >= 1f) return;
         }
-        else
-        {
-            doorIsOpen = false;
-        }
+    }
 
-        if (doorIsOpen)
-        {
-            Destroy(door);
-        }
+    public void OpenDoor()
+    {
+        doorIsOpen = true;
     }
 }
