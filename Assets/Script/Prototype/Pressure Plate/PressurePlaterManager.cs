@@ -26,6 +26,9 @@ public class PressurePlaterManager : MonoBehaviour
             }
         }
 
-        if (canOpen) door.OpenDoor();
+        if (canOpen)
+        {
+            door.OpenDoor();
+        }
     }
 }

@@ -5,7 +5,7 @@ public class ObjectController : PlayerController
 {
     public ColorManager colorMgr;
     public Transform PlayerLeavePoint { get; private set; }
-    public PlayerController Player { get; set; }
+    public PlayerController Player { get; set; }    
 
     // override the player controller start method
     protected override void Start()

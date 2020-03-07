@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] protected bool isControlled = true;
     [SerializeField] protected float speed = 15f;
     [SerializeField] protected float rotationSpeed = 100f;
+    [SerializeField] public int weight;
 
     // This method is protected to be accessed from child classes and virtual to be overriden in child classes
     protected virtual void Start()

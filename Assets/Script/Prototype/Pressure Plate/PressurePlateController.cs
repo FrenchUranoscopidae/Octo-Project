@@ -6,6 +6,7 @@ public class PressurePlateController : MonoBehaviour
 {
     public ColorManager colorMgr;
     public bool isActive = false;
+    public int pressurePlateValue;
 
     public delegate void OnPressurePlateActivatedDelegate();
     public event OnPressurePlateActivatedDelegate OnPressurePlateActivated;
@@ -18,7 +19,12 @@ public class PressurePlateController : MonoBehaviour
 
             if (player.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
-                ActivatePressurePlate();
+                pressurePlateValue = collider.GetComponent<PlayerController>().weight;
+
+                if (pressurePlateValue == 2)
+                {
+                    ActivatePressurePlate();
+                }
             }
         }
 
@@ -28,7 +34,12 @@ public class PressurePlateController : MonoBehaviour
         {
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
-                ActivatePressurePlate();
+                pressurePlateValue = collider.GetComponent<ObjectController>().weight;
+
+                if (pressurePlateValue == 2)
+                {
+                    ActivatePressurePlate();
+                }
             }
         }
     }
@@ -36,6 +47,7 @@ public class PressurePlateController : MonoBehaviour
     public void OnTriggerExit(Collider collider)
     {
         isActive = false;
+        pressurePlateValue = 0;
     }
 
     private void ActivatePressurePlate()

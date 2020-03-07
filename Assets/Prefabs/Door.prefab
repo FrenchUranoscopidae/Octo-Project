@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 835106427938933266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 49, y: 12.5, z: 0}
-  m_LocalScale: {x: 1, y: 25, z: 20}
+  m_LocalScale: {x: 0.25, y: 2, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -105,6 +105,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e11328dedd45845812f9cb76a8dec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 835106427938933266}
-  yellowPressurePlate: {fileID: 0}
-  magentaPressurePlate: {fileID: 0}
