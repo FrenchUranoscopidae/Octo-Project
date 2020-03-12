@@ -20,7 +20,15 @@ public class PlayerManager : MonoBehaviour
             ColorChanger changer = collision.collider.GetComponent<ColorChanger>();
             changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
         }
-        else if (col.CompareTag("Controllable"))
+        else if (col.CompareTag("ControllableHeavy"))
+        {
+            ObjectController obj = col.GetComponent<ObjectController>();
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
+            {
+                controller.ControlObject(obj, true, controller);
+            }
+        }
+        else if (col.CompareTag("ControllableLightweight"))
         {
             ObjectController obj = col.GetComponent<ObjectController>();
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object

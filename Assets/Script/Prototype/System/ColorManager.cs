@@ -19,9 +19,9 @@ public class ColorManager
     {
         if (renderer == null)
         {
-            Debug.LogError("The mesh renderer doesn't exists");
             return;
         }
+
         switch (currentColor)
         {
             case ObjectColor.BLUE:

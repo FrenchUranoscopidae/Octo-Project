@@ -30,7 +30,7 @@ public class PressurePlateController : MonoBehaviour
 
         ObjectController obj = collider.GetComponent<ObjectController>();
 
-        if (collider.CompareTag("Controllable"))
+        if (collider.CompareTag("ControllableHeavy"))
         {
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
@@ -42,12 +42,34 @@ public class PressurePlateController : MonoBehaviour
                 }
             }
         }
+        else if (collider.CompareTag("ControllableLightweight"))
+        {
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
+            {
+                pressurePlateValue++;
+
+                    if (pressurePlateValue == 2)
+                {
+                    ActivatePressurePlate();
+                }
+            }
+        }
     }
 
     public void OnTriggerExit(Collider collider)
     {
-        isActive = false;
-        pressurePlateValue = 0;
+        if(collider.gameObject.tag == "ControllableHeavy")
+        {
+            isActive = false;
+            pressurePlateValue = 0;
+        }
+
+        if(collider.gameObject.tag == "ControllableLightweight")
+        {
+            pressurePlateValue--;
+            isActive = false;
+        }
+        
     }
 
     private void ActivatePressurePlate()

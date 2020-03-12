@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class PressurePlaterManager : MonoBehaviour
+public class PressurePlateManager : MonoBehaviour
 {
     public List<PressurePlateController> plates;
     public Door door;
