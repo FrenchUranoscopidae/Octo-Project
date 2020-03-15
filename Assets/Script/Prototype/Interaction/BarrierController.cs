@@ -23,7 +23,19 @@ public class BarrierController : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.CompareTag("Controllable"))
+        if (collision.gameObject.CompareTag("ControllableHeavy"))
+        {
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
+            {
+                barrierCollider.enabled = false;
+            }
+            else
+            {
+                barrierCollider.enabled = true;
+            }
+        }
+
+        if (collision.gameObject.CompareTag("ControllableLightweight"))
         {
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {

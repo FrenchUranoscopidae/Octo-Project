@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 8189434503683881453}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.70710677}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 0.14999996, y: 0.14999998, z: 0.15000002}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 559615819}
   m_Father: {fileID: 0}
@@ -149,7 +149,7 @@ MonoBehaviour:
   rotationSpeed: 50
   weight: 2
   colorMgr:
-    currentColor: 4
+    currentColor: 3
 --- !u!65 &182213664494379225
 BoxCollider:
   m_ObjectHideFlags: 0
