@@ -4,6 +4,7 @@ public class PlayerManager : MonoBehaviour
 {
     public ColorManager colorMgr;
     private PlayerController controller;
+    
 
     void Start()
     {

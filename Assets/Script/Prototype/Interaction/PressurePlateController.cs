@@ -6,7 +6,7 @@ public class PressurePlateController : MonoBehaviour
 {
     public ColorManager colorMgr;
     public bool isActive = false;
-    public int pressurePlateValue;
+    public int pressurePlateValue = 0;
 
     public delegate void OnPressurePlateActivatedDelegate();
     public event OnPressurePlateActivatedDelegate OnPressurePlateActivated;
@@ -64,7 +64,13 @@ public class PressurePlateController : MonoBehaviour
             pressurePlateValue = 0;
         }
 
-        if(collider.gameObject.tag == "ControllableLightweight")
+        if (collider.gameObject.tag == "Player")
+        {
+            isActive = false;
+            pressurePlateValue = 0;
+        }
+
+        if (collider.gameObject.tag == "ControllableLightweight")
         {
             pressurePlateValue--;
             isActive = false;

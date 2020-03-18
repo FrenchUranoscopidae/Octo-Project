@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     protected Rigidbody rb;
 
     // Attributes (protected to be accessed from child classes)
-    [SerializeField] protected bool isControlled = true;
+    [SerializeField] public bool isControlled = true;
     [SerializeField] protected float speed = 15f;
     [SerializeField] protected float rotationSpeed = 100f;
     [SerializeField] public int weight;
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
             // Get the vertical axis value and scale it by time and speed (used for player translation)
             float vertical = Input.GetAxis("Vertical") * Time.deltaTime * speed;
             // Apply the movement
-            Move(horizontal, vertical);
+            Move(horizontal, -vertical);
         }
     }
 
@@ -35,8 +35,8 @@ public class PlayerController : MonoBehaviour
         /*transform.Rotate(new Vector3(0f, horizontal, 0f)); // Rotate arround the Y axis
         transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f); // Constraint the rotation
         rb.MovePosition(rb.position + transform.forward * vertical); // Move along the player forward*/
-        transform.Translate(0, 0, vertical / 5);
-        transform.Translate(horizontal / 5, 0, 0);
+        transform.Translate(vertical / 5, 0, 0);
+        transform.Translate(0, 0, horizontal / 5);
     }
 
     public void SetIsControlled(bool val)
@@ -57,8 +57,6 @@ public class PlayerController : MonoBehaviour
             player.GetComponent<Collider>().enabled = false;
             player.transform.parent = objToControl.transform;
             player.GetComponent<Rigidbody>().isKinematic = true;
-            player.transform.localPosition = Vector3.zero;
-            player.transform.localEulerAngles = Vector3.zero;
         }
         else
         {

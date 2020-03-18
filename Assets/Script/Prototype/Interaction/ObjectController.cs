@@ -21,6 +21,8 @@ public class ObjectController : PlayerController
         if (!isControlled) return;
         base.Update();
 
+        ObjectController obj = this.GetComponent<ObjectController>();
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             Player.ControlObject(this, false, Player);

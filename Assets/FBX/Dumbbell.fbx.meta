@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: 949a3199b37728b42beb51f8759a8062
+guid: d86ed18bd7e995f4483a39483cc18872
 ModelImporter:
   serializedVersion: 26
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -8414662971014006937
+    second: Cylinder|Cylinder|Take 001|BaseLayer
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -87,7 +90,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
