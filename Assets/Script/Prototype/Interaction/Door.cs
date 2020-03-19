@@ -28,4 +28,9 @@ public class Door : MonoBehaviour
     {
         doorIsOpen = true;
     }
+
+    public void CloseDoor()
+    {
+        doorIsOpen = false;
+    }
 }
