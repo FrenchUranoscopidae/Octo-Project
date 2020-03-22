@@ -9,6 +9,7 @@ TagManager:
   - ColorSwap
   - ControllableHeavy
   - ControllableLightweight
+  - Barrier
   layers:
   - Default
   - TransparentFX

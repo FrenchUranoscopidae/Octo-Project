@@ -24,7 +24,7 @@ public class UnlockNextRoom : MonoBehaviour
     }
 
     void Start()
-    {
+    {                   
         ResetPlayerPrefs();
    
         switch (roomPassed)

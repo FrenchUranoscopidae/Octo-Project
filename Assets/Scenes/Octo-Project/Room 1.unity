@@ -1956,9 +1956,22 @@ MonoBehaviour:
   room2: {fileID: 838493897}
   room3: {fileID: 1921582121}
   room4: {fileID: 53013867}
-  startpoint: {fileID: 80224250}
-  returnPoint: {fileID: 1314095110}
   player: {fileID: 7232843065139828240, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
+  returnPoint: {fileID: 1314095110}
+--- !u!114 &978448105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978448100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d4604872290bc4885b879fcffedc4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7232843065139828240, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
+  spawnPoint: {fileID: 80224250}
 --- !u!1 &1066852570
 GameObject:
   m_ObjectHideFlags: 0

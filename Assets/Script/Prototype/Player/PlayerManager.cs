@@ -4,7 +4,6 @@ public class PlayerManager : MonoBehaviour
 {
     public ColorManager colorMgr;
     private PlayerController controller;
-    
 
     void Start()
     {
@@ -35,6 +34,19 @@ public class PlayerManager : MonoBehaviour
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
             {
                 controller.ControlObject(obj, true, controller);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Barrier"))
+        {
+            BarrierController barrier = col.GetComponent<BarrierController>();
+            BoxCollider barrierCollider = col.GetComponent<BoxCollider>();
+            if (barrier.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
+            {
+                barrierCollider.enabled = false;
+            }
+            else
+            {
+                barrierCollider.enabled = true;
             }
         }
         else
