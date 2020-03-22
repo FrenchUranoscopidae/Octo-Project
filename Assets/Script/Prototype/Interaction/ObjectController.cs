@@ -34,7 +34,7 @@ public class ObjectController : PlayerController
         Collider col = collision.collider;
         if (col.CompareTag("ColorSwap"))
         {
-            ColorChanger changer = collision.collider.GetComponent<ColorChanger>();
+                ColorChanger changer = collision.collider.GetComponent<ColorChanger>();
             changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
             Player.GetComponent<PlayerManager>().colorMgr.SetCurrentColor(colorMgr.GetCurrentColor()); // Update the player color
         }

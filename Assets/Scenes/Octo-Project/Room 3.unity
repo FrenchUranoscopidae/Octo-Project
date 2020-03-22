@@ -6614,59 +6614,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec02188248b7ab4b8edd37182369c02, type: 3}
---- !u!1 &5253856636283239604 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5452955723388293300, guid: f1139c30fa46f8842a382393e0a4a6e7,
-    type: 3}
-  m_PrefabInstance: {fileID: 8140784838091752641}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &5253856636283239605
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5253856636283239604}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!65 &5253856636283239606
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5253856636283239604}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 240.00009, y: 336.221, z: 469.757}
-  m_Center: {x: -130.00005, y: 18.110428, z: 50.12158}
---- !u!114 &5253856636283239607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5253856636283239604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 658700f1c9324974ab727c4fc687fead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isControlled: 0
-  speed: 50
-  rotationSpeed: 50
-  weight: 2
-  colorMgr:
-    currentColor: 3
 --- !u!4 &5478472524558292904 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1810795255016584498, guid: b16265f49fb3eae418c3a61c4aa730b6,
@@ -6855,6 +6802,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16265f49fb3eae418c3a61c4aa730b6, type: 3}
+--- !u!1 &7830930358027030735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3421158365092316961, guid: b16265f49fb3eae418c3a61c4aa730b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7830930358027030734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &7830930358027030736 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8816966583896122812, guid: b16265f49fb3eae418c3a61c4aa730b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7830930358027030734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7830930358027030737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7830930358027030735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a36d5bd08ee8cf142988072d9bfc3454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strenght: 1000
+  rb: {fileID: 7830930358027030736}
 --- !u!1001 &8140784838091752641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6866,11 +6839,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TV
-      objectReference: {fileID: 0}
-    - target: {fileID: 5452955723388293300, guid: f1139c30fa46f8842a382393e0a4a6e7,
-        type: 3}
-      propertyPath: m_TagString
-      value: ControllableHeavy
       objectReference: {fileID: 0}
     - target: {fileID: 4741921526786389133, guid: f1139c30fa46f8842a382393e0a4a6e7,
         type: 3}
@@ -6927,15 +6895,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4741921526786389133, guid: f1139c30fa46f8842a382393e0a4a6e7,
+    - target: {fileID: 5253856636283239607, guid: f1139c30fa46f8842a382393e0a4a6e7,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0100000035
-      objectReference: {fileID: 0}
-    - target: {fileID: 4741921526786389133, guid: f1139c30fa46f8842a382393e0a4a6e7,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0100000035
+      propertyPath: colorMgr.currentColor
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1139c30fa46f8842a382393e0a4a6e7, type: 3}

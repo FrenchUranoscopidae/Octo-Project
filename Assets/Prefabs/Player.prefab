@@ -208,8 +208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 1
-  speed: 50
-  rotationSpeed: 50
+  speed: 80
+  rotationSpeed: 80
   weight: 2
 --- !u!114 &4151790659299176901
 MonoBehaviour:

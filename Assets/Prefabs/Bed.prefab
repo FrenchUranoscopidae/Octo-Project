@@ -364,9 +364,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658700f1c9324974ab727c4fc687fead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isControlled: 1
-  speed: 50
-  rotationSpeed: 50
+  isControlled: 0
+  speed: 80
+  rotationSpeed: 80
   weight: 2
   colorMgr:
     currentColor: 4

@@ -125,14 +125,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  speed: 50
-  rotationSpeed: 50
+  speed: 80
+  rotationSpeed: 80
   weight: 2
-  playerController: {fileID: 0}
-  playerCamera: {fileID: 0}
   colorMgr:
     currentColor: 3
-  player: {fileID: 0}
 --- !u!135 &56292526
 SphereCollider:
   m_ObjectHideFlags: 0

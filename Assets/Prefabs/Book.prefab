@@ -102,7 +102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5997678022393651202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -187.50003, y: 0, z: -0.000023841858}
+  m_LocalPosition: {x: -200.00003, y: 0, z: -0.000023841858}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8020489263442555768}
@@ -204,8 +204,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  speed: 50
-  rotationSpeed: 50
+  speed: 80
+  rotationSpeed: 80
   weight: 1
   colorMgr:
     currentColor: 3
