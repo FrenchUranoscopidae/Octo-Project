@@ -9,9 +9,8 @@ public class UnlockNextRoom : MonoBehaviour
     public Door room2;
     public Door room3;
     public Door room4;
-    public Transform startpoint;
-    public Transform returnPoint;
     public PlayerController player;
+    public Transform returnPoint;
     int roomPassed;
 
     private void Awake()
@@ -22,7 +21,6 @@ public class UnlockNextRoom : MonoBehaviour
         room2.CloseDoor();
         room3.CloseDoor();
         room4.CloseDoor();
-        Instantiate(player, startpoint.position, startpoint.rotation);
     }
 
     void Start()
@@ -33,6 +31,7 @@ public class UnlockNextRoom : MonoBehaviour
         {
             case 1:
                 Instantiate(player, returnPoint.position, returnPoint.rotation);
+                GameObject.Find("DoorManager").GetComponent<SpawnPlayer>().enabled = false;
                 jail.OpenDoor();
                 room1.OpenDoor();
                 room2.OpenDoor();
@@ -41,6 +40,7 @@ public class UnlockNextRoom : MonoBehaviour
                 break;
             case 2:
                 Instantiate(player, returnPoint.position, returnPoint.rotation);
+                GameObject.Find("DoorManager").GetComponent<SpawnPlayer>().enabled = false;
                 jail.OpenDoor();
                 room1.OpenDoor();
                 room2.OpenDoor();
@@ -49,6 +49,7 @@ public class UnlockNextRoom : MonoBehaviour
                 break;
             case 3:
                 Instantiate(player, returnPoint.position, returnPoint.rotation);
+                GameObject.Find("DoorManager").GetComponent<SpawnPlayer>().enabled = false;
                 jail.OpenDoor();
                 room1.OpenDoor();
                 room2.OpenDoor();
