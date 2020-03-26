@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour
 
     // Attributes (protected to be accessed from child classes)
     [SerializeField] public bool isControlled = true;
-    [SerializeField] protected float speed = 15f;
-    [SerializeField] protected float rotationSpeed = 100f;
+    [SerializeField] protected float xSpeed = 15f;
+    [SerializeField] protected float zSpeed = 100f;
     [SerializeField] public int weight;
 
     // This method is protected to be accessed from child classes and virtual to be overriden in child classes
@@ -22,9 +22,9 @@ public class PlayerController : MonoBehaviour
         if (isControlled)
         {
             // Get the horizontal axis value and scale it by time and speed (used for player rotation)
-            float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+            float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * xSpeed;
             // Get the vertical axis value and scale it by time and speed (used for player translation)
-            float vertical = Input.GetAxis("Vertical") * Time.deltaTime * speed;
+            float vertical = Input.GetAxis("Vertical") * Time.deltaTime * zSpeed;
             // Apply the movement
             Move(horizontal, -vertical);
         }

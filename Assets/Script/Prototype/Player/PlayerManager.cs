@@ -3,7 +3,8 @@
 public class PlayerManager : MonoBehaviour
 {
     public ColorManager colorMgr;
-    private PlayerController controller;
+    public PlayerController controller;
+    public GameObject smoke;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class PlayerManager : MonoBehaviour
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
             {
                 controller.ControlObject(obj, true, controller);
+                Instantiate(smoke, obj.transform.position, obj.transform.rotation);
             }
         }
         else if (col.CompareTag("ControllableLightweight"))
@@ -34,6 +36,7 @@ public class PlayerManager : MonoBehaviour
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
             {
                 controller.ControlObject(obj, true, controller);
+                Instantiate(smoke, obj.transform.position, obj.transform.rotation);
             }
         }
         else if (collision.gameObject.CompareTag("Barrier"))

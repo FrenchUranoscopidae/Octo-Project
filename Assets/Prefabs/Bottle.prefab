@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  speed: 80
-  rotationSpeed: 80
+  xSpeed: 80
+  zSpeed: 80
   weight: 1
   colorMgr:
     currentColor: 4
