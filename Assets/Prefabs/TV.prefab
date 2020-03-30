@@ -637,6 +637,9 @@ MonoBehaviour:
   weight: 2
   colorMgr:
     currentColor: 3
+  smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
+  playerManager: {fileID: 3733933972958445471, guid: 8f65eb1b34bc48744aa37c0d7d573c00,
+    type: 3}
 --- !u!1 &6796438721734508775
 GameObject:
   m_ObjectHideFlags: 0

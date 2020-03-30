@@ -26,8 +26,9 @@ public class PlayerManager : MonoBehaviour
             ObjectController obj = col.GetComponent<ObjectController>();
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
             {
-                controller.ControlObject(obj, true, controller);
                 Instantiate(smoke, obj.transform.position, obj.transform.rotation);
+                controller.ControlObject(obj, true, controller);
+                Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
             }
         }
         else if (col.CompareTag("ControllableLightweight"))
@@ -35,8 +36,9 @@ public class PlayerManager : MonoBehaviour
             ObjectController obj = col.GetComponent<ObjectController>();
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
             {
-                controller.ControlObject(obj, true, controller);
                 Instantiate(smoke, obj.transform.position, obj.transform.rotation);
+                controller.ControlObject(obj, true, controller);
+                Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
             }
         }
         else if (collision.gameObject.CompareTag("Barrier"))
