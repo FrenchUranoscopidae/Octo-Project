@@ -2,25 +2,22 @@
 
 public class Door : MonoBehaviour
 {
-    private bool doorIsOpen = false;
-    private float alpha;
-    private Vector3 startDoorEulers;
-    private Vector3 endDoorEulers;
+    public BoxCollider doorCollider;
+    public bool doorIsOpen = false;
+    private Animator openDoor;
 
     void Start()
     {
-        startDoorEulers = transform.eulerAngles;
-        endDoorEulers = new Vector3(startDoorEulers.x, startDoorEulers.y + 90f, startDoorEulers.z);
+        openDoor = gameObject.GetComponent<Animator>();
+        doorCollider.enabled = true;
     }
 
     void Update()
     {
-        if(doorIsOpen)
+        if(doorIsOpen == true)
         {
-            alpha += Time.deltaTime;
-            alpha = Mathf.Clamp(alpha, 0f, 1f);
-            transform.eulerAngles = Vector3.Lerp(startDoorEulers, endDoorEulers, alpha);
-            if (alpha >= 1f) return;
+            openDoor.SetBool("openDoor", true);
+            doorCollider.enabled = false;
         }
     }
 
