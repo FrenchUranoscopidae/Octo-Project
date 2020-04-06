@@ -290,6 +290,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorCollider: {fileID: 835106427938933267}
   doorIsOpen: 0
+  b_dialogueHappenned: 0
+  dialogueTrigger: {fileID: 0}
 --- !u!1 &2389773400836765930
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,7 +505,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3971010634288757278, guid: d351f3046123c7940924af977283ce2c, type: 3}
+  - {fileID: 2100000, guid: 9b0201c06cc159e47967d952b639956a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

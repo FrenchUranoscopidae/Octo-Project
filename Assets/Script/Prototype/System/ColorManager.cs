@@ -31,13 +31,15 @@ public class ColorManager
                 renderer.material.SetColor("_Color", Color.green);
                 break;
             case ObjectColor.MAGENTA:
-                renderer.material.SetColor("_Color", Color.magenta);
+                Color magentaMaterial = new Color32(85, 47, 150, 255);
+                renderer.material.SetColor("_Color", magentaMaterial);
                 break;
             case ObjectColor.RED:
                 renderer.material.SetColor("_Color", Color.red);
                 break;
             case ObjectColor.YELLOW:
-                renderer.material.SetColor("_Color", Color.yellow);
+                Color yellowMaterial = new Color32(255, 200, 80, 255);
+                renderer.material.SetColor("_Color", yellowMaterial);
                 break;
         }
     }
