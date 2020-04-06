@@ -71,6 +71,7 @@ public class DialogueManager : MonoBehaviour
         //if there is still sentences in the queue
         string sentence = sentences.Dequeue();
 
+        nextSentenceTimer = nextSentenceTimerReset;
         b_nextSentenceTimerRunning = true;
 
         //nextSentenceTimer -= Time.deltaTime;

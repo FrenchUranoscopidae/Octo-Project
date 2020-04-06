@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &1193097 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1193097, guid: 9151a6b757e4e254bb37cbb81caccc4e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1463163484}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8438371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,25 +1879,6 @@ Transform:
   m_Father: {fileID: 1273081181}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50.000004, y: 85, z: 0}
---- !u!1 &762765238 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6461047490210772589, guid: 9151a6b757e4e254bb37cbb81caccc4e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1463163484}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &762765242
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762765238}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.02898271, y: 0.02898271, z: 0.08054033}
-  m_Center: {x: 0.0000005965121, y: 0.0000001755543, z: -0.021092167}
 --- !u!1 &769013484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +2551,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffb10b4fd030a4408713ab38554530d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1065731948 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+    type: 3}
+  m_PrefabInstance: {fileID: 8773930575893296409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1134559112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,6 +3164,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304264152}
   m_CullTransparentMesh: 0
+--- !u!4 &1324429030 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+    type: 3}
+  m_PrefabInstance: {fileID: 1572010192}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1325908617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,6 +3375,7 @@ Transform:
   - {fileID: 279729970}
   - {fileID: 1200025371}
   - {fileID: 1298402557}
+  - {fileID: 1065731948}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3383,11 +3389,6 @@ PrefabInstance:
     - target: {fileID: 7517624414882217377, guid: 9151a6b757e4e254bb37cbb81caccc4e,
         type: 3}
       propertyPath: m_Name
-      value: ColorSwap
-      objectReference: {fileID: 0}
-    - target: {fileID: 7517624414882217377, guid: 9151a6b757e4e254bb37cbb81caccc4e,
-        type: 3}
-      propertyPath: m_TagString
       value: ColorSwap
       objectReference: {fileID: 0}
     - target: {fileID: 7517624414882217381, guid: 9151a6b757e4e254bb37cbb81caccc4e,
@@ -3445,16 +3446,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 6461047490210772589, guid: 9151a6b757e4e254bb37cbb81caccc4e,
+    - target: {fileID: 1080050984165569579, guid: 9151a6b757e4e254bb37cbb81caccc4e,
         type: 3}
-      propertyPath: m_TagString
-      value: ColorSwap
-      objectReference: {fileID: 0}
-    - target: {fileID: 365620455337144142, guid: 9151a6b757e4e254bb37cbb81caccc4e,
-        type: 3}
-      propertyPath: m_TagString
-      value: ColorSwap
-      objectReference: {fileID: 0}
+      propertyPath: dialogueTrigger
+      value: 
+      objectReference: {fileID: 1193097}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9151a6b757e4e254bb37cbb81caccc4e, type: 3}
 --- !u!4 &1463163485 stripped
@@ -3734,6 +3730,93 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499667475}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1572010192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1831567881}
+    m_Modifications:
+    - target: {fileID: 8773930576018879090, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger_BeginningBox (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879092, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879092, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Maintenant, passons aux choses s\xE9rieuses, lors de mon inspection
+        de ton vaisseau, je me suis rendu compte que celui-ci utilisait une \xE9nergie
+        \xE9trange\u2026 lui permettant de changer de couleur !\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879092, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "J\u2019ai, plus ou moins, cr\xE9\xE9 un appareil permettant d\u2019utiliser
+        cette puissance ! Enfin, seulement si tu parviens \xE0 l\u2019utiliser...\r"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6de9adfe34ba824fbc90be567797c20, type: 3}
 --- !u!1 &1626160653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3948,25 +4031,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690922148}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1719402881 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 365620455337144142, guid: 9151a6b757e4e254bb37cbb81caccc4e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1463163484}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1719402885
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719402881}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.02898271, y: 0.02898271, z: 0.08054033}
-  m_Center: {x: 0.0000005965121, y: 0.0000001755543, z: -0.021092175}
 --- !u!1001 &1733744077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4527,6 +4591,7 @@ Transform:
   - {fileID: 1734481842}
   - {fileID: 1835897975}
   - {fileID: 186475190}
+  - {fileID: 1324429030}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -5138,8 +5203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lorsque je t\u2019ai r\xE9cup\xE9r\xE9, je suis persuad\xE9 t\u2019avoir
-    vu prendre le contr\xF4le de ton vaisseau\u2026 litt\xE9ralement.\r\n"
+  m_Text: 
 --- !u!222 &2074498232
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5734,3 +5798,89 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 702345739466134095}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8773930575893296409
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1453511001}
+    m_Modifications:
+    - target: {fileID: 8773930576018879090, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger_BeginningBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879092, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879092, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Lorsque je t\u2019ai r\xE9cup\xE9r\xE9, je suis persuad\xE9 t\u2019avoir
+        vu prendre le contr\xF4le de ton vaisseau\u2026 Au sens litt\xE9ral.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773930576018879092, guid: a6de9adfe34ba824fbc90be567797c20,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "J\u2019ai, plus ou moins, cr\xE9\xE9 un appareil permettant d\u2019utiliser
+        cette puissance ! Enfin, seulement si tu parviens \xE0 l\u2019utiliser...\r"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6de9adfe34ba824fbc90be567797c20, type: 3}

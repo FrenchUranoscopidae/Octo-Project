@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8939485108195588947}
   - component: {fileID: 8668112116731293943}
   - component: {fileID: 809192626504418148}
+  - component: {fileID: 1719402885}
   m_Layer: 0
   m_Name: Pilonne 2.001
-  m_TagString: Untagged
+  m_TagString: ColorSwap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +79,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1719402885
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365620455337144142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02898271, y: 0.02898271, z: 0.08054033}
+  m_Center: {x: 0.0000005965121, y: 0.0000001755543, z: -0.021092175}
 --- !u!1 &467100270581273451
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,9 +337,10 @@ GameObject:
   - component: {fileID: 5745670817615371671}
   - component: {fileID: 2381623374144792002}
   - component: {fileID: 6549780501221755573}
+  - component: {fileID: 762765242}
   m_Layer: 0
   m_Name: Pilonne 2
-  m_TagString: Untagged
+  m_TagString: ColorSwap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -390,6 +405,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &762765242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6461047490210772589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02898271, y: 0.02898271, z: 0.08054033}
+  m_Center: {x: 0.0000005965121, y: 0.0000001755543, z: -0.021092167}
 --- !u!1 &7431060813642934798
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +508,9 @@ GameObject:
   - component: {fileID: 7517624414882217380}
   - component: {fileID: 7517624414882217383}
   - component: {fileID: 857217604069652423}
+  - component: {fileID: 837640358396716357}
   - component: {fileID: 1080050984165569579}
+  - component: {fileID: 1193097}
   m_Layer: 0
   m_Name: ColorSwap
   m_TagString: ColorSwap
@@ -570,6 +600,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &837640358396716357
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517624414882217377}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!114 &1080050984165569579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,6 +630,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorMgr:
     currentColor: 4
+  b_dialogueHappenned: 0
+  dialogueTrigger: {fileID: 0}
+--- !u!114 &1193097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517624414882217377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Scientist
+    sentences:
+    - "\xC7a alors ! Tu peux donc bel et bien changer de couleur ? Qui plus est, mes
+      couleurs pr\xE9f\xE9r\xE9es : Jaune et Magenta !\n\n"
+    - "Leur combinaison est d\u2019une beaut\xE9 \u2026 absolument parfaite !! N\u2019es-tu
+      pas d\u2019accord ?\r"
 --- !u!1 &7535458883184534269
 GameObject:
   m_ObjectHideFlags: 0
