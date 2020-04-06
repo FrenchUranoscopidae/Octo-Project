@@ -16,7 +16,7 @@ public class Door : MonoBehaviour
     {
         if(doorIsOpen == true)
         {
-            openDoor.SetBool("openDoor", true);
+            openDoor.SetBool("openDoor", true); 
             doorCollider.enabled = false;
         }
     }
