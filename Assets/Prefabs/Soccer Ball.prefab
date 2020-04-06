@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1126540659559343117}
   m_Layer: 0
   m_Name: Soccer Ball
-  m_TagString: ControllableLightweight
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,15 +28,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274049781243910963}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
+  m_LocalPosition: {x: -6.5928025, y: 2.625, z: -7.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8302294516528433948}
-  - {fileID: 286181633498646101}
+  - {fileID: 4828444760049801482}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &233729579976730972
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -44,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274049781243910963}
-  m_Mesh: {fileID: -1579241630799410176, guid: 635c042eb4c877646be47b7c7d27e069, type: 3}
+  m_Mesh: {fileID: 289301614986012343, guid: 37d3b6bb7a2056d4b9ca231fa9925b5c, type: 3}
 --- !u!23 &6985814258930256853
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62,8 +61,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6922793697723135513, guid: 635c042eb4c877646be47b7c7d27e069, type: 3}
-  - {fileID: -3846018093981099296, guid: 635c042eb4c877646be47b7c7d27e069, type: 3}
+  - {fileID: -6478536213147159724, guid: d351f3046123c7940924af977283ce2c, type: 3}
+  - {fileID: -6478536213147159724, guid: 37d3b6bb7a2056d4b9ca231fa9925b5c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103,8 +102,8 @@ MonoBehaviour:
   colorMgr:
     currentColor: 3
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
-  playerManager: {fileID: 3733933972958445471, guid: 8f65eb1b34bc48744aa37c0d7d573c00,
-    type: 3}
+  b_dialogueHappenned: 0
+  dialogueTrigger: {fileID: 0}
 --- !u!135 &1126540659559343118
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -116,8 +115,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.9999999
-  m_Center: {x: -0.00000005960464, y: -0.0032706258, z: 0.000000029802322}
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1126540659559343117
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -134,7 +133,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!1 &1155734602627259665
+--- !u!1 &2041641930176045542
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,7 +141,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8302294516528433948}
+  - component: {fileID: 4828444760049801482}
   m_Layer: 0
   m_Name: PlayerLeavePoint
   m_TagString: Untagged
@@ -150,96 +149,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8302294516528433948
+--- !u!4 &4828444760049801482
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155734602627259665}
+  m_GameObject: {fileID: 2041641930176045542}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3861492576721299744}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2845321135397715458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 286181633498646101}
-  - component: {fileID: 2647133085529992123}
-  - component: {fileID: 4312763822854701820}
-  m_Layer: 0
-  m_Name: Icosphere.002
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &286181633498646101
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2845321135397715458}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3861492576721299744}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2647133085529992123
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2845321135397715458}
-  m_Mesh: {fileID: 4444728127320036556, guid: 635c042eb4c877646be47b7c7d27e069, type: 3}
---- !u!23 &4312763822854701820
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2845321135397715458}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -3846018093981099296, guid: 635c042eb4c877646be47b7c7d27e069, type: 3}
-  - {fileID: -6922793697723135513, guid: 635c042eb4c877646be47b7c7d27e069, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0

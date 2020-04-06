@@ -4967,7 +4967,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3846018093981099296, guid: 635c042eb4c877646be47b7c7d27e069, type: 3}
+  - {fileID: 4218046369211427024, guid: 471bebb500e72b346a6407564145b3e2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5137,7 +5137,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3846018093981099296, guid: 635c042eb4c877646be47b7c7d27e069, type: 3}
+  - {fileID: 4218046369211427024, guid: 471bebb500e72b346a6407564145b3e2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15074,6 +15074,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorMgr:
     currentColor: 4
-  barrierCollider: {fileID: 3579704024991018989}
-  player: {fileID: 0}
-  obj: {fileID: 0}
