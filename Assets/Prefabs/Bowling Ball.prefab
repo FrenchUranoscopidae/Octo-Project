@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 511685951}
   - component: {fileID: 56292526}
   - component: {fileID: 56292528}
+  - component: {fileID: 524446490}
   m_Layer: 0
   m_Name: Bowling Ball
   m_TagString: ControllableHeavy
@@ -160,3 +161,20 @@ MonoBehaviour:
   colorMgr:
     currentColor: 3
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
+  b_dialogueHappenned: 0
+  dialogueTrigger: {fileID: 524446490}
+--- !u!114 &524446490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7029408148652607253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Scientist
+    sentences: []

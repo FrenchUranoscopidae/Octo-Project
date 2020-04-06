@@ -8,6 +8,11 @@ public class ObjectController : PlayerController
     public PlayerController Player { get; set; }
     public GameObject smoke;
 
+    //Introductions DialogueTriggering
+    public bool b_dialogueHappenned = false;
+    public DialogueTrigger dialogueTrigger;
+    //public DialogueManager dialogueManager;
+
     // override the player controller start method
     protected override void Start()
     {
@@ -24,12 +29,31 @@ public class ObjectController : PlayerController
 
         ObjectController obj = this.GetComponent<ObjectController>();
 
+        //DialogueTriggering
+        if (!b_dialogueHappenned)
+        {
+            ThisObjectDialogueTrigger();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Player.ControlObject(this, false, Player);
+        }
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             Instantiate(smoke, obj.transform.position, obj.transform.rotation);
             Player.ControlObject(this, false, Player);
             Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
         }
+    }
+
+    //Function to trigger the dialogue of this object only once
+    public void ThisObjectDialogueTrigger()
+    {
+        dialogueTrigger.TriggerDialogue();
+        b_dialogueHappenned = true;
+        Debug.Log(b_dialogueHappenned);
     }
 
     void OnCollisionEnter(Collision collision)

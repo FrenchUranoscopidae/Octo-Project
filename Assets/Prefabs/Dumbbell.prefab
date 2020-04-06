@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 6011077564507179978}
   - component: {fileID: 2284740382867723587}
   - component: {fileID: 636628024}
+  - component: {fileID: 6323598950877943481}
   - component: {fileID: 7242483464140871989}
   - component: {fileID: 7242483464140871988}
   m_Layer: 0
@@ -59,14 +60,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8189434503683881453}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.002000001, y: 0.002, z: 0.002000001}
   m_Children:
   - {fileID: 702345740127075858}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8360943089261460798
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -151,8 +152,23 @@ MonoBehaviour:
   colorMgr:
     currentColor: 4
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
-  playerManager: {fileID: 3733933972958445471, guid: 8f65eb1b34bc48744aa37c0d7d573c00,
-    type: 3}
+  b_dialogueHappenned: 0
+  dialogueTrigger: {fileID: 6323598950877943481}
+--- !u!114 &6323598950877943481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8189434503683881453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
 --- !u!65 &7242483464140871989
 BoxCollider:
   m_ObjectHideFlags: 0

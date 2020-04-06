@@ -6,6 +6,10 @@ public class Door : MonoBehaviour
     public bool doorIsOpen = false;
     private Animator openDoor;
 
+    //Introductions DialogueTriggering
+    public bool b_dialogueHappenned = false;
+    public DialogueTrigger dialogueTrigger;
+
     void Start()
     {
         openDoor = gameObject.GetComponent<Animator>();
@@ -18,7 +22,21 @@ public class Door : MonoBehaviour
         {
             openDoor.SetBool("openDoor", true); 
             doorCollider.enabled = false;
+
+            //DialogueTriggering
+            if (!b_dialogueHappenned)
+            {
+                ThisObjectDialogueTrigger();
+            }
         }
+    }
+
+    //Function to trigger the dialogue of this object only once
+    public void ThisObjectDialogueTrigger()
+    {
+        dialogueTrigger.TriggerDialogue();
+        b_dialogueHappenned = true;
+        Debug.Log(b_dialogueHappenned);
     }
 
     public void OpenDoor()
