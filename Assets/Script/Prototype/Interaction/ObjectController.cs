@@ -33,12 +33,7 @@ public class ObjectController : PlayerController
         if (!b_dialogueHappenned)
         {
             ThisObjectDialogueTrigger();
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Player.ControlObject(this, false, Player);
-        }
+        }   
 
         if (Input.GetKeyDown(KeyCode.E))
         {
