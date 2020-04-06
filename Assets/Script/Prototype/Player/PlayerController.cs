@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
             player.GetComponent<Collider>().enabled = true;
             player.GetComponent<Rigidbody>().isKinematic = false;
             objToControl.Player = null;
+
         }
     }
 }

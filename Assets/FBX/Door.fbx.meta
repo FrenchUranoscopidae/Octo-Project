@@ -1,8 +1,35 @@
 fileFormatVersion: 2
-guid: 3a9d88ec8f074da429b264f3a8bf0c46
+guid: d351f3046123c7940924af977283ce2c
 ModelImporter:
   serializedVersion: 26
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -6472949774974541161
+    second: Partie superieur|Partie inferrieurAction
+  - first:
+      74: 6745979723308618431
+    second: Partie superieur|Partie superieur.001Action.001
+  - first:
+      74: -8697929065376999175
+    second: Partie superieur|Partie superieurAction.001
+  - first:
+      74: -3450801077127908169
+    second: Partie inferrieur|Partie inferrieurAction
+  - first:
+      74: 5575837279273898901
+    second: Partie inferrieur|Partie superieur.001Action.001
+  - first:
+      74: 465676463116209345
+    second: Partie inferrieur|Partie superieurAction.001
+  - first:
+      74: -2547609978880102943
+    second: Partie superieur.001|Partie inferrieurAction
+  - first:
+      74: 1990041451001986136
+    second: Partie superieur.001|Partie superieur.001Action.001
+  - first:
+      74: 496430476921180754
+    second: Partie superieur.001|Partie superieurAction.001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -34,7 +61,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 5
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -81,13 +108,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.099999994
+    globalScale: 0.049999997
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
