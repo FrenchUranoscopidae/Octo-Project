@@ -995,7 +995,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &317572152
 MonoBehaviour:
@@ -1316,31 +1316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffb10b4fd030a4408713ab38554530d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &524446484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7029408148652607253, guid: 8523532e0c3f4514f8166dde16fd7854,
-    type: 3}
-  m_PrefabInstance: {fileID: 5064327353125437506}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &524446490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524446484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Scientist
-    sentences:
-    - "Oui ! C\u2019est cela ! Tu es capable de prendre possession de ton environnement.
-      Ma th\xE9orie \xE9tait correcte ! Quel prodige je fais !"
-    - "Maintenant, tu es bien capable de sortir de cet \xE9tat par toi-m\xEAme\u2026
-      n\u2019est-ce pas ?"
 --- !u!1 &527099466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1410,7 @@ RectTransform:
   - {fileID: 190521140}
   - {fileID: 1626160654}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2044,7 +2019,7 @@ Transform:
   - {fileID: 8667082899546229054}
   - {fileID: 369139063}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832351080
 GameObject:
@@ -3041,7 +3016,7 @@ Transform:
   - {fileID: 1134559114}
   - {fileID: 414822031}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1298402556
 GameObject:
@@ -3290,7 +3265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1398926236
 GameObject:
@@ -3326,7 +3301,7 @@ Transform:
   - {fileID: 785327079}
   - {fileID: 2093808302}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1453511000
 GameObject:
@@ -3361,7 +3336,7 @@ Transform:
   - {fileID: 1200025371}
   - {fileID: 1298402557}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1463163484
 PrefabInstance:
@@ -4006,7 +3981,7 @@ PrefabInstance:
     - target: {fileID: 2083002479306180004, guid: 4931cb2e8486e7242af52d3827815760,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2083002479306180004, guid: 4931cb2e8486e7242af52d3827815760,
         type: 3}
@@ -4517,7 +4492,7 @@ Transform:
   - {fileID: 1835897975}
   - {fileID: 186475190}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1835897974
 GameObject:
@@ -5482,7 +5457,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &702345739466134095
 PrefabInstance:
@@ -5565,14 +5540,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bowling Ball
       objectReference: {fileID: 0}
-    - target: {fileID: 56292528, guid: 8523532e0c3f4514f8166dde16fd7854, type: 3}
-      propertyPath: dialogueTrigger
-      value: 
-      objectReference: {fileID: 524446490}
-    - target: {fileID: 56292528, guid: 8523532e0c3f4514f8166dde16fd7854, type: 3}
-      propertyPath: dialogueManager
-      value: 
-      objectReference: {fileID: 317572152}
     - target: {fileID: 6329282263082743046, guid: 8523532e0c3f4514f8166dde16fd7854,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5628,17 +5595,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2092384374, guid: 8523532e0c3f4514f8166dde16fd7854, type: 3}
+    - target: {fileID: 524446490, guid: 8523532e0c3f4514f8166dde16fd7854, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2092384374, guid: 8523532e0c3f4514f8166dde16fd7854, type: 3}
-      propertyPath: dialogue.sentences.Array.data[2]
-      value: 
+    - target: {fileID: 524446490, guid: 8523532e0c3f4514f8166dde16fd7854, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Oui ! C\u2019est cela ! Tu es capable de prendre possession de ton environnement.
+        Ma th\xE9orie \xE9tait correcte ! Quel prodige je fais !\r"
       objectReference: {fileID: 0}
-    - target: {fileID: 2092384374, guid: 8523532e0c3f4514f8166dde16fd7854, type: 3}
-      propertyPath: dialogue.sentences.Array.data[3]
-      value: 
+    - target: {fileID: 524446490, guid: 8523532e0c3f4514f8166dde16fd7854, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Maintenant, tu es bien capable de sortir de cet \xE9tat par toi-m\xEAme\u2026
+        n\u2019est-ce pas ?\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8523532e0c3f4514f8166dde16fd7854, type: 3}
