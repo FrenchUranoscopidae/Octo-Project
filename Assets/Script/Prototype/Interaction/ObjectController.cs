@@ -11,7 +11,9 @@ public class ObjectController : PlayerController
     //Introductions DialogueTriggering
     public bool b_dialogueHappenned = false;
     public DialogueTrigger dialogueTrigger;
-    //public DialogueManager dialogueManager;
+
+    //Animation props
+    public Animator animator;
 
     // override the player controller start method
     protected override void Start()
@@ -41,6 +43,15 @@ public class ObjectController : PlayerController
             Player.ControlObject(this, false, Player);
             Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
         }
+
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        /*else
+        {
+
+        }*/
     }
 
     //Function to trigger the dialogue of this object only once
