@@ -806,7 +806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80224249}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -10, y: 3, z: 0}
+  m_LocalPosition: {x: -10, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1356542035}
@@ -2463,7 +2463,7 @@ Transform:
   - {fileID: 730531422}
   - {fileID: 1751723069}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &463038104
 PrefabInstance:
@@ -5294,7 +5294,7 @@ PrefabInstance:
     - target: {fileID: 2083002479306180004, guid: 4931cb2e8486e7242af52d3827815760,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2083002479306180004, guid: 4931cb2e8486e7242af52d3827815760,
         type: 3}
@@ -5351,7 +5351,7 @@ MonoBehaviour:
   room2: {fileID: 838493897}
   room3: {fileID: 1921582121}
   room4: {fileID: 53013867}
-  player: {fileID: 4519682652760872685, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
+  player: {fileID: 315328301341317124, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
   returnPoint: {fileID: 1314095110}
 --- !u!114 &978448105
 MonoBehaviour:
@@ -5365,7 +5365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d4604872290bc4885b879fcffedc4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4519682652760872685, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
+  player: {fileID: 315328301341317124, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
   spawnPoint: {fileID: 80224250}
 --- !u!1001 &994257579
 PrefabInstance:

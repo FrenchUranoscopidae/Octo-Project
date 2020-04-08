@@ -10,11 +10,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] protected float xSpeed = 15f;
     [SerializeField] protected float zSpeed = 100f;
     [SerializeField] public int weight;
+    private Animator alienAnimation;
 
     // This method is protected to be accessed from child classes and virtual to be overriden in child classes
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody>();
+        alienAnimation = GetComponent<Animator>();
     }
 
     protected virtual void Update()
@@ -27,6 +29,11 @@ public class PlayerController : MonoBehaviour
             float vertical = Input.GetAxis("Vertical") * Time.deltaTime * zSpeed;
             // Apply the movement
             Move(horizontal, -vertical);
+        }
+
+        if(Input.GetButton("Horizontal"))
+        {
+            alienAnimation.SetTrigger("isWalking");
         }
     }
 

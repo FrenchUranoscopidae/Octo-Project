@@ -3228,7 +3228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d4604872290bc4885b879fcffedc4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4519682652760872685, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
+  player: {fileID: 315328301341317124, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
   spawnPoint: {fileID: 2011860482}
 --- !u!4 &914489694 stripped
 Transform:
@@ -6799,17 +6799,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1126540659559343116, guid: d61f7fdc06d0454458e8edafc17b524b,
-        type: 3}
-      propertyPath: playerCamera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6985814258930256853, guid: d61f7fdc06d0454458e8edafc17b524b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: -1580535799172915004, guid: 7d9c733217972994d83f28e2e9adc552,
         type: 3}
+    - target: {fileID: 1126540659559343116, guid: d61f7fdc06d0454458e8edafc17b524b,
+        type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d61f7fdc06d0454458e8edafc17b524b, type: 3}
 --- !u!1001 &7830930358027030734
