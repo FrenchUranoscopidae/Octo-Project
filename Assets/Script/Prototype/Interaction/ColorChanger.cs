@@ -12,7 +12,7 @@ public class ColorChanger : MonoBehaviour
 
     void Start()
     {
-        colorMgr.Initialize(GetComponent<MeshRenderer>());
+        colorMgr.Initialize(GetComponent<SkinnedMeshRenderer>());
     }
 
     public void SwapColors(ColorManager playerColorMgr)

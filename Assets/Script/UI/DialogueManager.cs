@@ -38,7 +38,7 @@ public class DialogueManager : MonoBehaviour
             nextSentenceTimer = nextSentenceTimerReset;
         }
 
-        Debug.Log(nextSentenceTimer);
+        //Debug.Log(nextSentenceTimer);
     }
 
     public void StartDialogue(Dialogue dialogue)

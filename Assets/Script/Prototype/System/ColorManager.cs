@@ -4,15 +4,12 @@
 public class ColorManager
 {
     // Components
-    private MeshRenderer renderer;
+    private SkinnedMeshRenderer renderer;
 
     // Attributes
     [SerializeField] private ObjectColor currentColor = ObjectColor.YELLOW;
 
-    //Color Hex test
-    //public static string ToHtmlStringRGB(Color colorHex);
-
-    public void Initialize(MeshRenderer rend)
+    public void Initialize(SkinnedMeshRenderer rend)
     {
         renderer = rend; // Set the mesh renderer
         UpdateMeshColor();
@@ -42,7 +39,6 @@ public class ColorManager
                 renderer.material.SetColor("_Color", Color.red);
                 break;
             case ObjectColor.YELLOW:
-                //Color yellowMaterial = new Color32(255, 195, 76, 255);
                 Color yellowMaterial = new Color32(255, 195, 76, 255);
                 ColorUtility.TryParseHtmlString("#ffc337", out yellowMaterial);
                 renderer.material.SetColor("_Color", yellowMaterial);

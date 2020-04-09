@@ -19,7 +19,7 @@ public class ObjectController : PlayerController
     protected override void Start()
     {
         base.Start(); // Call the player controller start
-        colorMgr.Initialize(GetComponent<MeshRenderer>());
+        colorMgr.Initialize(GetComponent<SkinnedMeshRenderer>());
         PlayerLeavePoint = transform.GetChild(0);
         isControlled = false; // Disable controls for this object
     }
@@ -48,10 +48,6 @@ public class ObjectController : PlayerController
         {
             animator.SetBool("IsWalking", true);
         }
-        /*else
-        {
-
-        }*/
     }
 
     //Function to trigger the dialogue of this object only once

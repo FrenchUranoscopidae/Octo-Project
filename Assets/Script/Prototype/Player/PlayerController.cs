@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         if (controlObject)
         {
             objToControl.Player = player;
-            player.GetComponent<MeshRenderer>().enabled = false;
+            player.GetComponent<SkinnedMeshRenderer>().enabled = false;
             objToControl.SetIsControlled(true);
             player.SetIsControlled(false);
             player.GetComponent<Collider>().enabled = false;
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            player.GetComponent<MeshRenderer>().enabled = true;
+            player.GetComponent<SkinnedMeshRenderer>().enabled = true;
             objToControl.SetIsControlled(false);
             player.SetIsControlled(true);
             player.transform.parent = null;

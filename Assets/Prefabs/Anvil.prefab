@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1645640290292564739}
   - component: {fileID: 7749986456943900981}
-  - component: {fileID: 4085313468279899596}
   - component: {fileID: 6029416027386554395}
   - component: {fileID: 6686990274290239164}
   - component: {fileID: 517975759240065026}
+  - component: {fileID: 4679106072885662208}
   m_Layer: 0
   m_Name: Anvil
   m_TagString: ControllableLightweight
@@ -44,8 +44,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2345571632483102992}
   m_Mesh: {fileID: -684972364914979309, guid: b92447b91822a99409262aae179b9d0e, type: 3}
---- !u!23 &4085313468279899596
-MeshRenderer:
+--- !u!114 &6029416027386554395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345571632483102992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658700f1c9324974ab727c4fc687fead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isControlled: 0
+  xSpeed: 80
+  zSpeed: 80
+  weight: 2
+  colorMgr:
+    currentColor: 3
+  smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
+  b_dialogueHappenned: 0
+  dialogueTrigger: {fileID: 0}
+  animator: {fileID: 0}
+--- !u!65 &6686990274290239164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345571632483102992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.3586254, y: 0.5981699, z: 1.8702997}
+  m_Center: {x: 0.83420116, y: 0.29908496, z: 0}
+--- !u!54 &517975759240065026
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345571632483102992}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!137 &4679106072885662208
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -82,56 +133,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &6029416027386554395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2345571632483102992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 658700f1c9324974ab727c4fc687fead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isControlled: 0
-  xSpeed: 80
-  zSpeed: 80
-  weight: 2
-  colorMgr:
-    currentColor: 3
-  smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
-  playerManager: {fileID: 3733933972958445471, guid: 8f65eb1b34bc48744aa37c0d7d573c00,
-    type: 3}
---- !u!65 &6686990274290239164
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2345571632483102992}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.3586254, y: 0.5981699, z: 1.8702997}
-  m_Center: {x: 0.83420116, y: 0.29908496, z: 0}
---- !u!54 &517975759240065026
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2345571632483102992}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 1
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: -684972364914979309, guid: b92447b91822a99409262aae179b9d0e, type: 3}
+  m_Bones: []
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: 0.834201, y: 0.29908496, z: 0}
+    m_Extent: {x: 2.1793122, y: 0.29908496, z: 0.9351496}
+  m_DirtyAABB: 0
 --- !u!1 &6983573331271911577
 GameObject:
   m_ObjectHideFlags: 0
