@@ -1214,29 +1214,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 219556949}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &222987803 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 835106427938933266, guid: b339a29de65fee64f89b2091f833f3cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1922044048}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &222987807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222987803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Scientist
-    sentences:
-    - "Splendide ! Splendide ! Je craignais d\u2019avoir affaire \xE0 une esp\xE8ce
-      intellectuellement inf\xE9rieure..."
 --- !u!1 &256290630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,7 +1557,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &317572152
 MonoBehaviour:
@@ -2647,7 +2624,7 @@ GameObject:
   - component: {fileID: 527099468}
   - component: {fileID: 527099467}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5135,7 +5112,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1922044048}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222987803}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9e11328dedd45845812f9cb76a8dec9, type: 3}
@@ -7992,7 +7969,7 @@ PrefabInstance:
     - target: {fileID: 2083002479306180004, guid: 4931cb2e8486e7242af52d3827815760,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2083002479306180004, guid: 4931cb2e8486e7242af52d3827815760,
         type: 3}
@@ -8907,26 +8884,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 835106427938933278, guid: b339a29de65fee64f89b2091f833f3cf,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 835106427938933278, guid: b339a29de65fee64f89b2091f833f3cf,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 835106427938933278, guid: b339a29de65fee64f89b2091f833f3cf,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 835106427938933279, guid: b339a29de65fee64f89b2091f833f3cf,
-        type: 3}
-      propertyPath: dialogueTrigger
-      value: 
-      objectReference: {fileID: 222987807}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
 --- !u!4 &1922044049 stripped
@@ -9346,6 +9303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975442869972756460, guid: 4e774919710739944b10f22ce9c210a4,
+        type: 3}
+      propertyPath: player
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e774919710739944b10f22ce9c210a4, type: 3}

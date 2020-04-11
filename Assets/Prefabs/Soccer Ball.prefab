@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 1126540659559343118}
   - component: {fileID: 1126540659559343117}
   - component: {fileID: -1029455573786039886}
+  - component: {fileID: -8218064803547024360}
   m_Layer: 0
   m_Name: Soccer Ball
-  m_TagString: Untagged
+  m_TagString: ControllableLightweight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +65,7 @@ MonoBehaviour:
     currentColor: 3
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: 0}
+  dialogueTrigger: {fileID: -8218064803547024360}
   animator: {fileID: 0}
 --- !u!135 &1126540659559343118
 SphereCollider:
@@ -113,6 +114,7 @@ SkinnedMeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -6478536213147159724, guid: d351f3046123c7940924af977283ce2c, type: 3}
+  - {fileID: -3846018093981099296, guid: df71432373ed238419667ddb54aa7dc0, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,6 +147,21 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000000029802322, y: 0, z: 0}
     m_Extent: {x: 0.75, y: 0.74999994, z: 0.75}
   m_DirtyAABB: 0
+--- !u!114 &-8218064803547024360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274049781243910963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
 --- !u!1 &2041641930176045542
 GameObject:
   m_ObjectHideFlags: 0

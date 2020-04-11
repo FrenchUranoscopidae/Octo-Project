@@ -10,6 +10,8 @@ public class ColorChanger : MonoBehaviour
     public bool b_dialogueHappenned = false;
     public DialogueTrigger dialogueTrigger;
 
+    public AudioClip colorSwapSound;
+
     void Start()
     {
         colorMgr.Initialize(GetComponent<SkinnedMeshRenderer>());
@@ -20,6 +22,7 @@ public class ColorChanger : MonoBehaviour
         if (!canSwap) return; // Do nothing if we can't swap colors
         colorMgr.SwapObjectColors(playerColorMgr, colorMgr);
         StartCoroutine(SwapColorsTimer()); // Start the canSwap timer
+        AudioSource.PlayClipAtPoint(colorSwapSound, transform.position);
     }
 
     private IEnumerator SwapColorsTimer()

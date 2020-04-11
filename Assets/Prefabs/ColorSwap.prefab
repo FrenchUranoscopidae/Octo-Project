@@ -594,6 +594,7 @@ MonoBehaviour:
     currentColor: 4
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 0}
+  colorSwapSound: {fileID: 8300000, guid: ebb76aa1bf5161c4380b6d976aa085d3, type: 3}
 --- !u!114 &1193097
 MonoBehaviour:
   m_ObjectHideFlags: 0

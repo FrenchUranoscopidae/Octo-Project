@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 3041113592352626809}
   - component: {fileID: 3041113592352626790}
   - component: {fileID: 3311022209465623331}
+  - component: {fileID: -8029384540094668968}
   m_Layer: 0
   m_Name: Book
   m_TagString: ControllableLightweight
@@ -173,7 +174,7 @@ MonoBehaviour:
     currentColor: 3
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: 0}
+  dialogueTrigger: {fileID: -8029384540094668968}
   animator: {fileID: 0}
 --- !u!65 &3041113592352626809
 BoxCollider:
@@ -254,3 +255,18 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0, z: -5.041689}
     m_Extent: {x: 73.50302, y: 10.875948, z: 47.505753}
   m_DirtyAABB: 0
+--- !u!114 &-8029384540094668968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419276147917652331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []

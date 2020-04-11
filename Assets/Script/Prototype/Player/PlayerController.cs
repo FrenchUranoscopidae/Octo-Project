@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] protected float xSpeed = 15f;
     [SerializeField] protected float zSpeed = 100f;
     [SerializeField] public int weight;
+    public GameObject footstep;
     private Animator alienAnimation;
 
     // This method is protected to be accessed from child classes and virtual to be overriden in child classes
@@ -29,11 +30,16 @@ public class PlayerController : MonoBehaviour
             float vertical = Input.GetAxis("Vertical") * Time.deltaTime * zSpeed;
             // Apply the movement
             Move(horizontal, -vertical);
-        }
 
-        if(Input.GetButton("Horizontal"))
-        {
-            alienAnimation.SetTrigger("isWalking");
+            if (Input.GetButton("Horizontal"))
+            {
+                alienAnimation.SetTrigger("isWalking");
+                PlayFootstepSound();
+            }
+            else
+            {
+                StopPlayFootstepSound();
+            }
         }
     }
 
@@ -75,7 +81,18 @@ public class PlayerController : MonoBehaviour
             player.GetComponent<Collider>().enabled = true;
             player.GetComponent<Rigidbody>().isKinematic = false;
             objToControl.Player = null;
-
         }
+    }
+
+    public void PlayFootstepSound()
+    {
+        footstep.GetComponent<AudioSource>().enabled = true;
+        footstep.GetComponent<AudioSource>().loop = true;
+    }
+
+    public void StopPlayFootstepSound()
+    {
+        footstep.GetComponent<AudioSource>().enabled = false;
+        footstep.GetComponent<AudioSource>().loop = false;
     }
 }   

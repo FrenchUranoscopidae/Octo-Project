@@ -4,6 +4,7 @@ public class Door : MonoBehaviour
 {
     public BoxCollider doorCollider;
     public bool doorIsOpen = false;
+    public AudioClip doorSound;
     private Animator openDoor;
 
     //Introductions DialogueTriggering
@@ -42,6 +43,7 @@ public class Door : MonoBehaviour
     public void OpenDoor()
     {
         doorIsOpen = true;
+        AudioSource.PlayClipAtPoint(doorSound, transform.position);
     }
 
     public void CloseDoor()

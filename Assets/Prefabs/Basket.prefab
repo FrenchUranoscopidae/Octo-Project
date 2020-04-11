@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8816966583896122813}
   - component: {fileID: 8816966583896122814}
   - component: {fileID: 1606596475981172362}
+  - component: {fileID: 1209589721395012605}
   m_Layer: 0
   m_Name: Basket
   m_TagString: ControllableLightweight
@@ -93,7 +94,7 @@ MonoBehaviour:
     currentColor: 4
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: 0}
+  dialogueTrigger: {fileID: 1209589721395012605}
   animator: {fileID: 0}
 --- !u!137 &1606596475981172362
 SkinnedMeshRenderer:
@@ -145,6 +146,21 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000000059604645, y: -0.014786065, z: 0}
     m_Extent: {x: 1.1374495, y: 0.97762203, z: 1.1374496}
   m_DirtyAABB: 0
+--- !u!114 &1209589721395012605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421158365092316961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
 --- !u!1 &6040348134835788260
 GameObject:
   m_ObjectHideFlags: 0
