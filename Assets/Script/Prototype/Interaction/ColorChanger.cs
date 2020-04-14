@@ -11,6 +11,7 @@ public class ColorChanger : MonoBehaviour
     public DialogueTrigger dialogueTrigger;
 
     public AudioClip colorSwapSound;
+    public GameObject colorSwapVisualEffect;
 
     void Start()
     {
@@ -23,6 +24,8 @@ public class ColorChanger : MonoBehaviour
         colorMgr.SwapObjectColors(playerColorMgr, colorMgr);
         StartCoroutine(SwapColorsTimer()); // Start the canSwap timer
         AudioSource.PlayClipAtPoint(colorSwapSound, transform.position);
+        Instantiate(colorSwapVisualEffect, transform.position, transform.rotation);
+        Destroy(GameObject.Find("ColorSwap(Clone)"), 2f);
     }
 
     private IEnumerator SwapColorsTimer()

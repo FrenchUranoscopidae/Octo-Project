@@ -74,8 +74,6 @@ public class DialogueManager : MonoBehaviour
         nextSentenceTimer = nextSentenceTimerReset;
         b_nextSentenceTimerRunning = true;
 
-        //nextSentenceTimer -= Time.deltaTime;
-
         //dialogueText.text = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));

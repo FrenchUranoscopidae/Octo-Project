@@ -123,8 +123,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0721412, y: 0.7111378, z: 2.377656}
-  m_Center: {x: -0.010779142, y: 0.38885468, z: 0.00000047683716}
+  m_Size: {x: 1.528965, y: 0.7111378, z: 1.4949926}
+  m_Center: {x: -0.022094091, y: 0.38885468, z: -0.0000012715658}
 --- !u!114 &4788701451519055789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   y: 0
+  teleporterSound: {fileID: 8300000, guid: a37bac4ec22eea6418ccf46e3df4a30c, type: 3}
+  teleporterVisualEffect: {fileID: 4160248357580239431, guid: 215250d0ca1184848b4d295f436c856e,
+    type: 3}
 --- !u!1 &7043483316646323477
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,6 @@ public class PlayerManager : MonoBehaviour
     public ColorManager colorMgr;
     public PlayerController controller;
     public GameObject smoke;
-    //public AudioClip colorSwapSound;
 
     void Start()
     {
@@ -21,7 +20,6 @@ public class PlayerManager : MonoBehaviour
         {
             ColorChanger changer = collision.collider.GetComponent<ColorChanger>();
             changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
-            //AudioSource.PlayClipAtPoint(colorSwapSound, transform.position);
         }
         else if (col.CompareTag("ControllableHeavy"))
         {
