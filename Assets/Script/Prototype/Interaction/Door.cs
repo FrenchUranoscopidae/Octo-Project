@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
 
     //Introductions DialogueTriggering
     public bool b_dialogueHappenned = false;
+    public bool b_dialogueAllowed = false;
     public DialogueTrigger dialogueTrigger;
 
     void Start()
@@ -25,7 +26,7 @@ public class Door : MonoBehaviour
             doorCollider.enabled = false;
 
             //DialogueTriggering
-            if (!b_dialogueHappenned)
+            if (!b_dialogueHappenned & b_dialogueAllowed)
             {
                 ThisObjectDialogueTrigger();
             }

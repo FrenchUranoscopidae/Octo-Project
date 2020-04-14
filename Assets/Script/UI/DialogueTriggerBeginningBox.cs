@@ -8,11 +8,6 @@ public class DialogueTriggerBeginningBox : MonoBehaviour
     public bool b_dialogueHappenned = false;
     public DialogueTrigger dialogueTrigger;
 
-    void Update()
-    {
-
-    }
-
     //Function to trigger the dialogue of this object only once
     public void ThisObjectDialogueTrigger()
     {

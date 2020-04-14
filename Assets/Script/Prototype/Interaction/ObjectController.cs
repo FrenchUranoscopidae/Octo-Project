@@ -14,6 +14,7 @@ public class ObjectController : PlayerController
 
     //Animation props
     public Animator animator;
+    //public Animation propsWalk;
 
     // override the player controller start method
     protected override void Start()
@@ -22,6 +23,8 @@ public class ObjectController : PlayerController
         colorMgr.Initialize(GetComponent<SkinnedMeshRenderer>());
         PlayerLeavePoint = transform.GetChild(0);
         isControlled = false; // Disable controls for this object
+
+        //animator.applyRootMotion;
     }
 
     protected override void Update()
@@ -44,7 +47,9 @@ public class ObjectController : PlayerController
             Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
         }
 
-        if(Input.GetKeyDown(KeyCode.Z))
+        //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             animator.SetBool("IsWalking", true);
         }
