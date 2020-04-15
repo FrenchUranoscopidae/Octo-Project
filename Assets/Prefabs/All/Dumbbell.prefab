@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isControlled: 0
   xSpeed: 80
-  zSpeed: 80
+  rotationSpeed: 100
   weight: 2
   footstep: {fileID: 8189434503683881453}
   colorMgr:
@@ -378,7 +378,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8189434503683881453}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 55c087398fbd9d24f8b5114e286a49a2, type: 2}
   m_CullingMode: 0
