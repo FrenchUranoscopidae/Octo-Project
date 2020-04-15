@@ -29,16 +29,15 @@ public class PlayerController : MonoBehaviour
             // Get the vertical axis value and scale it by time and speed (used for player translation)
             float vertical = Input.GetAxis("Vertical") * Time.deltaTime * rotationSpeed;
             // Apply the movement
-            Move(horizontal, vertical / 5);
+            Move(horizontal, -vertical);
 
-            if (Input.GetButton("Vertical"))
+            if (Input.GetButton("Horizontal"))
             {
-                alienAnimation.SetBool("isWalking", true);
+                alienAnimation.SetTrigger("isWalking");
                 PlayFootstepSound();
             }
             else
             {
-                //alienAnimation.SetBool("isWalking", false);
                 StopPlayFootstepSound();
             }
         }
@@ -46,11 +45,11 @@ public class PlayerController : MonoBehaviour
 
     private void Move(float horizontal, float vertical)
     {
-        transform.Rotate(new Vector3(0f, horizontal, 0f)); // Rotate arround the Y axis
+        /*transform.Rotate(new Vector3(0f, horizontal, 0f)); // Rotate arround the Y axis
         transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f); // Constraint the rotation
-        rb.MovePosition(rb.position + transform.forward * vertical); // Move along the player forward
-        //transform.Translate(vertical / 5, 0, 0);
-        //transform.Translate(0, 0, horizontal / 5);
+        rb.MovePosition(rb.position + transform.forward * vertical); // Move along the player forward*/
+        transform.Translate(vertical / 5, 0, 0);
+        transform.Translate(0, 0, horizontal / 5);
     }
 
     public void SetIsControlled(bool val)
