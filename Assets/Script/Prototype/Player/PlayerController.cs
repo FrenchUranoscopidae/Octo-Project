@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     // Attributes (protected to be accessed from child classes)
     [SerializeField] public bool isControlled = true;
     [SerializeField] protected float xSpeed = 15f;
-    [SerializeField] protected float zSpeed = 100f;
+    [SerializeField] protected float rotationSpeed = 100f;
     [SerializeField] public int weight;
     public GameObject footstep;
     private Animator alienAnimation;
@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
             // Get the horizontal axis value and scale it by time and speed (used for player rotation)
             float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * xSpeed;
             // Get the vertical axis value and scale it by time and speed (used for player translation)
-            float vertical = Input.GetAxis("Vertical") * Time.deltaTime * zSpeed;
+            float vertical = Input.GetAxis("Vertical") * Time.deltaTime * rotationSpeed;
             // Apply the movement
             Move(horizontal, vertical / 5);
 
