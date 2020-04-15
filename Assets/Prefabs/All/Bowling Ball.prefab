@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 7029408148652607253}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 11.7621355, y: 2, z: -2}
-  m_LocalScale: {x: 10, y: 10.000001, z: 9.999999}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children:
   - {fileID: 3979289231407013623}
   m_Father: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   weight: 2
   footstep: {fileID: 7029408148652607253}
   colorMgr:
-    currentColor: 3
+    currentColor: 4
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 524446490}
