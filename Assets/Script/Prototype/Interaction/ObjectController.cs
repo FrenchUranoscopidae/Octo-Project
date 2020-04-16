@@ -21,6 +21,7 @@ public class ObjectController : PlayerController
     {
         base.Start(); // Call the player controller start
         colorMgr.Initialize(GetComponent<SkinnedMeshRenderer>());
+        colorMgr.InitializeObjectRenderer(GetComponent<MeshRenderer>());
         PlayerLeavePoint = transform.GetChild(0);
         isControlled = false; // Disable controls for this object
 

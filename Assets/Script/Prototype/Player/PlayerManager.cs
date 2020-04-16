@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     {
         // Initialize the color manager with the mesh renderer
         colorMgr.Initialize(GetComponent<SkinnedMeshRenderer>());
+        colorMgr.InitializeObjectRenderer(GetComponent<MeshRenderer>());
         controller = GetComponent<PlayerController>();
     }
 
