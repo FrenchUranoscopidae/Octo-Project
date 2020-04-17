@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Octo-Project/Room 2.unity
     guid: f496db62c1ddc924799b92d4766b8202
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Octo-Project/Room 3.unity
     guid: 5ac82082f536cd042b1f5eb2407155ed
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Octo-Project/Room 4.unity
     guid: 10461b850d2ba804cbd97a85067787f3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Octo-Project/Room 5.unity
     guid: 550bf091141dd644bbb60dd1282ee475
   m_configObjects: {}

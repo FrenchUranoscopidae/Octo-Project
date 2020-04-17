@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -41616503615132006}
   - component: {fileID: -6545665639969347801}
   - component: {fileID: 227077109729363961}
+  - component: {fileID: 3429392672349563119}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: ControllableLightweight
@@ -63,13 +64,13 @@ MonoBehaviour:
   xSpeed: 80
   rotationSpeed: 100
   weight: 1
-  footstep: {fileID: 0}
+  footstep: {fileID: 57384269555118301}
   colorMgr:
-    currentColor: 3
+    currentColor: 4
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: -41616503615132006}
-  animator: {fileID: 0}
+  animator: {fileID: 3429392672349563119}
 --- !u!65 &4797762519565911627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -248,6 +249,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &3429392672349563119
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57384269555118301}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5810350894285175496
 GameObject:
   m_ObjectHideFlags: 0

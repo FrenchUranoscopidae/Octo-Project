@@ -515,6 +515,7 @@ GameObject:
   - component: {fileID: 5253856636283239607}
   - component: {fileID: -3395515904085974699}
   - component: {fileID: -7898534015001067482}
+  - component: {fileID: 1065119137620849512}
   m_Layer: 0
   m_Name: TV
   m_TagString: ControllableHeavy
@@ -635,15 +636,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isControlled: 0
   xSpeed: 80
-  zSpeed: 80
+  rotationSpeed: 100
   weight: 2
-  footstep: {fileID: 0}
+  footstep: {fileID: 5452955723388293300}
   colorMgr:
     currentColor: 3
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: 0}
-  animator: {fileID: 0}
+  dialogueTrigger: {fileID: -3395515904085974699}
+  animator: {fileID: 1065119137620849512}
 --- !u!114 &-3395515904085974699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,6 +756,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1065119137620849512
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5452955723388293300}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6796438721734508775
 GameObject:
   m_ObjectHideFlags: 0

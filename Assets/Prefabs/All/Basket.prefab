@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 1209589721395012605}
   - component: {fileID: -3342812380382811986}
   - component: {fileID: 5244320657061136165}
+  - component: {fileID: 7830930358027030737}
+  - component: {fileID: 8788638377918839578}
   m_Layer: 0
   m_Name: Basket
   m_TagString: ControllableLightweight
@@ -91,13 +93,13 @@ MonoBehaviour:
   xSpeed: 80
   rotationSpeed: 100
   weight: 1
-  footstep: {fileID: 0}
+  footstep: {fileID: 3421158365092316961}
   colorMgr:
     currentColor: 4
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 1209589721395012605}
-  animator: {fileID: 0}
+  animator: {fileID: 8788638377918839578}
 --- !u!114 &1209589721395012605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +249,39 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7830930358027030737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421158365092316961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a36d5bd08ee8cf142988072d9bfc3454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strenght: 1000
+  rb: {fileID: 8816966583896122812}
+--- !u!95 &8788638377918839578
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421158365092316961}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6040348134835788260
 GameObject:
   m_ObjectHideFlags: 0

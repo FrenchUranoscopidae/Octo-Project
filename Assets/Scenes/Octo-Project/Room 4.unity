@@ -3653,21 +3653,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1790240865103988617, guid: 5e21b31969cf66147acb19b3302c4ee9,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790240865103988617, guid: 5e21b31969cf66147acb19b3302c4ee9,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 7406043205793502001, guid: 5e21b31969cf66147acb19b3302c4ee9,
-        type: 3}
-      propertyPath: colorMgr.currentColor
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e21b31969cf66147acb19b3302c4ee9, type: 3}
 --- !u!4 &1440883517 stripped
@@ -3706,8 +3691,8 @@ Transform:
   - {fileID: 120065944}
   - {fileID: 1184708524}
   - {fileID: 1924690606}
-  - {fileID: 1483728846}
   - {fileID: 2076904778}
+  - {fileID: 1483728846}
   - {fileID: 1027500310}
   - {fileID: 140800136}
   m_Father: {fileID: 0}
@@ -4903,7 +4888,7 @@ Transform:
   m_LocalScale: {x: 15, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1453511001}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &2076904779
 MeshCollider:

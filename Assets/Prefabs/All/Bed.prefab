@@ -261,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7176031280402404141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2525.2522, y: 0, z: 0}
+  m_LocalPosition: {x: -3030.3025, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4717670967851356821}
@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: -3297927400370123379}
   - component: {fileID: 270731628055541554}
   - component: {fileID: 3211228098907557880}
+  - component: {fileID: 5266007953931366545}
   m_Layer: 0
   m_Name: Bed
   m_TagString: ControllableHeavy
@@ -297,7 +298,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8584935555318603910}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 10, y: 2.5, z: 20}
   m_LocalScale: {x: 0.004950002, y: 0.03, z: 0.004950002}
   m_Children:
@@ -332,13 +333,13 @@ MonoBehaviour:
   xSpeed: 80
   rotationSpeed: 100
   weight: 2
-  footstep: {fileID: 0}
+  footstep: {fileID: 8584935555318603910}
   colorMgr:
     currentColor: 4
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: -3297927400370123379}
-  animator: {fileID: 0}
+  animator: {fileID: 5266007953931366545}
 --- !u!65 &7801447902816438041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -517,3 +518,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &5266007953931366545
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8584935555318603910}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

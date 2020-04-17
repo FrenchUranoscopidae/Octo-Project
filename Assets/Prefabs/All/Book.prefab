@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: -8029384540094668968}
   - component: {fileID: -3391991600539267839}
   - component: {fileID: 8346706609725813929}
+  - component: {fileID: 7971912073063620043}
   m_Layer: 0
   m_Name: Book
   m_TagString: ControllableLightweight
@@ -140,7 +141,7 @@ Transform:
   m_GameObject: {fileID: 6419276147917652331}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 25, y: 0.5, z: -85}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children:
   - {fileID: 6114307219310637568}
   - {fileID: 7757898630321904813}
@@ -171,13 +172,13 @@ MonoBehaviour:
   xSpeed: 80
   rotationSpeed: 100
   weight: 1
-  footstep: {fileID: 0}
+  footstep: {fileID: 6419276147917652331}
   colorMgr:
     currentColor: 3
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: -8029384540094668968}
-  animator: {fileID: 0}
+  animator: {fileID: 7971912073063620043}
 --- !u!65 &3041113592352626809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -356,3 +357,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &7971912073063620043
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419276147917652331}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
