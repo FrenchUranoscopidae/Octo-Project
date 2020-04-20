@@ -7,6 +7,8 @@ public class PressurePlateController : MonoBehaviour
     public ColorManager colorMgr;
     public bool isActive = false;
     public int pressurePlateValue = 0;
+    public GameObject diodeColor;
+    public Material initialMaterial;
 
     public delegate void OnPressurePlateActivatedDelegate();
     public event OnPressurePlateActivatedDelegate OnPressurePlateActivated;
@@ -62,18 +64,21 @@ public class PressurePlateController : MonoBehaviour
         {
             isActive = false;
             pressurePlateValue = 0;
+            diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
         }
 
         if (collider.gameObject.tag == "Player")
         {
             isActive = false;
             pressurePlateValue = 0;
+            diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
         }
 
         if (collider.gameObject.tag == "ControllableLightweight")
         {
             pressurePlateValue--;
             isActive = false;
+
         }
         
     }
@@ -81,6 +86,7 @@ public class PressurePlateController : MonoBehaviour
     private void ActivatePressurePlate()
     {
         isActive = true;
+        diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
         OnPressurePlateActivated?.Invoke();
     }
 }

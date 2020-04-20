@@ -257,6 +257,8 @@ MonoBehaviour:
     currentColor: 3
   isActive: 0
   pressurePlateValue: 0
+  diodeColor: {fileID: 7986190404296194425}
+  initialMaterial: {fileID: 2100000, guid: 1b88772662aeab34fb6accae44a94209, type: 2}
 --- !u!65 &425677370
 BoxCollider:
   m_ObjectHideFlags: 0
