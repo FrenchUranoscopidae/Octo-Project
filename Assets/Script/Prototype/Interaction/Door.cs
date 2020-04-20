@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿    using UnityEngine;
 
 public class Door : MonoBehaviour
 {
     public BoxCollider doorCollider;
     public bool doorIsOpen = false;
     public AudioClip doorSound;
+    public GameObject diodeColor;
+    public Light diodeLightColor;
     private Animator openDoor;
 
     //Introductions DialogueTriggering
@@ -45,6 +47,8 @@ public class Door : MonoBehaviour
     {
         doorIsOpen = true;
         AudioSource.PlayClipAtPoint(doorSound, transform.position);
+        diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+        diodeLightColor.color = Color.green;
     }
 
     public void CloseDoor()
