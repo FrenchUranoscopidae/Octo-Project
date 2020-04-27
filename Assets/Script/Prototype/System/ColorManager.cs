@@ -8,7 +8,7 @@ public class ColorManager
     private MeshRenderer objectsRenderer;
 
     // Attributes
-    [SerializeField] private ObjectColor currentColor = ObjectColor.YELLOW;
+    [SerializeField] private ObjectColor currentColor;
 
     public void Initialize(SkinnedMeshRenderer rend)
     {

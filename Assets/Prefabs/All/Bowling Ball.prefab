@@ -143,7 +143,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Scientist
-    sentences: []
+    sentences:
+    - "Oui ! C\u2019est cela ! Tu es capable de prendre possession de ton environnement.
+      Ma th\xE9orie \xE9tait correcte ! Quel prodige je fais !\r"
+    - "Maintenant, tu es bien capable de sortir de cet \xE9tat par toi-m\xEAme\u2026
+      n\u2019est-ce pas ?\r"
 --- !u!82 &4263977451098854948
 AudioSource:
   m_ObjectHideFlags: 0
@@ -276,7 +280,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 67d2e518922e64e41bde45aa51930685, type: 3}
+  - {fileID: 670224309865224971, guid: e0021231285deb64a9154e436a77d596, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

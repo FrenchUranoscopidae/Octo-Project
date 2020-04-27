@@ -24,8 +24,6 @@ public class ObjectController : PlayerController
         colorMgr.InitializeObjectRenderer(GetComponent<MeshRenderer>());
         PlayerLeavePoint = transform.GetChild(0);
         isControlled = false; // Disable controls for this object
-
-        //animator.applyRootMotion;
     }
 
     protected override void Update()
@@ -47,8 +45,6 @@ public class ObjectController : PlayerController
             Player.ControlObject(this, false, Player);
             Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
         }
-
-        //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
