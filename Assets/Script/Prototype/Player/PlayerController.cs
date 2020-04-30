@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
             // Get the vertical axis value and scale it by time and speed (used for player translation)
             float vertical = Input.GetAxis("Vertical") * Time.deltaTime * rotationSpeed;
             // Apply the movement
-            Move(horizontal, -vertical);
+            Move(-horizontal, vertical);
 
             if (Input.GetButton("Horizontal"))
             {
