@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5855558420204004135}
   - component: {fileID: 3177318008364308753}
   - component: {fileID: 9161606488916649448}
+  - component: {fileID: 7667731777335309662}
+  - component: {fileID: 5841772169533545872}
+  - component: {fileID: 8882661819159259092}
   m_Layer: 0
   m_Name: Wall Bump
   m_TagString: Untagged
@@ -80,3 +83,42 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7667731777335309662
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7428765113841635636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.591402, y: 13.004223, z: 4.695438}
+  m_Center: {x: 0.071105, y: 1.652111, z: 1.3477187}
+--- !u!65 &5841772169533545872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7428765113841635636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3295193, y: 13.004223, z: 2.824605}
+  m_Center: {x: -4.8352404, y: 1.652111, z: 0.41230232}
+--- !u!65 &8882661819159259092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7428765113841635636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0854874, y: 13.004223, z: 3.0158951}
+  m_Center: {x: 4.9572563, y: 1.652111, z: 0.50794685}

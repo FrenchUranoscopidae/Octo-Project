@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 2240531861472985204}
   - component: {fileID: 7083301727788988994}
   - component: {fileID: 3562479311960016571}
+  - component: {fileID: 6960054241399536429}
+  - component: {fileID: 7194555976145834054}
   m_Layer: 0
-  m_Name: Wall Angle
+  m_Name: Wall Right Angled Corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,3 +82,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6960054241399536429
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2975944783850910311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.015002, y: 13, z: 2.593777}
+  m_Center: {x: 2.508207, y: 1.5, z: 0.29741418}
+--- !u!65 &7194555976145834054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2975944783850910311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7101967, y: 13, z: 7.0150003}
+  m_Center: {x: 0.35580432, y: 1.5, z: 2.5080256}
