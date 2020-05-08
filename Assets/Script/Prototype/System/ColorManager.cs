@@ -70,7 +70,7 @@ public class ColorManager
                 break;
             case ObjectColor.MAGENTA:
                 Color magentaMaterial = new Color32(85, 47, 150, 255);
-                ColorUtility.TryParseHtmlString("#51339e", out magentaMaterial);
+                ColorUtility.TryParseHtmlString("#7859c7", out magentaMaterial);
                 objectsRenderer.material.SetColor("_Color", magentaMaterial);
                 break;
             case ObjectColor.RED:
