@@ -39,7 +39,7 @@ public class ColorManager
                 break;
             case ObjectColor.MAGENTA:
                 Color magentaMaterial = new Color32(85, 47, 150, 255);
-                ColorUtility.TryParseHtmlString("#4f2194", out magentaMaterial);
+                ColorUtility.TryParseHtmlString("#521aab", out magentaMaterial);
                 playerRenderer.material.SetColor("_Color", magentaMaterial);
                 break;
             case ObjectColor.RED:
@@ -70,7 +70,7 @@ public class ColorManager
                 break;
             case ObjectColor.MAGENTA:
                 Color magentaMaterial = new Color32(85, 47, 150, 255);
-                ColorUtility.TryParseHtmlString("#4f2194", out magentaMaterial);
+                ColorUtility.TryParseHtmlString("#51339e", out magentaMaterial);
                 objectsRenderer.material.SetColor("_Color", magentaMaterial);
                 break;
             case ObjectColor.RED:
@@ -78,7 +78,7 @@ public class ColorManager
                 break;
             case ObjectColor.YELLOW:
                 Color yellowMaterial = new Color32(255, 195, 76, 255);
-                ColorUtility.TryParseHtmlString("#ffc337", out yellowMaterial);
+                ColorUtility.TryParseHtmlString("#ffbe31", out yellowMaterial);
                 objectsRenderer.material.SetColor("_Color", yellowMaterial);
                 break;
         }
