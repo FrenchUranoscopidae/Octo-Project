@@ -4,6 +4,7 @@
 public class ColorManager
 {
     // Components
+    public PlayerManager alienMaterial;
     private SkinnedMeshRenderer playerRenderer;
     private MeshRenderer objectsRenderer;
 
@@ -38,17 +39,19 @@ public class ColorManager
                 playerRenderer.material.SetColor("_Color", Color.green);
                 break;
             case ObjectColor.MAGENTA:
-                Color magentaMaterial = new Color32(85, 47, 150, 255);
-                ColorUtility.TryParseHtmlString("#521aab", out magentaMaterial);
-                playerRenderer.material.SetColor("_Color", magentaMaterial);
+                //Color magentaMaterial = new Color32(85, 47, 150, 255);
+                //ColorUtility.TryParseHtmlString("#521aab", out magentaMaterial);
+                playerRenderer.material.mainTexture = alienMaterial.alienMagentaTexture;
+                //playerRenderer.material.SetColor("_Color", magentaMaterial);
                 break;
             case ObjectColor.RED:
                 playerRenderer.material.SetColor("_Color", Color.red);
                 break;
             case ObjectColor.YELLOW:
-                Color yellowMaterial = new Color32(255, 195, 76, 255);
-                ColorUtility.TryParseHtmlString("#ffc337", out yellowMaterial);
-                playerRenderer.material.SetColor("_Color", yellowMaterial);
+                //Color yellowMaterial = new Color32(255, 195, 76, 255);
+                //ColorUtility.TryParseHtmlString("#ffc337", out yellowMaterial);
+                playerRenderer.material.mainTexture = alienMaterial.alienYellowTexture;
+                //playerRenderer.material.SetColor("_Color", yellowMaterial);
                 break;
         }
     }

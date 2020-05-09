@@ -5,6 +5,8 @@ public class PlayerManager : MonoBehaviour
     public ColorManager colorMgr;
     public PlayerController controller;
     public GameObject smoke;
+    public Texture alienYellowTexture;
+    public Texture alienMagentaTexture;
 
     void Start()
     {

@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
             // Apply the movement
             Move(-horizontal, vertical);
 
-            if (Input.GetButton("Horizontal"))
+            if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
             {
                 alienAnimation.SetTrigger("isWalking");
                 PlayFootstepSound();
