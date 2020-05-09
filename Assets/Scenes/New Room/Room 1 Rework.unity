@@ -8229,6 +8229,11 @@ PrefabInstance:
         \xE9valuer tes capacit\xE9s physiques et ... mentales. Voyons ce dont tu es
         capable...\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 7760704134071303626, guid: 10e2c4dd33a72694d9666d4f6d90c248,
+        type: 3}
+      propertyPath: dialogue.name
+      value: Scientifique
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e2c4dd33a72694d9666d4f6d90c248, type: 3}
 --- !u!1 &560999300

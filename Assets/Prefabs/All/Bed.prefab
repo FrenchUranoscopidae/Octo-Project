@@ -335,6 +335,7 @@ MonoBehaviour:
   weight: 2
   footstep: {fileID: 8584935555318603910}
   colorMgr:
+    alienMaterial: {fileID: 0}
     currentColor: 4
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0

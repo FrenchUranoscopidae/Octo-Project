@@ -73,6 +73,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Scientist
+    name: Scientifique
     sentences:
     - 
