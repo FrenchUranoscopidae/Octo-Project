@@ -10,7 +10,7 @@ public class Teleporter : MonoBehaviour
 	public GameObject teleporterVisualEffect;
 	public Transform vfxSpawnPoint;
 
-	void OnTriggerEnter(Collider other)
+	void OnTriggerStay(Collider other)
 	{
 		if (other.gameObject.tag == "Player")
 		{

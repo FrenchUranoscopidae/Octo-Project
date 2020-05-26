@@ -44,7 +44,7 @@ public class PlayerManager : MonoBehaviour
                 Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
             }
         }
-        else if (collision.gameObject.CompareTag("Barrier"))
+        else if (col.CompareTag("Barrier"))
         {
             BarrierController barrier = col.GetComponent<BarrierController>();
             BoxCollider barrierCollider = col.GetComponent<BoxCollider>();
