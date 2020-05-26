@@ -102,7 +102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6695790476753640511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.27493882, y: 0, z: 0}
+  m_LocalPosition: {x: -0.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3720382752997579547}
@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 8688886230047595093}
   - component: {fileID: 8688886230047595092}
   - component: {fileID: 8688886230047595095}
+  - component: {fileID: 5713454546704217629}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: ControllableHeavy
@@ -207,10 +208,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  xSpeed: 80
-  rotationSpeed: 100
+  xSpeed: 15
   weight: 2
   footstep: {fileID: 8688886230047595094}
+  gravity: 8.91
+  controller: {fileID: 5713454546704217629}
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 3
@@ -229,7 +231,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.13746928, y: 0.17812279, z: 0.42475277}
+  m_Size: {x: 0.12160044, y: 0.17812279, z: 0.42475277}
   m_Center: {x: 0.004848182, y: -0.00011926025, z: -0.13912971}
 --- !u!54 &8688886230047595090
 Rigidbody:
@@ -243,7 +245,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -377,3 +379,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!143 &5713454546704217629
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8688886230047595094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0.17788425
+  m_Radius: 0.07358282
+  m_SlopeLimit: 45
+  m_StepOffset: 0.5
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}

@@ -39,7 +39,7 @@ public class ObjectController : PlayerController
             ThisObjectDialogueTrigger();
         }   
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Possession/Depossession"))
         {
             Instantiate(smoke, obj.transform.position, obj.transform.rotation);
             Player.ControlObject(this, false, Player);

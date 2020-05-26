@@ -14,7 +14,7 @@ public class PressurePlateController : MonoBehaviour
     public delegate void OnPressurePlateActivatedDelegate();
     public event OnPressurePlateActivatedDelegate OnPressurePlateActivated;
 
-    public void OnTriggerEnter(Collider collider)
+    public void OnTriggerStay(Collider collider)
     {
         if (collider.CompareTag("Player"))
         {
