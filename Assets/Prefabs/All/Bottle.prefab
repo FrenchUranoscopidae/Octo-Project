@@ -66,6 +66,7 @@ MonoBehaviour:
   weight: 1
   footstep: {fileID: 57384269555118301}
   colorMgr:
+    alienMaterial: {fileID: 0}
     currentColor: 4
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   b_dialogueHappenned: 0
@@ -228,7 +229,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: e0021231285deb64a9154e436a77d596, type: 3}
+  - {fileID: 2100000, guid: ea174c0e9ce6ae64c8b6fc6a8253a998, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

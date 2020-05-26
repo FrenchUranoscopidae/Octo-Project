@@ -2,7 +2,7 @@
 {
     Properties
 	{
-		_Color("Color", Color) = (1,1,1,1)
+		_Color("_Color", Color) = (1,1,1,1)
 		_MainTex("Main Texture", 2D) = "white" {}
 		// Ambient light is applied uniformly to all surfaces on the object.
 		[HDR]

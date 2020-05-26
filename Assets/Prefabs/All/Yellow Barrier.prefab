@@ -15040,6 +15040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorMgr:
+    alienMaterial: {fileID: 0}
     currentColor: 3
 --- !u!1 &8775202452053494906
 GameObject:
