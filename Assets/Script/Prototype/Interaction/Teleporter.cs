@@ -8,15 +8,21 @@ public class Teleporter : MonoBehaviour
 	public int y = SceneManager.GetActiveScene().buildIndex;
 	public AudioClip teleporterSound;
 	public GameObject teleporterVisualEffect;
+	public bool alreadyPlayed = false;
 	public Transform vfxSpawnPoint;
 
 	void OnTriggerStay(Collider other)
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			AudioSource.PlayClipAtPoint(teleporterSound, transform.position);
-			Instantiate(teleporterVisualEffect, vfxSpawnPoint.position, vfxSpawnPoint.rotation);
-			RoomControl.instance.Victory();
+			if(!alreadyPlayed)
+			{
+				AudioSource.PlayClipAtPoint(teleporterSound, transform.position);
+				Instantiate(teleporterVisualEffect, vfxSpawnPoint.position, vfxSpawnPoint.rotation);
+				RoomControl.instance.Victory();
+				alreadyPlayed = true;
+			}
+			
 			StartCoroutine("Teleport");
 		}
 	}

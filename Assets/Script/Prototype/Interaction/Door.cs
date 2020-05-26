@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
     public AudioClip doorSound;
     public GameObject diodeColor;
     public Light diodeLightColor;
+    public bool alreadyPlayed = false;
     private Animator openDoor;
 
     //Introductions DialogueTriggering
@@ -45,8 +46,13 @@ public class Door : MonoBehaviour
 
     public void OpenDoor()
     {
+        if(!alreadyPlayed)
+        {
+            AudioSource.PlayClipAtPoint(doorSound, transform.position);
+            alreadyPlayed = true;
+        }
+        
         doorIsOpen = true;
-        AudioSource.PlayClipAtPoint(doorSound, transform.position);
         diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
         diodeLightColor.color = Color.green;
     }
