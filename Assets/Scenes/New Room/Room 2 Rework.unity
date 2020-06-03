@@ -14660,36 +14660,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &680038833
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 680038834}
-  m_Layer: 0
-  m_Name: Pilliars
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &680038834
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680038833}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1725889517}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &685300052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19041,6 +19011,11 @@ PrefabInstance:
       propertyPath: b_dialogueAllowed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5613203787985695254, guid: b339a29de65fee64f89b2091f833f3cf,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 835106427938933276, guid: b339a29de65fee64f89b2091f833f3cf,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19064,11 +19039,6 @@ PrefabInstance:
     - target: {fileID: 61156091563400218, guid: b339a29de65fee64f89b2091f833f3cf,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5613203787985695254, guid: b339a29de65fee64f89b2091f833f3cf,
-        type: 3}
-      propertyPath: m_Shadows.m_Type
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8878767272164516201, guid: b339a29de65fee64f89b2091f833f3cf,
@@ -19480,7 +19450,7 @@ Transform:
   - {fileID: 5006512735897596166}
   - {fileID: 341150731}
   m_Father: {fileID: 1725889517}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927580126
 PrefabInstance:
@@ -27635,7 +27605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1291015956}
   m_Layer: 0
-  m_Name: Puzzle 3 Rework
+  m_Name: 'Puzzle 3 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29389,21 +29359,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3748980670304175561, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4395255590806489879, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7986190404296194425, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
       propertyPath: m_Size.x
       value: 3.356147
@@ -29423,6 +29378,21 @@ PrefabInstance:
     - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
       propertyPath: m_Center.z
       value: 0.0155108
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748980670304175561, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395255590806489879, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986190404296194425, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -36701,7 +36671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1725889517}
   m_Layer: 0
-  m_Name: Puzzle 2 Rework
+  m_Name: 'Puzzle 2 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36725,7 +36695,6 @@ Transform:
   - {fileID: 1200025371}
   - {fileID: 443418}
   - {fileID: 685338777}
-  - {fileID: 680038834}
   - {fileID: 925590491}
   m_Father: {fileID: 463097410}
   m_RootOrder: 0
@@ -36964,7 +36933,7 @@ PrefabInstance:
     - target: {fileID: 2083002479306180004, guid: 4931cb2e8486e7242af52d3827815760,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2083002479306180004, guid: 4931cb2e8486e7242af52d3827815760,
         type: 3}
@@ -41127,7 +41096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908656288}
   m_Layer: 0
-  m_Name: Puzzle 4 Rework
+  m_Name: 'Puzzle 4 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46504,7 +46473,7 @@ PrefabInstance:
     - target: {fileID: 1625543883378910776, guid: cc62e4afae5784942bdfa11d3f539dbe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1625543883378910776, guid: cc62e4afae5784942bdfa11d3f539dbe,
         type: 3}
