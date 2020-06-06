@@ -11,6 +11,12 @@ public class PressurePlateController : MonoBehaviour
     public GameObject diodeColor1;
     public Material initialMaterial;
 
+    [Header("Sound")]
+    public AudioClip PlateActivation;
+    public AudioSource PlateSource;
+    public float volume;
+    public bool b_HasActivated = false;
+
     public delegate void OnPressurePlateActivatedDelegate();
     public event OnPressurePlateActivatedDelegate OnPressurePlateActivated;
 
@@ -24,10 +30,18 @@ public class PressurePlateController : MonoBehaviour
             {
                 pressurePlateValue = collider.GetComponent<PlayerController>().weight;
 
-                if (pressurePlateValue == 2)
+                if (pressurePlateValue == 2 && !b_HasActivated)
                 {
                     diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
                     diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+
+                    //Sound
+                    b_HasActivated = true;
+                    if (b_HasActivated)
+                    {
+                        AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
+                        Debug.Log("Activated");
+                    }
                     ActivatePressurePlate();
                 }
             }
@@ -82,6 +96,7 @@ public class PressurePlateController : MonoBehaviour
             pressurePlateValue = 0;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            b_HasActivated = false;
         }
 
         if (collider.gameObject.tag == "ControllableLightweight")
@@ -96,6 +111,8 @@ public class PressurePlateController : MonoBehaviour
     private void ActivatePressurePlate()
     {
         isActive = true;
+        //Plate4.Play();
+        //AudioSource.PlayClipAtPoint(PlateActivation, transform.position);
         OnPressurePlateActivated?.Invoke();
     }
 }
