@@ -17,6 +17,10 @@ public class PressurePlateController : MonoBehaviour
     public float volume;
     public bool b_HasActivated = false;
 
+    [Header("Dialogue")]
+    public bool b_dialogueHappenned = false;
+    public DialogueTrigger dialogueTrigger;
+
     public delegate void OnPressurePlateActivatedDelegate();
     public event OnPressurePlateActivatedDelegate OnPressurePlateActivated;
 
@@ -75,6 +79,12 @@ public class PressurePlateController : MonoBehaviour
                     diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
                     diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
                     ActivatePressurePlate();
+
+                    //Dialogue
+                    if (!b_dialogueHappenned)
+                    {
+                        ThisObjectDialogueTrigger();
+                    }
                 }
             }
         }
@@ -114,5 +124,12 @@ public class PressurePlateController : MonoBehaviour
         //Plate4.Play();
         //AudioSource.PlayClipAtPoint(PlateActivation, transform.position);
         OnPressurePlateActivated?.Invoke();
+    }
+
+    public void ThisObjectDialogueTrigger()
+    {
+        dialogueTrigger.TriggerDialogue();
+        b_dialogueHappenned = true;
+        Debug.Log(b_dialogueHappenned);
     }
 }

@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Scientist
+    name: Scientifique
     sentences:
     - "Lorsque je t\u2019ai r\xE9cup\xE9r\xE9, je suis persuad\xE9 t\u2019avoir vu
       prendre le contr\xF4le de ton vaisseau\u2026 Au sens litt\xE9ral.\r"
