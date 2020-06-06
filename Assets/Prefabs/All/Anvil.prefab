@@ -61,9 +61,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isControlled: 0
   xSpeed: 80
-  rotationSpeed: 100
   weight: 2
   footstep: {fileID: 2345571632483102992}
+  gravity: 8.91
+  controller: {fileID: 0}
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 3
@@ -122,14 +123,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2345571632483102992}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
