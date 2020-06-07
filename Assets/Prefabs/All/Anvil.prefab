@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2093130418640995287}
   - component: {fileID: 6748280823748514686}
   - component: {fileID: 2635499384061943199}
+  - component: {fileID: 8428300448893396931}
   m_Layer: 0
   m_Name: Anvil
   m_TagString: ControllableLightweight
@@ -60,11 +61,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  xSpeed: 80
+  xSpeed: 15
   weight: 2
   footstep: {fileID: 2345571632483102992}
   gravity: 8.91
-  controller: {fileID: 0}
+  controller: {fileID: 8428300448893396931}
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 3
@@ -97,7 +98,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -269,6 +270,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!143 &8428300448893396931
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345571632483102992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.1963398
+  m_Radius: 1.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.5
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!1 &6983573331271911577
 GameObject:
   m_ObjectHideFlags: 0

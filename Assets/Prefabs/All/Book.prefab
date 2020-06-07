@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1593771493410366725}
   - component: {fileID: 4829958994949186013}
   - component: {fileID: 5440100771693138032}
+  - component: {fileID: 7581771482869903189}
   m_Layer: 0
   m_Name: Book
   m_TagString: ControllableLightweight
@@ -99,11 +100,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  xSpeed: 80
+  xSpeed: 15
   weight: 1
   footstep: {fileID: 6320694875305946998}
   gravity: 8.91
-  controller: {fileID: 0}
+  controller: {fileID: 7581771482869903189}
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 3
@@ -123,7 +124,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -270,6 +271,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.41821444, y: 3.4016469, z: 4.0498743}
   m_Center: {x: -0.22500001, y: -0.04711796, z: -0.004610887}
+--- !u!143 &7581771482869903189
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6320694875305946998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 3.6656966
+  m_Radius: 1.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.5
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: -1.5, y: 0, z: 0}
 --- !u!1 &7330778588105348698
 GameObject:
   m_ObjectHideFlags: 0

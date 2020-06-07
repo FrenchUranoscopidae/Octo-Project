@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 1209589721395012605}
   - component: {fileID: -3342812380382811986}
   - component: {fileID: 5244320657061136165}
-  - component: {fileID: 7830930358027030737}
   - component: {fileID: 8788638377918839578}
+  - component: {fileID: 2477524165035234991}
   m_Layer: 0
   m_Name: Basket
   m_TagString: ControllableLightweight
@@ -60,7 +60,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -90,11 +90,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  xSpeed: 80
+  xSpeed: 15
   weight: 1
   footstep: {fileID: 3421158365092316961}
   gravity: 8.91
-  controller: {fileID: 0}
+  controller: {fileID: 2477524165035234991}
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 4
@@ -251,20 +251,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &7830930358027030737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3421158365092316961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a36d5bd08ee8cf142988072d9bfc3454, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  strenght: 1000
-  rb: {fileID: 8816966583896122812}
 --- !u!95 &8788638377918839578
 Animator:
   serializedVersion: 3
@@ -284,6 +270,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!143 &2477524165035234991
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421158365092316961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.9256719
+  m_Radius: 1.1374499
+  m_SlopeLimit: 45
+  m_StepOffset: 0.5
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6040348134835788260
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6040348134835788260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7499983, y: 0, z: -0.00000031789122}
+  m_LocalPosition: {x: -5, y: 0, z: -0.00000031789122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1810795255016584498}

@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -6545665639969347801}
   - component: {fileID: 227077109729363961}
   - component: {fileID: 3429392672349563119}
+  - component: {fileID: 1953274374568761238}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: ControllableLightweight
@@ -61,11 +62,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  xSpeed: 80
+  xSpeed: 15
   weight: 1
   footstep: {fileID: 57384269555118301}
   gravity: 8.91
-  controller: {fileID: 0}
+  controller: {fileID: 1953274374568761238}
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 4
@@ -98,7 +99,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -270,6 +271,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!143 &1953274374568761238
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57384269555118301}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 28.94766
+  m_Radius: 12.944688
+  m_SlopeLimit: 45
+  m_StepOffset: 0.5
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 4, z: 0}
 --- !u!1 &5810350894285175496
 GameObject:
   m_ObjectHideFlags: 0

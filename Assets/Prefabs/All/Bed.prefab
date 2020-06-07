@@ -261,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7176031280402404141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3030.3025, y: 0, z: 0}
+  m_LocalPosition: {x: -3050, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4717670967851356821}
@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 270731628055541554}
   - component: {fileID: 3211228098907557880}
   - component: {fileID: 5266007953931366545}
+  - component: {fileID: 8134285709830082156}
   m_Layer: 0
   m_Name: Bed
   m_TagString: ControllableHeavy
@@ -330,11 +331,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  xSpeed: 80
+  xSpeed: 15
   weight: 2
   footstep: {fileID: 8584935555318603910}
   gravity: 8.91
-  controller: {fileID: 0}
+  controller: {fileID: 8134285709830082156}
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 4
@@ -367,7 +368,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -539,3 +540,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!143 &8134285709830082156
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8584935555318603910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 200.68634
+  m_Radius: 1400
+  m_SlopeLimit: 45
+  m_StepOffset: 0.5
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 125, z: 0}
