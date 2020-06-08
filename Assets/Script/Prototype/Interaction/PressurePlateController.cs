@@ -110,7 +110,7 @@ public class PressurePlateController : MonoBehaviour
         if(collider.gameObject.tag == "ControllableHeavy")
         {
             isActive = false;
-            pressurePlateValue -= 2;
+            pressurePlateValue = 0;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
         }
@@ -118,7 +118,7 @@ public class PressurePlateController : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {   
             isActive = false;
-            pressurePlateValue -= 2;
+            pressurePlateValue = 0;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
         }
