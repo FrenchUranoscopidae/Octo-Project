@@ -78,7 +78,7 @@ public class PressurePlateController : MonoBehaviour
         {
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
-                pressurePlateValue = collider.GetComponent<ObjectController>().weight;
+                pressurePlateValue++;
                 diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
 
                 if (pressurePlateValue == 2)
