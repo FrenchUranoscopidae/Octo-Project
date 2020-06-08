@@ -78,8 +78,8 @@ public class PressurePlateController : MonoBehaviour
         {
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
-                pressurePlateValue++;
-                diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+                pressurePlateValue = collider.GetComponent<ObjectController>().weight;
+                diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
 
                 if (pressurePlateValue == 2)
                 {
@@ -110,7 +110,7 @@ public class PressurePlateController : MonoBehaviour
         if(collider.gameObject.tag == "ControllableHeavy")
         {
             isActive = false;
-            pressurePlateValue = 0;
+            pressurePlateValue -= 2;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
         }
@@ -118,7 +118,7 @@ public class PressurePlateController : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {   
             isActive = false;
-            pressurePlateValue = 0;
+            pressurePlateValue -= 2;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
         }
@@ -126,6 +126,7 @@ public class PressurePlateController : MonoBehaviour
         if (collider.gameObject.tag == "ControllableLightweight")
         {
             pressurePlateValue--;
+            pressurePlateValue = 0;
             isActive = false;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
         }
