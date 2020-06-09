@@ -621,8 +621,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 240.00009, y: 336.221, z: 469.757}
-  m_Center: {x: -130.00005, y: 18.110428, z: 50.12158}
+  m_Size: {x: 240.00008, y: 300.67953, z: 469.75696}
+  m_Center: {x: -130.00005, y: 0.33972263, z: 50.12158}
 --- !u!114 &5253856636283239607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,12 +790,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 372.44186
-  m_Radius: 250
+  m_Radius: 200
   m_SlopeLimit: 45
   m_StepOffset: 0.5
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 125, z: 55}
+  m_Center: {x: 0, y: 80, z: 55}
 --- !u!1 &6796438721734508775
 GameObject:
   m_ObjectHideFlags: 0
