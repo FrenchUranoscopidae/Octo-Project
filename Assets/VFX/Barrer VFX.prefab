@@ -9567,10 +9567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorMgr:
+    alienMaterial: {fileID: 0}
     currentColor: 4
-  barrierCollider: {fileID: 16422742}
-  player: {fileID: 0}
-  obj: {fileID: 0}
 --- !u!1 &1168274075441287793
 GameObject:
   m_ObjectHideFlags: 0
