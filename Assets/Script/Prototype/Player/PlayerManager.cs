@@ -44,19 +44,6 @@ public class PlayerManager : MonoBehaviour
                 Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
             }
         }
-        else if (col.CompareTag("Barrier"))
-        {
-            BarrierController barrier = col.GetComponent<BarrierController>();
-            BoxCollider barrierCollider = col.GetComponent<BoxCollider>();
-            if (barrier.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
-            {
-                barrierCollider.enabled = false;
-            }
-            else
-            {
-                barrierCollider.enabled = true;
-            }
-        }
         else
         {
             return;

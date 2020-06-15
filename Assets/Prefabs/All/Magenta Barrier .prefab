@@ -15073,4 +15073,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorMgr:
+    alienMaterial: {fileID: 0}
     currentColor: 4
+  barrierCollider: {fileID: 3579704024991018989}

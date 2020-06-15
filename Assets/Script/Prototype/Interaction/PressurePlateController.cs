@@ -129,6 +129,7 @@ public class PressurePlateController : MonoBehaviour
             pressurePlateValue = 0;
             isActive = false;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
+            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
         }
         
     }
