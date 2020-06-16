@@ -23,11 +23,12 @@ public class BarrierController : MonoBehaviour
                 barrierCollider.enabled = true;
             }
         }
-        else if(col.CompareTag("ControllableHeavy"))
-        {
-            ObjectController obj = col.GetComponent<ObjectController>();
 
-            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
+        if(col.CompareTag("ControllableHeavy"))
+        {
+            ObjectController objH = col.GetComponent<ObjectController>();
+
+            if (objH.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
                 barrierCollider.enabled = false;
             }
@@ -37,11 +38,12 @@ public class BarrierController : MonoBehaviour
             }
 
         }
-        else if (col.CompareTag("ControllableLightweight"))
+        
+        if (col.CompareTag("ControllableLightweight"))
         {
-            ObjectController obj = col.GetComponent<ObjectController>();
+            ObjectController objL = col.GetComponent<ObjectController>();
 
-            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
+            if (objL.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
                 barrierCollider.enabled = false;
             }
@@ -49,10 +51,6 @@ public class BarrierController : MonoBehaviour
             {
                 barrierCollider.enabled = true;
             }
-        }
-        else
-        {
-            return;
         }
     }
 }
