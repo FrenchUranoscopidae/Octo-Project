@@ -60,14 +60,16 @@ public class ObjectController : PlayerController
         Debug.Log(b_dialogueHappenned);
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerStay(Collider other)
     {
-        Collider col = collision.collider;
-        if (col.CompareTag("ColorSwap"))
+        if (other.CompareTag("ColorSwap"))
         {
-            ColorChanger changer = collision.collider.GetComponent<ColorChanger>();
-            changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
-            Player.GetComponent<PlayerManager>().colorMgr.SetCurrentColor(colorMgr.GetCurrentColor()); // Update the player color
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                ColorChanger changer = other.GetComponent<ColorChanger>();
+                changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
+                Player.GetComponent<PlayerManager>().colorMgr.SetCurrentColor(colorMgr.GetCurrentColor()); // Update the player color
+            } 
         }
         else
         {

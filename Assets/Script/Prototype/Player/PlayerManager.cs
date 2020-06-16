@@ -19,12 +19,7 @@ public class PlayerManager : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Collider col = collision.collider;
-        if (col.CompareTag("ColorSwap"))
-        {
-            ColorChanger changer = collision.collider.GetComponent<ColorChanger>();
-            changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
-        }
-        else if (col.CompareTag("ControllableHeavy"))
+        if (col.CompareTag("ControllableHeavy"))
         {
             ObjectController obj = col.GetComponent<ObjectController>();
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
@@ -47,6 +42,18 @@ public class PlayerManager : MonoBehaviour
         else
         {
             return;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("ColorSwap"))
+        {
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                ColorChanger changer = other.GetComponent<ColorChanger>();
+                changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
+            }      
         }
     }
 }
