@@ -8,6 +8,10 @@ public class PlayerManager : MonoBehaviour
     public Texture alienYellowTexture;
     public Texture alienMagentaTexture;
 
+    [Header("Sound")]
+    public AudioClip Pos;
+    public float volume;
+
     void Start()
     {
         // Initialize the color manager with the mesh renderer
@@ -24,6 +28,9 @@ public class PlayerManager : MonoBehaviour
             ObjectController obj = col.GetComponent<ObjectController>();
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
             {
+                //Sound
+                AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
+
                 Instantiate(smoke, obj.transform.position, obj.transform.rotation);
                 controller.ControlObject(obj, true, controller);
                 Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
@@ -34,6 +41,9 @@ public class PlayerManager : MonoBehaviour
             ObjectController obj = col.GetComponent<ObjectController>();
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
             {
+                //Sound
+                AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
+
                 Instantiate(smoke, obj.transform.position, obj.transform.rotation);
                 controller.ControlObject(obj, true, controller);
                 Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);

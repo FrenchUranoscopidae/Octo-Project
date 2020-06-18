@@ -1149,6 +1149,8 @@ MonoBehaviour:
   smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
   alienYellowTexture: {fileID: 2800000, guid: 572525c189148f546bf67c6e4a95a0f6, type: 3}
   alienMagentaTexture: {fileID: 2800000, guid: 043a2a19fa0053d40ac76c8abcccb3e1, type: 3}
+  Pos: {fileID: 8300000, guid: 8740a00c383c05c4fab94abd3a7b72f3, type: 3}
+  volume: 7
 --- !u!143 &-645598042771048811
 CharacterController:
   m_ObjectHideFlags: 0
