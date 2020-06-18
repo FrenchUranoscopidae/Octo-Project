@@ -98,7 +98,7 @@ MonoBehaviour:
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 4
-  smoke: {fileID: 6699290014932349716, guid: 3cb95e75f1c20174e99514cbc077f301, type: 3}
+  smoke: {fileID: 382208630272409109, guid: 863dde0f4db81ac4bb21c3b90775fa87, type: 3}
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 1209589721395012605}
   animator: {fileID: 8788638377918839578}
