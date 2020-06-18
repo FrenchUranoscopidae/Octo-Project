@@ -15023,6 +15023,7 @@ GameObject:
   - component: {fileID: 5821514010490909277}
   - component: {fileID: 3579704024991018989}
   - component: {fileID: 4290416982302295413}
+  - component: {fileID: 542625057184556766}
   m_Layer: 0
   m_Name: Barrer VFX
   m_TagString: Untagged
@@ -15076,3 +15077,16 @@ MonoBehaviour:
     alienMaterial: {fileID: 0}
     currentColor: 4
   barrierCollider: {fileID: 3579704024991018989}
+--- !u!65 &542625057184556766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8078168099904726550}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.7935843, y: 13.004582, z: 13.217431}
+  m_Center: {x: -0.18204856, y: 2.533545, z: 6.57984}
