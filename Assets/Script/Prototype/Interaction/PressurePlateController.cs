@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PressurePlateController : MonoBehaviour
 {
+    public Animator pressurePlateAnimation;
     public ColorManager colorMgr;
     public bool isActive = false;
     public int pressurePlateValue = 0;
@@ -113,6 +114,7 @@ public class PressurePlateController : MonoBehaviour
             pressurePlateValue = 0;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            pressurePlateAnimation.SetBool("IsActive", false);
         }
 
         if (collider.gameObject.tag == "Player")
@@ -121,6 +123,7 @@ public class PressurePlateController : MonoBehaviour
             pressurePlateValue = 0;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            pressurePlateAnimation.SetBool("IsActive", false);
         }
 
         if (collider.gameObject.tag == "ControllableLightweight")
@@ -130,6 +133,7 @@ public class PressurePlateController : MonoBehaviour
             isActive = false;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            pressurePlateAnimation.SetBool("IsActive", false);
         }
         
     }
@@ -138,6 +142,7 @@ public class PressurePlateController : MonoBehaviour
     {
         isActive = true;
         OnPressurePlateActivated?.Invoke();
+        pressurePlateAnimation.SetBool("IsActive", true);
     }
 
     public void ThisObjectDialogueTrigger()

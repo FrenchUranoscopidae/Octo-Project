@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 7479412050200343259}
   - component: {fileID: 425677370}
   - component: {fileID: 3783403356714582147}
+  - component: {fileID: 7806436296342781276}
   m_Layer: 0
   m_Name: YellowPressurePlate
   m_TagString: Untagged
@@ -269,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffb10b4fd030a4408713ab38554530d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pressurePlateAnimation: {fileID: 7806436296342781276}
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 3
@@ -310,6 +312,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -8803937527578110353, guid: 39dea217b0e4ed249a49d47232f21fef, type: 3}
+--- !u!95 &7806436296342781276
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7479412050200343239}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 40f3746e098a3d84ba12c339616eb1bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8336792961193510550
 GameObject:
   m_ObjectHideFlags: 0
