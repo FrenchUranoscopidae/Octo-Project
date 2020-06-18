@@ -108,7 +108,7 @@ public class PressurePlateController : MonoBehaviour
 
     public void OnTriggerExit(Collider collider)
     {
-        if(collider.gameObject.tag == "ControllableHeavy")
+        if(CompareTag("ControllableHeavy"))
         {
             isActive = false;
             pressurePlateValue = 0;
@@ -117,7 +117,7 @@ public class PressurePlateController : MonoBehaviour
             pressurePlateAnimation.SetBool("IsActive", false);
         }
 
-        if (collider.gameObject.tag == "Player")
+        if (collider.CompareTag("Player"))
         {   
             isActive = false;
             pressurePlateValue = 0;
@@ -126,7 +126,7 @@ public class PressurePlateController : MonoBehaviour
             pressurePlateAnimation.SetBool("IsActive", false);
         }
 
-        if (collider.gameObject.tag == "ControllableLightweight")
+        if (collider.CompareTag("ControllableLightweight"))
         {
             pressurePlateValue--;
             pressurePlateValue = 0;
