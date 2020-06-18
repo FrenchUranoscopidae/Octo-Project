@@ -273,7 +273,7 @@ MonoBehaviour:
   pressurePlateAnimation: {fileID: 7806436296342781276}
   colorMgr:
     alienMaterial: {fileID: 0}
-    currentColor: 3
+    currentColor: 4
   isActive: 0
   pressurePlateValue: 0
   diodeColor: {fileID: 414573311618780850}
@@ -322,7 +322,7 @@ Animator:
   m_GameObject: {fileID: 7479412050200343239}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 40f3746e098a3d84ba12c339616eb1bd, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

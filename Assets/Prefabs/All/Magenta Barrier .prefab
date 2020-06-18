@@ -15075,7 +15075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorMgr:
     alienMaterial: {fileID: 0}
-    currentColor: 4
+    currentColor: 5
   barrierCollider: {fileID: 3579704024991018989}
 --- !u!65 &542625057184556766
 BoxCollider:

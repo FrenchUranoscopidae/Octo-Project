@@ -22,7 +22,7 @@ public class ColorChanger : MonoBehaviour
     public void SwapColors(ColorManager playerColorMgr)
     {
         if (!canSwap) return; // Do nothing if we can't swap colors
-        colorMgr.SwapObjectColors(playerColorMgr, colorMgr);
+        colorMgr.SwapObjectColors(playerColorMgr);
         StartCoroutine(SwapColorsTimer()); // Start the canSwap timer
         AudioSource.PlayClipAtPoint(colorSwapSound, transform.position);
         Instantiate(colorSwapVisualEffect, transform.position, transform.rotation);

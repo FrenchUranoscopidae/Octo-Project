@@ -32,6 +32,8 @@ public class ColorManager
 
         switch (currentColor)
         {
+            case ObjectColor.Null:
+                break;
             case ObjectColor.BLUE:
                 playerRenderer.material.SetColor("_Color", Color.blue);
                 break;
@@ -65,6 +67,8 @@ public class ColorManager
 
         switch (currentColor)
         {
+            case ObjectColor.Null:
+                break;
             case ObjectColor.BLUE:
                 objectsRenderer.material.SetColor("_Color", Color.blue);
                 break;
@@ -87,11 +91,20 @@ public class ColorManager
         }
     }
 
-    public void SwapObjectColors(ColorManager obj1, ColorManager obj2)
+    public void SwapObjectColors(ColorManager obj)
     {
-        ObjectColor temp = obj1.GetCurrentColor();
+        /*ObjectColor temp = obj1.GetCurrentColor();
         obj1.SetCurrentColor(obj2.GetCurrentColor());
-        obj2.SetCurrentColor(temp);
+        obj2.SetCurrentColor(temp);*/
+        
+        if(obj.currentColor == ObjectColor.YELLOW)
+        {
+            obj.SetCurrentColor(ObjectColor.MAGENTA);
+        }
+        else
+        {
+            obj.SetCurrentColor(ObjectColor.YELLOW);
+        }
     }
 
     #region Getters and Setters

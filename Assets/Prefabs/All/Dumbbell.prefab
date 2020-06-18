@@ -178,7 +178,7 @@ MonoBehaviour:
   controller: {fileID: 4931062515449034861}
   colorMgr:
     alienMaterial: {fileID: 0}
-    currentColor: 4
+    currentColor: 5
   smoke: {fileID: 382208630272409109, guid: 863dde0f4db81ac4bb21c3b90775fa87, type: 3}
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: -7432501464190118198}

@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorMgr:
     alienMaterial: {fileID: 4118269485489092446}
-    currentColor: 3
+    currentColor: 4
   controller: {fileID: 315328301341317124}
   smoke: {fileID: 382208630272409109, guid: 863dde0f4db81ac4bb21c3b90775fa87, type: 3}
   alienYellowTexture: {fileID: 2800000, guid: 572525c189148f546bf67c6e4a95a0f6, type: 3}

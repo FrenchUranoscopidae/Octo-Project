@@ -97,15 +97,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffb10b4fd030a4408713ab38554530d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pressurePlateAnimation: {fileID: 0}
   colorMgr:
     alienMaterial: {fileID: 0}
-    currentColor: 4
+    currentColor: 5
   isActive: 0
   pressurePlateValue: 0
   diodeColor: {fileID: 8112439861702440636}
   diodeColor1: {fileID: 6520857018340748542}
   initialMaterial: {fileID: -6478536213147159724, guid: d351f3046123c7940924af977283ce2c,
     type: 3}
+  PlateActivation: {fileID: 0}
+  volume: 0
+  b_HasActivated: 0
+  b_dialogueHappenned: 0
+  dialogueTrigger: {fileID: 0}
 --- !u!65 &2257900043263053083
 BoxCollider:
   m_ObjectHideFlags: 0

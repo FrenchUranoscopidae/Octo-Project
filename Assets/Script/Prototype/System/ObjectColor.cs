@@ -3,6 +3,7 @@
 /// </summary>
 public enum ObjectColor
 {
+    Null,
     RED,
     GREEN,
     BLUE,
