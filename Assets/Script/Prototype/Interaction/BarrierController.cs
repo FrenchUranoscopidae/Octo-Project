@@ -7,47 +7,62 @@ public class BarrierController : MonoBehaviour
     public ColorManager colorMgr;
     public BoxCollider barrierCollider;
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerStay(Collider collider)
     {
-        Collider col = collision.collider;
-        if (col.CompareTag("Player"))
+        if (collider.CompareTag("Player"))
         {
-            PlayerManager player = col.GetComponent<PlayerManager>();
+            PlayerManager player = collider.GetComponent<PlayerManager>();
 
             if (player.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
                 barrierCollider.enabled = false;
             }
-            else
+        }
+        else if(collider.CompareTag("ControllableHeavy"))
+        {
+            ObjectController obj = collider.GetComponent<ObjectController>();
+
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
+            {
+                barrierCollider.enabled = false;
+            }
+        }  
+        else if (collider.CompareTag("ControllableLightweight"))
+        {
+            ObjectController obj = collider.GetComponent<ObjectController>();
+
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
+            {
+                barrierCollider.enabled = false;
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider collider)
+    {
+        if (collider.CompareTag("Player"))
+        {
+            PlayerManager player = collider.GetComponent<PlayerManager>();
+
+            if (player.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
                 barrierCollider.enabled = true;
             }
         }
-
-        if(col.CompareTag("ControllableHeavy"))
+        else if (collider.CompareTag("ControllableHeavy"))
         {
-            ObjectController objH = col.GetComponent<ObjectController>();
+            ObjectController obj = collider.GetComponent<ObjectController>();
 
-            if (objH.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
-            {
-                barrierCollider.enabled = false;
-            }
-            else
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
                 barrierCollider.enabled = true;
             }
-
         }
-        
-        if (col.CompareTag("ControllableLightweight"))
+        else if (collider.CompareTag("ControllableLightweight"))
         {
-            ObjectController objL = col.GetComponent<ObjectController>();
+            ObjectController obj = collider.GetComponent<ObjectController>();
 
-            if (objL.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
-            {
-                barrierCollider.enabled = false;
-            }
-            else
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
                 barrierCollider.enabled = true;
             }
