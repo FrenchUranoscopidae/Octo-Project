@@ -21360,7 +21360,7 @@ PrefabInstance:
     - target: {fileID: 1625543883378910775, guid: cc62e4afae5784942bdfa11d3f539dbe,
         type: 3}
       propertyPath: nextSentenceTimer
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1625543883378910776, guid: cc62e4afae5784942bdfa11d3f539dbe,
         type: 3}
@@ -37241,7 +37241,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: "Voici ta nouvelle \xE9preuve : Tu dois simplement prendre le contr\xF4le
-        de ce tabouret et le d\xE9poser sur l\u2019une des plaques, et, absolument,
+        de cette bouteille et la d\xE9poser sur l\u2019une des plaques, et, absolument,
         rien d\u2019autre...\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []

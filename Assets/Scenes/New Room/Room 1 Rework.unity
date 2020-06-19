@@ -29639,7 +29639,7 @@ PrefabInstance:
     - target: {fileID: 1625543883378910775, guid: cc62e4afae5784942bdfa11d3f539dbe,
         type: 3}
       propertyPath: nextSentenceTimer
-      value: 5.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1625543883378910776, guid: cc62e4afae5784942bdfa11d3f539dbe,
         type: 3}

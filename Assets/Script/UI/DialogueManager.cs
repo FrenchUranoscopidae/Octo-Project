@@ -32,8 +32,19 @@ public class DialogueManager : MonoBehaviour
             nextSentenceTimer -= Time.deltaTime;
         }
 
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            DisplayNextSentence();
+            nextSentenceTimer = nextSentenceTimerReset;
+        }
+
         if(nextSentenceTimer <= 0)
         {
+            /*if (Input.GetKeyDown(KeyCode.A))
+            {
+                DisplayNextSentence();
+                nextSentenceTimer = nextSentenceTimerReset;
+            }*/
             DisplayNextSentence();
             nextSentenceTimer = nextSentenceTimerReset;
         }
