@@ -39,11 +39,11 @@ public class ObjectController : PlayerController
             ThisObjectDialogueTrigger();
         }   
 
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Possession/Depossession"))
+        if (Input.GetKey(KeyCode.E) || Input.GetButton("Button B"))
         {
             Instantiate(smoke, obj.transform.position, obj.transform.rotation);
             Player.ControlObject(this, false, Player);
-            Destroy(GameObject.Find("VFX Smoke(Clone)"), 2f);
+            Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
@@ -64,7 +64,7 @@ public class ObjectController : PlayerController
     {
         if (other.CompareTag("ColorSwap"))
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(Input.GetKey(KeyCode.Space) || Input.GetButton("Button A"))
             {
                 ColorChanger changer = other.GetComponent<ColorChanger>();
                 changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
