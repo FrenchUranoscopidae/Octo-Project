@@ -27,6 +27,12 @@ public class ColorChanger : MonoBehaviour
         AudioSource.PlayClipAtPoint(colorSwapSound, transform.position);
         Instantiate(colorSwapVisualEffect, transform.position, transform.rotation);
         Destroy(GameObject.Find("ColorSwap(Clone)"), 2f);
+
+        //DialogueTriggering
+        if (!b_dialogueHappenned)
+        {
+            ThisObjectDialogueTrigger();
+        }
     }
 
     private IEnumerator SwapColorsTimer()
@@ -36,7 +42,7 @@ public class ColorChanger : MonoBehaviour
         canSwap = true;
     }
 
-    private void OnCollisionEnter(Collision col)
+    /*private void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "Player")
         {
@@ -46,7 +52,7 @@ public class ColorChanger : MonoBehaviour
                 ThisObjectDialogueTrigger();
             }
         }
-    }
+    }*/
 
     //Function to trigger the dialogue of this object only once
     public void ThisObjectDialogueTrigger()
