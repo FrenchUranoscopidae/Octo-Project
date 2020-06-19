@@ -45,11 +45,6 @@ public class ObjectController : PlayerController
             Player.ControlObject(this, false, Player);
             Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
         }
-
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            animator.SetBool("IsWalking", true);
-        }
     }
 
     //Function to trigger the dialogue of this object only once

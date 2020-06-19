@@ -2470,7 +2470,7 @@ GameObject:
   - component: {fileID: 91445372}
   - component: {fileID: 91445371}
   m_Layer: 0
-  m_Name: Floor (1)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3140,8 +3140,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115576212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -140, y: 2.229, z: -295.5}
-  m_LocalScale: {x: 6.25, y: 4.454, z: 2.0600002}
+  m_LocalPosition: {x: -140, y: 2.229, z: -295.8}
+  m_LocalScale: {x: 6.25, y: 4.454, z: 1.4584801}
   m_Children: []
   m_Father: {fileID: 645249075}
   m_RootOrder: 2
@@ -13094,8 +13094,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356571477}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -420, y: 2.229, z: -193.375}
-  m_LocalScale: {x: 6.25, y: 4.454, z: 1.4605399}
+  m_LocalPosition: {x: -420, y: 2.229, z: -193.97}
+  m_LocalScale: {x: 6.25, y: 4.454, z: 2.6418247}
   m_Children: []
   m_Father: {fileID: 1781013401}
   m_RootOrder: 1
@@ -21444,7 +21444,7 @@ GameObject:
   - component: {fileID: 572298562}
   - component: {fileID: 572298561}
   m_Layer: 0
-  m_Name: Floor (2)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23660,11 +23660,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1403852313}
     m_Modifications:
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_Name
-      value: YellowPressurePlate
-      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23719,6 +23714,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: YellowPressurePlate
       objectReference: {fileID: 0}
     - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
@@ -24237,11 +24237,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1403852313}
     m_Modifications:
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_Name
-      value: 'YellowPressurePlate '
-      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24296,6 +24291,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: 'YellowPressurePlate '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -30601,7 +30601,7 @@ GameObject:
   - component: {fileID: 827390381}
   - component: {fileID: 827390380}
   m_Layer: 0
-  m_Name: Floor (3)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32809,7 +32809,7 @@ GameObject:
   - component: {fileID: 896821081}
   - component: {fileID: 896821080}
   m_Layer: 0
-  m_Name: Floor (4)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35489,7 +35489,7 @@ GameObject:
   - component: {fileID: 956048845}
   - component: {fileID: 956048844}
   m_Layer: 0
-  m_Name: Floor (7)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41139,11 +41139,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1100074587}
     m_Modifications:
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_Name
-      value: YellowPressurePlate
-      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41198,6 +41193,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: YellowPressurePlate
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -43433,7 +43433,7 @@ GameObject:
   - component: {fileID: 1184806040}
   - component: {fileID: 1184806039}
   m_Layer: 0
-  m_Name: Floor (8)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45622,7 +45622,7 @@ GameObject:
   - component: {fileID: 1252939108}
   - component: {fileID: 1252939107}
   m_Layer: 0
-  m_Name: Floor (10)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46628,8 +46628,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266956291}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -420, y: 2.229, z: -185.125}
-  m_LocalScale: {x: 6.25, y: 4.454, z: 2.0600002}
+  m_LocalPosition: {x: -420, y: 2.256, z: -185.542}
+  m_LocalScale: {x: 6.25, y: 4.399278, z: 1.2270701}
   m_Children: []
   m_Father: {fileID: 1781013401}
   m_RootOrder: 0
@@ -47149,8 +47149,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276627429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -140, y: 2.229, z: -303.625}
-  m_LocalScale: {x: 6.25, y: 4.454, z: 1.4605399}
+  m_LocalPosition: {x: -140, y: 2.229, z: -303.956}
+  m_LocalScale: {x: 6.25, y: 4.454, z: 2.1228774}
   m_Children: []
   m_Father: {fileID: 645249075}
   m_RootOrder: 1
@@ -49539,7 +49539,7 @@ GameObject:
   - component: {fileID: 1332365320}
   - component: {fileID: 1332365319}
   m_Layer: 0
-  m_Name: Floor (5)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50391,11 +50391,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1100074587}
     m_Modifications:
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_Name
-      value: 'YellowPressurePlate '
-      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50450,6 +50445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: 'YellowPressurePlate '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -52886,7 +52886,7 @@ GameObject:
   - component: {fileID: 1432209572}
   - component: {fileID: 1432209571}
   m_Layer: 0
-  m_Name: Floor (9)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55575,11 +55575,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1034366108}
     m_Modifications:
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_Name
-      value: YellowPressurePlate
-      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -55634,6 +55629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: YellowPressurePlate
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -65131,7 +65131,7 @@ GameObject:
   - component: {fileID: 1781284001}
   - component: {fileID: 1781284000}
   m_Layer: 0
-  m_Name: Floor (6)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73502,11 +73502,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1403852313}
     m_Modifications:
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_Name
-      value: YellowPressurePlate
-      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73561,6 +73556,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: YellowPressurePlate
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
