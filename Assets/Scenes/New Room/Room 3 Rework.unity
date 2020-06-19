@@ -3907,7 +3907,7 @@ PrefabInstance:
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -394
+      value: -392
       objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
@@ -11574,7 +11574,7 @@ PrefabInstance:
     - target: {fileID: 3720382752997579547, guid: df369f7a7e04347408ab8313b4d4ec15,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3720382752997579547, guid: df369f7a7e04347408ab8313b4d4ec15,
         type: 3}
@@ -15707,7 +15707,7 @@ PrefabInstance:
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -376
+      value: -378
       objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
@@ -22042,6 +22042,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 835106427938933279, guid: b339a29de65fee64f89b2091f833f3cf,
+        type: 3}
+      propertyPath: b_dialogueAllowed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: "Magnifique capacit\xE9 d\u2019adaptation ! De toute ma vie je n\u2019avais
@@ -22824,6 +22829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 835106427938933279, guid: b339a29de65fee64f89b2091f833f3cf,
+        type: 3}
+      propertyPath: b_dialogueAllowed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
       propertyPath: dialogue.sentences.Array.size
