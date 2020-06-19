@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 8428300448893396931}
   m_Layer: 0
   m_Name: Anvil
-  m_TagString: ControllableLightweight
+  m_TagString: ControllableHeavy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
