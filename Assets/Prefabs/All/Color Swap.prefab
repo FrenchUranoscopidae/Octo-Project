@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6607347438543864413}
   - component: {fileID: 6759164964057885868}
   - component: {fileID: 5841675173906593211}
-  - component: {fileID: 2153119748284905329}
   - component: {fileID: 2153119748284905330}
   - component: {fileID: 2153119748284905328}
+  - component: {fileID: 2153119748284905329}
   - component: {fileID: 2153119748284905334}
   m_Layer: 0
   m_Name: Color Swap
@@ -86,19 +86,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2153119748284905329
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2153119748284905331}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.03233712, y: 0.03029455, z: 0.009327915}
-  m_Center: {x: 0.00026399182, y: 0.00005591996, z: 0.0015667}
 --- !u!114 &2153119748284905330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +121,19 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences: []
+--- !u!65 &2153119748284905329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2153119748284905331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03233712, y: 0.03717858, z: 0.020177439}
+  m_Center: {x: 0.00026399182, y: -0.000116835334, z: 0.0069914577}
 --- !u!64 &2153119748284905334
 MeshCollider:
   m_ObjectHideFlags: 0
