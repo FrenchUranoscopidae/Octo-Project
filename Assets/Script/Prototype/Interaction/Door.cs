@@ -21,18 +21,28 @@ public class Door : MonoBehaviour
         doorCollider.enabled = true;
     }
 
-    void Update()
+    void OnTriggerStay(Collider collider)
     {
         if(doorIsOpen == true)
         {
-            openDoor.SetBool("openDoor", true); 
-            doorCollider.enabled = false;
+            openDoor.SetBool("openDoor", true);
+
+            if (!alreadyPlayed)
+            {
+                AudioSource.PlayClipAtPoint(doorSound, transform.position);
+                alreadyPlayed = true;
+            }
 
             //DialogueTriggering
             if (!b_dialogueHappenned & b_dialogueAllowed)
             {
                 ThisObjectDialogueTrigger();
             }
+
+            if (collider.CompareTag("Player"))
+            {
+                doorCollider.enabled = false;
+            }      
         }
     }
 
@@ -45,13 +55,7 @@ public class Door : MonoBehaviour
     }
 
     public void OpenDoor()
-    {
-        if(!alreadyPlayed)
-        {
-            AudioSource.PlayClipAtPoint(doorSound, transform.position);
-            alreadyPlayed = true;
-        }
-        
+    {   
         doorIsOpen = true;
         diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
         diodeLightColor.color = Color.green;
