@@ -75442,7 +75442,7 @@ PrefabInstance:
     - target: {fileID: 57384269555118301, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}
       propertyPath: m_TagString
-      value: ControllableLightweight2
+      value: ControllableLightweight
       objectReference: {fileID: 0}
     - target: {fileID: 1790240865103988617, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}
