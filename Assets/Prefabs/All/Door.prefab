@@ -262,7 +262,6 @@ GameObject:
   - component: {fileID: 835106427938933267}
   - component: {fileID: 835106427938933279}
   - component: {fileID: 222987807}
-  - component: {fileID: 7254828001991105612}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -406,19 +405,6 @@ MonoBehaviour:
     sentences:
     - "Splendide ! Splendide ! Je craignais d\u2019avoir affaire \xE0 une esp\xE8ce
       intellectuellement inf\xE9rieure..."
---- !u!65 &7254828001991105612
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835106427938933266}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 17.665514, y: 6.894928, z: 12.426893}
-  m_Center: {x: 0, y: -0.0939064, z: -1.2129612}
 --- !u!1 &2389773400836765930
 GameObject:
   m_ObjectHideFlags: 0
