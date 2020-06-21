@@ -42,7 +42,11 @@ public class Door : MonoBehaviour
             if (collider.CompareTag("Player"))
             {
                 doorCollider.enabled = false;
-            }      
+            }
+            else
+            {
+                doorCollider.enabled = true;
+            }
         }
     }
 

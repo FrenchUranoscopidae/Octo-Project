@@ -23,9 +23,6 @@ public class PressurePlateController : MonoBehaviour
     public delegate void OnPressurePlateActivatedDelegate();
     public event OnPressurePlateActivatedDelegate OnPressurePlateActivated;
 
-    //public bool lightOnPlate = false;
-    //public bool lightOnPlateTwo = false;
-
     public bool playerOnPlate = false;
     public int lightOnPlateCount = 0;
 
@@ -80,11 +77,6 @@ public class PressurePlateController : MonoBehaviour
                 }
             }
         }
-
-        if(collider.CompareTag("ControllableLightweight"))
-        {
-            //lightOnPlate = true;
-        }
     }
 
     public void OnTriggerEnter(Collider collider)
@@ -98,12 +90,6 @@ public class PressurePlateController : MonoBehaviour
                 pressurePlateValue++;
                 Debug.Log(pressurePlateValue);
                 diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
-                //lightOnPlate = true;
-
-                /*if(lightOnPlate)
-                {
-                    lightOnPlateTwo = true;
-                }*/
 
                 lightOnPlateCount += 1;
 
@@ -143,29 +129,6 @@ public class PressurePlateController : MonoBehaviour
                 
         if (collider.CompareTag("Player"))
         {   
-            /*if(!lightOnPlate)
-            {
-                isActive = false;
-                pressurePlateValue = 0;
-                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
-                diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
-            }
-
-            if(lightOnPlate && !lightOnPlateTwo)
-            {
-                isActive = false;
-                pressurePlateValue = 1;
-                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
-                diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
-            }
-
-            if (!lightOnPlate && lightOnPlateTwo)
-            {
-                isActive = false;
-                pressurePlateValue = 2;
-                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
-                diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
-            }*/
             if(lightOnPlateCount == 0)
             {
                 isActive = false;
@@ -189,11 +152,6 @@ public class PressurePlateController : MonoBehaviour
                 diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
                 diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
             }
-
-            /*isActive = false;
-            pressurePlateValue = 0;
-            diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
-            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;*/
         }
 
         if (collider.CompareTag("ControllableLightweight"))
@@ -201,7 +159,6 @@ public class PressurePlateController : MonoBehaviour
             if(lightOnPlateCount == 1)
             {
                 pressurePlateValue--;
-                //pressurePlateValue = 0;
                 isActive = false;
                 diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
                 diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
@@ -210,18 +167,10 @@ public class PressurePlateController : MonoBehaviour
             if(lightOnPlateCount == 2)
             {
                 pressurePlateValue--;
-                //pressurePlateValue = 0;
                 isActive = false;
                 diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
                 diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
             }
-
-            /*pressurePlateValue--;
-            //pressurePlateValue = 0;
-            isActive = false;
-            diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
-            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;*/
-
             lightOnPlateCount -= 1;
         }
 
