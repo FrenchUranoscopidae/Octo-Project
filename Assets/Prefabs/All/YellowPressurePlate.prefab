@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 4525280889052258306}
   - component: {fileID: 8224675052784160743}
   - component: {fileID: 236593114843668350}
-  - component: {fileID: 8698808098003580709}
   m_Layer: 0
   m_Name: Torus.001
   m_TagString: Untagged
@@ -158,20 +157,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8698808098003580709
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4591962546079979906}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -5287425419667122880, guid: 39dea217b0e4ed249a49d47232f21fef, type: 3}
 --- !u!1 &7479412050200343239
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,9 +170,8 @@ GameObject:
   - component: {fileID: 7479412050200343237}
   - component: {fileID: 7479412050200343259}
   - component: {fileID: 425677370}
-  - component: {fileID: 3783403356714582147}
   - component: {fileID: 7806436296342781276}
-  - component: {fileID: -5493947926826289831}
+  - component: {fileID: 3110005805621586768}
   m_Layer: 0
   m_Name: YellowPressurePlate
   m_TagString: Untagged
@@ -284,7 +268,7 @@ MonoBehaviour:
   volume: 1
   b_HasActivated: 0
   b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: -5493947926826289831}
+  dialogueTrigger: {fileID: 0}
 --- !u!65 &425677370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -298,20 +282,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5022523, y: 12.84167, z: 4.2364454}
   m_Center: {x: -0.040946554, y: 4.9132457, z: 0.0805642}
---- !u!64 &3783403356714582147
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7479412050200343239}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -8803937527578110353, guid: 39dea217b0e4ed249a49d47232f21fef, type: 3}
 --- !u!95 &7806436296342781276
 Animator:
   serializedVersion: 3
@@ -331,21 +301,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-5493947926826289831
-MonoBehaviour:
+--- !u!64 &3110005805621586768
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7479412050200343239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences: []
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -8803937527578110353, guid: 39dea217b0e4ed249a49d47232f21fef, type: 3}
 --- !u!1 &8336792961193510550
 GameObject:
   m_ObjectHideFlags: 0

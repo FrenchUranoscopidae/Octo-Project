@@ -478,7 +478,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -1580535799172915004, guid: 471bebb500e72b346a6407564145b3e2, type: 3}
-  - {fileID: 4913911580219713836, guid: 471bebb500e72b346a6407564145b3e2, type: 3}
+  - {fileID: 2100000, guid: ea174c0e9ce6ae64c8b6fc6a8253a998, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -621,8 +621,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 240.00008, y: 553.34094, z: 469.75696}
-  m_Center: {x: -130.00005, y: 126.67055, z: 50.12158}
+  m_Size: {x: 240.00008, y: 342.89236, z: 469.75696}
+  m_Center: {x: -130.00005, y: 21.446276, z: 50.12158}
 --- !u!114 &5253856636283239607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,7 +792,7 @@ CharacterController:
   m_Height: 372.44186
   m_Radius: 200
   m_SlopeLimit: 45
-  m_StepOffset: 1
+  m_StepOffset: 1.5
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 80, z: 55}

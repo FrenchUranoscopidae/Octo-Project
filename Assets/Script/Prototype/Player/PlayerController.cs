@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
             transform.TransformDirection(direction);
             
             //Apply gravity
-            direction.y -= gravity * Time.deltaTime;
+            direction.y -= gravity * 10  * Time.deltaTime;
             controller.Move(direction * Time.deltaTime);
 
             //Apply rotation

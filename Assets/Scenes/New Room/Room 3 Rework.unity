@@ -3907,7 +3907,7 @@ PrefabInstance:
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -392
+      value: -390
       objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
@@ -3958,6 +3958,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -5993,6 +5998,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basket
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421158365092316961, guid: b16265f49fb3eae418c3a61c4aa730b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: ControllableLightweight
       objectReference: {fileID: 0}
     - target: {fileID: 1810795255016584498, guid: b16265f49fb3eae418c3a61c4aa730b6,
         type: 3}
@@ -15707,7 +15717,7 @@ PrefabInstance:
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -378
+      value: -375
       objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
@@ -15758,6 +15768,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -19412,6 +19427,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -23660,6 +23680,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1403852313}
     m_Modifications:
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: YellowPressurePlate
+      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23673,7 +23698,7 @@ PrefabInstance:
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -97
+      value: -95
       objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
@@ -23715,16 +23740,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_Name
-      value: YellowPressurePlate
-      objectReference: {fileID: 0}
     - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: dialogueTrigger
       value: 
       objectReference: {fileID: 520077689}
+    - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: range
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
+      propertyPath: m_Size.x
+      value: 3.502252
+      objectReference: {fileID: 0}
+    - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
+      propertyPath: m_Size.y
+      value: 12.841665
+      objectReference: {fileID: 0}
+    - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
+      propertyPath: m_Center.x
+      value: -0.04094655
+      objectReference: {fileID: 0}
+    - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
+      propertyPath: m_Center.y
+      value: 4.9132442
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
 --- !u!4 &631542081 stripped
@@ -24237,6 +24282,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1403852313}
     m_Modifications:
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: 'YellowPressurePlate '
+      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24292,10 +24342,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+    - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
-      propertyPath: m_Name
-      value: 'YellowPressurePlate '
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -34499,17 +34549,17 @@ PrefabInstance:
     - target: {fileID: 6607347438543864413, guid: 3100c1243388b664bbad29d80a3716a4,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6607347438543864413, guid: 3100c1243388b664bbad29d80a3716a4,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6607347438543864413, guid: 3100c1243388b664bbad29d80a3716a4,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6607347438543864413, guid: 3100c1243388b664bbad29d80a3716a4,
         type: 3}
@@ -34519,7 +34569,7 @@ PrefabInstance:
     - target: {fileID: 6607347438543864413, guid: 3100c1243388b664bbad29d80a3716a4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6607347438543864413, guid: 3100c1243388b664bbad29d80a3716a4,
         type: 3}
@@ -41139,6 +41189,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1100074587}
     m_Modifications:
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: YellowPressurePlate
+      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41152,7 +41207,7 @@ PrefabInstance:
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -298.99274
+      value: -295
       objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
@@ -41194,10 +41249,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+    - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
-      propertyPath: m_Name
-      value: YellowPressurePlate
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -50391,6 +50446,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1100074587}
     m_Modifications:
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: 'YellowPressurePlate '
+      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50446,10 +50506,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+    - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
-      propertyPath: m_Name
-      value: 'YellowPressurePlate '
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -52977,6 +53037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basket
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421158365092316961, guid: b16265f49fb3eae418c3a61c4aa730b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: ControllableLightweight
       objectReference: {fileID: 0}
     - target: {fileID: 1810795255016584498, guid: b16265f49fb3eae418c3a61c4aa730b6,
         type: 3}
@@ -55575,10 +55640,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1034366108}
     m_Modifications:
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: YellowPressurePlate
+      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -367.5
+      value: -365
       objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
@@ -55588,7 +55658,7 @@ PrefabInstance:
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -195.5
+      value: -195
       objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
@@ -55630,10 +55700,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+    - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
-      propertyPath: m_Name
-      value: YellowPressurePlate
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -61471,7 +61541,7 @@ PrefabInstance:
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -429.875
+      value: -430
       objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
@@ -61522,6 +61592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -61787,6 +61862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.040000014
+      objectReference: {fileID: 0}
+    - target: {fileID: 4797762519565911627, guid: 5e21b31969cf66147acb19b3302c4ee9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7406043205793502001, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}
@@ -73502,6 +73582,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1403852313}
     m_Modifications:
+    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_Name
+      value: YellowPressurePlate
+      objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73557,10 +73642,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7479412050200343239, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+    - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
-      propertyPath: m_Name
-      value: YellowPressurePlate
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}

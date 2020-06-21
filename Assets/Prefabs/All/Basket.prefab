@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1810795255016584498}
   - component: {fileID: 7240163190656913156}
   - component: {fileID: 8816966583896122812}
-  - component: {fileID: 8816966583896122813}
   - component: {fileID: 8816966583896122814}
   - component: {fileID: 1209589721395012605}
   - component: {fileID: -3342812380382811986}
@@ -64,19 +63,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &8816966583896122813
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3421158365092316961}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.2748995, y: 2.896648, z: 2.2420387}
-  m_Center: {x: 0.000000079472805, y: 0.45591593, z: -0.01642997}
 --- !u!114 &8816966583896122814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,13 +267,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.9256719
+  m_Height: 2
   m_Radius: 1.1374499
   m_SlopeLimit: 45
-  m_StepOffset: 1
+  m_StepOffset: 1.5
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.09, z: 0}
 --- !u!1 &6040348134835788260
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2257900043263053082}
   - component: {fileID: 2257900043263053083}
   - component: {fileID: 1456463437505111526}
-  - component: {fileID: 4753912453704725837}
   m_Layer: 0
   m_Name: MagentaPressurePlate
   m_TagString: Untagged
@@ -111,7 +110,7 @@ MonoBehaviour:
   volume: 1
   b_HasActivated: 0
   b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: 4753912453704725837}
+  dialogueTrigger: {fileID: 0}
 --- !u!65 &2257900043263053083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -139,21 +138,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -8803937527578110353, guid: 39dea217b0e4ed249a49d47232f21fef, type: 3}
---- !u!114 &4753912453704725837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2257900043263053081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences: []
 --- !u!1 &5398721609960120716
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +149,6 @@ GameObject:
   - component: {fileID: 5447376249859725324}
   - component: {fileID: 537647210228922345}
   - component: {fileID: 8511096341170251632}
-  - component: {fileID: 2245043094971497470}
   m_Layer: 0
   m_Name: Torus.001
   m_TagString: Untagged
@@ -233,20 +216,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2245043094971497470
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5398721609960120716}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -5287425419667122880, guid: 39dea217b0e4ed249a49d47232f21fef, type: 3}
 --- !u!1 &6520857018340748542
 GameObject:
   m_ObjectHideFlags: 0

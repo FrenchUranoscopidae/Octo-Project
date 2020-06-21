@@ -75,40 +75,42 @@ public class PressurePlateController : MonoBehaviour
             }
         }
 
-        for(int i = 0; i <= 0; i++)
+    }
+
+    public void OnTriggerEnter(Collider collider)
+    {
+        if (collider.CompareTag("ControllableLightweight"))
         {
-            if (collider.CompareTag("ControllableLightweight"))
+            ObjectController obj = collider.GetComponent<ObjectController>();
+
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
-                ObjectController obj = collider.GetComponent<ObjectController>();
+                pressurePlateValue++;
+                Debug.Log(pressurePlateValue);
+                diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
 
-                if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor() && pressurePlateValue == 0)
+                if (pressurePlateValue == 2)
                 {
-                    pressurePlateValue++;
+                    diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
                     diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+                    ActivatePressurePlate();
 
-                    if (pressurePlateValue == 2)
+                    //Sound
+                    if (!b_HasActivated)
                     {
-                        diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
-                        diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
-                        ActivatePressurePlate();
+                        AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
+                        Debug.Log("Activated");
+                        b_HasActivated = true;
+                    }
 
-                        //Sound
-                        if (!b_HasActivated)
-                        {
-                            AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
-                            Debug.Log("Activated");
-                            b_HasActivated = true;
-                        }
-
-                        //Dialogue
-                        if (!b_dialogueHappenned)
-                        {
-                            ThisObjectDialogueTrigger();
-                        }
+                    //Dialogue
+                    if (!b_dialogueHappenned)
+                    {
+                        ThisObjectDialogueTrigger();
                     }
                 }
             }
-        }    
+        }
     }
 
     public void OnTriggerExit(Collider collider)
@@ -120,7 +122,7 @@ public class PressurePlateController : MonoBehaviour
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
         }
-
+                
         if (collider.CompareTag("Player"))
         {   
             isActive = false;
@@ -137,7 +139,15 @@ public class PressurePlateController : MonoBehaviour
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
         }
-        
+
+        if (collider.CompareTag("ControllableLightweight2"))
+        {
+            pressurePlateValue--;
+            pressurePlateValue = 0;
+            isActive = false;
+            diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
+            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+        }
     }
 
     private void ActivatePressurePlate()

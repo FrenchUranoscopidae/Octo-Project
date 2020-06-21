@@ -73627,7 +73627,7 @@ PrefabInstance:
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 580.3995
+      value: 580
       objectReference: {fileID: 0}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
@@ -74965,6 +74965,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 57384269555118301, guid: 5e21b31969cf66147acb19b3302c4ee9,
+        type: 3}
+      propertyPath: m_TagString
+      value: ControllableLightweight2
       objectReference: {fileID: 0}
     - target: {fileID: 1790240865103988617, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}

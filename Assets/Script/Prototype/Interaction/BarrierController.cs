@@ -66,7 +66,7 @@ public class BarrierController : MonoBehaviour
             {
                 barrierCollider.enabled = true;
             }
-        }
+        }        
     }
 }
     

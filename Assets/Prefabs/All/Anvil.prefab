@@ -84,8 +84,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.3586254, y: 1.6370958, z: 1.8702997}
-  m_Center: {x: 0.8342011, y: 0.8185479, z: 2.3561407e-15}
+  m_Size: {x: 4.3586254, y: 0.6186886, z: 1.8702997}
+  m_Center: {x: 0.8342011, y: 0.3093443, z: 2.3561407e-15}
 --- !u!54 &517975759240065026
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -284,7 +284,7 @@ CharacterController:
   m_Height: 1.1963398
   m_Radius: 1.5
   m_SlopeLimit: 45
-  m_StepOffset: 1
+  m_StepOffset: 1.5
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.4, z: 0}
