@@ -23,6 +23,12 @@ public class PressurePlateController : MonoBehaviour
     public delegate void OnPressurePlateActivatedDelegate();
     public event OnPressurePlateActivatedDelegate OnPressurePlateActivated;
 
+    //public bool lightOnPlate = false;
+    //public bool lightOnPlateTwo = false;
+
+    public bool playerOnPlate = false;
+    public int lightOnPlateCount = 0;
+
     public void OnTriggerStay(Collider collider)
     {
         if (collider.CompareTag("Player"))
@@ -75,6 +81,10 @@ public class PressurePlateController : MonoBehaviour
             }
         }
 
+        if(collider.CompareTag("ControllableLightweight"))
+        {
+            //lightOnPlate = true;
+        }
     }
 
     public void OnTriggerEnter(Collider collider)
@@ -88,6 +98,14 @@ public class PressurePlateController : MonoBehaviour
                 pressurePlateValue++;
                 Debug.Log(pressurePlateValue);
                 diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+                //lightOnPlate = true;
+
+                /*if(lightOnPlate)
+                {
+                    lightOnPlateTwo = true;
+                }*/
+
+                lightOnPlateCount += 1;
 
                 if (pressurePlateValue == 2)
                 {
@@ -125,19 +143,86 @@ public class PressurePlateController : MonoBehaviour
                 
         if (collider.CompareTag("Player"))
         {   
-            isActive = false;
+            /*if(!lightOnPlate)
+            {
+                isActive = false;
+                pressurePlateValue = 0;
+                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
+                diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            }
+
+            if(lightOnPlate && !lightOnPlateTwo)
+            {
+                isActive = false;
+                pressurePlateValue = 1;
+                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
+                diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            }
+
+            if (!lightOnPlate && lightOnPlateTwo)
+            {
+                isActive = false;
+                pressurePlateValue = 2;
+                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
+                diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            }*/
+            if(lightOnPlateCount == 0)
+            {
+                isActive = false;
+                pressurePlateValue = 0;
+                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
+                diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            }
+
+            if(lightOnPlateCount == 1)
+            {
+                isActive = false;
+                pressurePlateValue = 1;
+                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
+                diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+            }
+
+            if (lightOnPlateCount == 2)
+            {
+                isActive = false;
+                pressurePlateValue = 2;
+                diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+                diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+            }
+
+            /*isActive = false;
             pressurePlateValue = 0;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
-            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;*/
         }
 
         if (collider.CompareTag("ControllableLightweight"))
         {
-            pressurePlateValue--;
-            pressurePlateValue = 0;
+            if(lightOnPlateCount == 1)
+            {
+                pressurePlateValue--;
+                //pressurePlateValue = 0;
+                isActive = false;
+                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
+                diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            }
+
+            if(lightOnPlateCount == 2)
+            {
+                pressurePlateValue--;
+                //pressurePlateValue = 0;
+                isActive = false;
+                diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
+                diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+            }
+
+            /*pressurePlateValue--;
+            //pressurePlateValue = 0;
             isActive = false;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
-            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;*/
+
+            lightOnPlateCount -= 1;
         }
 
         if (collider.CompareTag("ControllableLightweight2"))
