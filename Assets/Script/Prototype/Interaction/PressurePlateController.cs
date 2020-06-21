@@ -74,7 +74,6 @@ public class PressurePlateController : MonoBehaviour
                 }
             }
         }
-
     }
 
     public void OnTriggerEnter(Collider collider)
@@ -138,16 +137,7 @@ public class PressurePlateController : MonoBehaviour
             isActive = false;
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
-        }
-
-        if (collider.CompareTag("ControllableLightweight2"))
-        {
-            pressurePlateValue--;
-            pressurePlateValue = 0;
-            isActive = false;
-            diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
-            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
-        }
+        }               
     }
 
     private void ActivatePressurePlate()
