@@ -3904,11 +3904,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagentaPressurePlate
       objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3963,6 +3958,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -15715,11 +15715,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'MagentaPressurePlate '
       objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15774,6 +15769,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -19374,11 +19374,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagentaPressurePlate
       objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19433,6 +19428,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -47101,7 +47101,7 @@ PrefabInstance:
     - target: {fileID: 1790240865103988617, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -97.5
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 1790240865103988617, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}
@@ -47111,7 +47111,7 @@ PrefabInstance:
     - target: {fileID: 1790240865103988617, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -319
+      value: -330
       objectReference: {fileID: 0}
     - target: {fileID: 1790240865103988617, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}
@@ -53304,7 +53304,7 @@ PrefabInstance:
     - target: {fileID: 1810795255016584498, guid: b16265f49fb3eae418c3a61c4aa730b6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -112
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 1810795255016584498, guid: b16265f49fb3eae418c3a61c4aa730b6,
         type: 3}
@@ -53314,7 +53314,7 @@ PrefabInstance:
     - target: {fileID: 1810795255016584498, guid: b16265f49fb3eae418c3a61c4aa730b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -319
+      value: -320
       objectReference: {fileID: 0}
     - target: {fileID: 1810795255016584498, guid: b16265f49fb3eae418c3a61c4aa730b6,
         type: 3}
@@ -61947,11 +61947,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'MagentaPressurePlate '
       objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62006,6 +62001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
