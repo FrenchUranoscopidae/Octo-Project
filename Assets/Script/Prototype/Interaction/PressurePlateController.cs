@@ -7,6 +7,10 @@ public class PressurePlateController : MonoBehaviour
     public ColorManager colorMgr;
     public bool isActive = false;
     public int pressurePlateValue = 0;
+
+    public int lightOnPlateCount = 0;
+    public bool playerOnPlate = false;
+
     public GameObject diodeColor;
     public GameObject diodeColor1;
     public Material initialMaterial;
@@ -23,8 +27,7 @@ public class PressurePlateController : MonoBehaviour
     public delegate void OnPressurePlateActivatedDelegate();
     public event OnPressurePlateActivatedDelegate OnPressurePlateActivated;
 
-    public bool playerOnPlate = false;
-    public int lightOnPlateCount = 0;
+    public bool b_All = true;
 
     public void OnTriggerStay(Collider collider)
     {
@@ -93,14 +96,11 @@ public class PressurePlateController : MonoBehaviour
 
                 lightOnPlateCount += 1;
 
-                //Dialogue
-                if (!b_dialogueHappenned)
-                {
-                    ThisObjectDialogueTrigger();
-                }
+                //Debug.Log("PLATEACTIVATED");
 
                 if (pressurePlateValue == 2)
                 {
+                    Debug.Log("PLATEACTIVATED");
                     diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
                     diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
                     ActivatePressurePlate();
@@ -112,12 +112,12 @@ public class PressurePlateController : MonoBehaviour
                         Debug.Log("Activated");
                         b_HasActivated = true;
                     }
+                }
 
-                    //Dialogue
-                    /*if (!b_dialogueHappenned)
-                    {
-                        ThisObjectDialogueTrigger();
-                    }*/
+                //Dialogue
+                if (!b_dialogueHappenned)
+                {
+                    ThisObjectDialogueTrigger();
                 }
             }
         }
