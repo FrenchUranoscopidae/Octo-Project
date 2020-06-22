@@ -29,7 +29,7 @@ public class UnlockNextRoom : MonoBehaviour
    
         switch (roomPassed)
         {
-            case 1:
+            case 2:
                 Instantiate(player, returnPoint.position, returnPoint.rotation);
                 GameObject.Find("DoorManager").GetComponent<SpawnPlayer>().enabled = false;
                 jail.OpenDoor();
@@ -38,7 +38,7 @@ public class UnlockNextRoom : MonoBehaviour
                 room3.CloseDoor();
                 room4.CloseDoor();
                 break;
-            case 2:
+            case 3:
                 Instantiate(player, returnPoint.position, returnPoint.rotation);
                 GameObject.Find("DoorManager").GetComponent<SpawnPlayer>().enabled = false;
                 jail.OpenDoor();
@@ -47,7 +47,7 @@ public class UnlockNextRoom : MonoBehaviour
                 room3.OpenDoor();
                 room4.CloseDoor();
                 break;
-            case 3:
+            case 4:
                 Instantiate(player, returnPoint.position, returnPoint.rotation);
                 GameObject.Find("DoorManager").GetComponent<SpawnPlayer>().enabled = false;
                 jail.OpenDoor();

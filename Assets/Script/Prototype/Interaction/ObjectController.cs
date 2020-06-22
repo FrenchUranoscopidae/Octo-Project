@@ -85,7 +85,7 @@ public class ObjectController : PlayerController
     {
         if (other.CompareTag("ColorSwap"))
         {
-            if(Input.GetKey(KeyCode.Space) || Input.GetButton("Button A"))
+            if(Input.GetKey(KeyCode.Space) && isControlled || Input.GetButton("Button A") && isControlled)
             {
                 ColorChanger changer = other.GetComponent<ColorChanger>();
                 changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors

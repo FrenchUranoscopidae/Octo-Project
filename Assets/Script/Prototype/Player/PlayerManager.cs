@@ -56,7 +56,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.CompareTag("ColorSwap"))
         {
-            if(Input.GetKey(KeyCode.Space) || Input.GetButton("Button A"))
+            if(Input.GetKey(KeyCode.Space) && controller.isControlled || Input.GetButton("Button A") && controller.isControlled)
             {
                 ColorChanger changer = other.GetComponent<ColorChanger>();
                 changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
