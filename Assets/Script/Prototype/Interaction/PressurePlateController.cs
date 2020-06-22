@@ -93,6 +93,12 @@ public class PressurePlateController : MonoBehaviour
 
                 lightOnPlateCount += 1;
 
+                //Dialogue
+                if (!b_dialogueHappenned)
+                {
+                    ThisObjectDialogueTrigger();
+                }
+
                 if (pressurePlateValue == 2)
                 {
                     diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
@@ -108,10 +114,10 @@ public class PressurePlateController : MonoBehaviour
                     }
 
                     //Dialogue
-                    if (!b_dialogueHappenned)
+                    /*if (!b_dialogueHappenned)
                     {
                         ThisObjectDialogueTrigger();
-                    }
+                    }*/
                 }
             }
         }

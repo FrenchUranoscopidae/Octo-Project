@@ -16,9 +16,20 @@ public class ObjectController : PlayerController
     public Animator animator;
     //public Animation propsWalk;
 
+    [Header("Sound")]
+    public AudioClip Pos;
+    public float volume;
+
+    [Header("Tuto Depos")]
+    public GameObject deposTuto;
+    public bool hasActivated = false;
+
     // override the player controller start method
     protected override void Start()
     {
+        //Tuto Depos
+        hasActivated = false;
+
         base.Start(); // Call the player controller start
         colorMgr.Initialize(GetComponent<SkinnedMeshRenderer>());
         colorMgr.InitializeObjectRenderer(GetComponent<MeshRenderer>());
@@ -41,9 +52,24 @@ public class ObjectController : PlayerController
 
         if (Input.GetKey(KeyCode.E) || Input.GetButton("Button B"))
         {
+            AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
+
+            //Tuto Depos
+            if (hasActivated)
+            {
+                deposTuto.SetActive(false);
+            }
+
             Instantiate(smoke, obj.transform.position, obj.transform.rotation);
             Player.ControlObject(this, false, Player);
             Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
+        }
+
+        //Tuto Depos
+        if (!hasActivated)
+        {
+            deposTuto.SetActive(true);
+            hasActivated = true;
         }
     }
 

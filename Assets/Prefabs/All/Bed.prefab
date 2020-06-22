@@ -383,6 +383,10 @@ MonoBehaviour:
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 193218704674175350}
   animator: {fileID: 3498120599319525062}
+  Pos: {fileID: 8300000, guid: 8740a00c383c05c4fab94abd3a7b72f3, type: 3}
+  volume: 7
+  deposTuto: {fileID: 0}
+  hasActivated: 0
 --- !u!54 &8781423316838726885
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorSwapTuto : MonoBehaviour
+public class DeposTuto : MonoBehaviour
 {
-    public GameObject colorSwapTuto;
+    public GameObject deposTuto;
     public bool hasActivated = false;
 
     void Update()
     {
-        if(hasActivated)
+        if (hasActivated)
         {
-            colorSwapTuto.SetActive(false);
+            deposTuto.SetActive(false);
         }
     }
 
-    private void OnTriggerEnter (Collider col)
+    private void OnTriggerEnter(Collider col)
     {
-        if(!hasActivated)
+        if (!hasActivated)
         {
-            colorSwapTuto.SetActive(true);
+            deposTuto.SetActive(true);
         }
     }
 
@@ -27,13 +27,13 @@ public class ColorSwapTuto : MonoBehaviour
     {
         if (!hasActivated)
         {
-            colorSwapTuto.SetActive(false);
+            deposTuto.SetActive(false);
         }
     }
 
     private void OnTriggerStay(Collider col)
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             hasActivated = true;
         }

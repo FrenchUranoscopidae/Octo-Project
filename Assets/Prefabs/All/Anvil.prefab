@@ -73,6 +73,10 @@ MonoBehaviour:
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 2977318994611680565}
   animator: {fileID: 2635499384061943199}
+  Pos: {fileID: 8300000, guid: 8740a00c383c05c4fab94abd3a7b72f3, type: 3}
+  volume: 7
+  deposTuto: {fileID: 0}
+  hasActivated: 0
 --- !u!65 &6686990274290239164
 BoxCollider:
   m_ObjectHideFlags: 0
