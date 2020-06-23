@@ -115,6 +115,8 @@ MonoBehaviour:
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 0}
   b_All: 1
+  loweringValue1: -0.35
+  loweringValue2: -0.75
 --- !u!65 &2257900043263053083
 BoxCollider:
   m_ObjectHideFlags: 0
