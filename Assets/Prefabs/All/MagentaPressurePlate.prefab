@@ -102,8 +102,11 @@ MonoBehaviour:
     currentColor: 5
   isActive: 0
   pressurePlateValue: 0
+  lightOnPlateCount: 0
+  playerOnPlate: 0
   diodeColor: {fileID: 8112439861702440636}
   diodeColor1: {fileID: 6520857018340748542}
+  pressurePlate: {fileID: 5398721609960120716}
   initialMaterial: {fileID: -6478536213147159724, guid: d351f3046123c7940924af977283ce2c,
     type: 3}
   PlateActivation: {fileID: 8300000, guid: 4154b7a48b22e3a44aea0e85b0dcb1d7, type: 3}
@@ -111,6 +114,7 @@ MonoBehaviour:
   b_HasActivated: 0
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 0}
+  b_All: 1
 --- !u!65 &2257900043263053083
 BoxCollider:
   m_ObjectHideFlags: 0

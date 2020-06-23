@@ -13,6 +13,7 @@ public class PressurePlateController : MonoBehaviour
 
     public GameObject diodeColor;
     public GameObject diodeColor1;
+    public GameObject pressurePlate;
     public Material initialMaterial;
 
     [Header("Sound")]
@@ -29,6 +30,10 @@ public class PressurePlateController : MonoBehaviour
 
     public bool b_All = true;
 
+    public void Start()
+    {
+        pressurePlate.transform.position = transform.position + new Vector3(0, 0, 0);
+    }
     public void OnTriggerStay(Collider collider)
     {
         if (collider.CompareTag("Player"))
@@ -91,16 +96,12 @@ public class PressurePlateController : MonoBehaviour
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
                 pressurePlateValue++;
-                Debug.Log(pressurePlateValue);
                 diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
-
                 lightOnPlateCount += 1;
-
-                //Debug.Log("PLATEACTIVATED");
+                pressurePlate.transform.position = transform.position + new Vector3(0, -0.5f, 0);
 
                 if (pressurePlateValue == 2)
                 {
-                    Debug.Log("PLATEACTIVATED");
                     diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
                     diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
                     ActivatePressurePlate();
@@ -109,7 +110,6 @@ public class PressurePlateController : MonoBehaviour
                     if (!b_HasActivated)
                     {
                         AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
-                        Debug.Log("Activated");
                         b_HasActivated = true;
                     }
                 }
@@ -129,6 +129,7 @@ public class PressurePlateController : MonoBehaviour
         {
             isActive = false;
             pressurePlateValue = 0;
+            pressurePlate.transform.position = transform.position + new Vector3(0, 0, 0);
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
         }
@@ -139,6 +140,7 @@ public class PressurePlateController : MonoBehaviour
             {
                 isActive = false;
                 pressurePlateValue = 0;
+                pressurePlate.transform.position = transform.position + new Vector3(0, 0, 0);
                 diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
                 diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
             }
@@ -147,6 +149,7 @@ public class PressurePlateController : MonoBehaviour
             {
                 isActive = false;
                 pressurePlateValue = 1;
+                pressurePlate.transform.position = transform.position + new Vector3(0, -0.5f, 0);
                 diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
                 diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
             }
@@ -166,6 +169,7 @@ public class PressurePlateController : MonoBehaviour
             {
                 pressurePlateValue--;
                 isActive = false;
+                pressurePlate.transform.position = transform.position + new Vector3(0, 0, 0);
                 diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
                 diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
             }
@@ -174,19 +178,11 @@ public class PressurePlateController : MonoBehaviour
             {
                 pressurePlateValue--;
                 isActive = false;
+                pressurePlate.transform.position = transform.position + new Vector3(0, -0.5f, 0);
                 diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
                 diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
             }
             lightOnPlateCount -= 1;
-        }
-
-        if (collider.CompareTag("ControllableLightweight2"))
-        {
-            pressurePlateValue--;
-            pressurePlateValue = 0;
-            isActive = false;
-            diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
-            diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
         }
     }
 
@@ -194,6 +190,7 @@ public class PressurePlateController : MonoBehaviour
     {
         isActive = true;
         OnPressurePlateActivated?.Invoke();
+        pressurePlate.transform.position = transform.position + new Vector3(0, -0.75f, 0);
     }
 
     public void ThisObjectDialogueTrigger()
