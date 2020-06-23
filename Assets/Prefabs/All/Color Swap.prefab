@@ -163,7 +163,7 @@ MonoBehaviour:
     currentColor: 0
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 2153119748284905328}
-  colorSwapSound: {fileID: 8300000, guid: ebb76aa1bf5161c4380b6d976aa085d3, type: 3}
+  colorSwapSound: {fileID: 8300000, guid: f13197cf1518c884a9f068c4c1a88b5c, type: 3}
   colorSwapVisualEffect: {fileID: 8148318095936924264, guid: f20c98683c3b30f4297ed9cddc06c59a,
     type: 3}
 --- !u!114 &2153119748284905328

@@ -3904,6 +3904,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagentaPressurePlate
       objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3959,11 +3964,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &140424563 stripped
@@ -4000,6 +4000,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 267680676945727523, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428696450468553485, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 69579441299486083, guid: 9df8cfc4ac7305e47a642d1470ddef00,
         type: 3}
@@ -4111,16 +4121,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 570708568}
-    - target: {fileID: 267680676945727523, guid: 9df8cfc4ac7305e47a642d1470ddef00,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6428696450468553485, guid: 9df8cfc4ac7305e47a642d1470ddef00,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df8cfc4ac7305e47a642d1470ddef00, type: 3}
 --- !u!114 &144300214 stripped
@@ -15747,6 +15747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'MagentaPressurePlate '
       objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15801,11 +15806,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -19406,6 +19406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagentaPressurePlate
       objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19460,11 +19465,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -22104,6 +22104,10 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[0]
       value: "Magnifique capacit\xE9 d\u2019adaptation ! De toute ma vie je n\u2019avais
         vu d\u2019alien capable de \u2026 ! Je n\u2019avais jamais vu d\u2019alien."
+      objectReference: {fileID: 0}
+    - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
+      propertyPath: dialogue.name
+      value: Scientifique
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
@@ -62016,6 +62020,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'MagentaPressurePlate '
       objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62070,11 +62079,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -62341,11 +62345,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.040000014
       objectReference: {fileID: 0}
-    - target: {fileID: 4797762519565911627, guid: 5e21b31969cf66147acb19b3302c4ee9,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7406043205793502001, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}
       propertyPath: colorMgr.currentColor
@@ -62356,6 +62355,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 4797762519565911627, guid: 5e21b31969cf66147acb19b3302c4ee9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e21b31969cf66147acb19b3302c4ee9, type: 3}
 --- !u!4 &1689658744 stripped
