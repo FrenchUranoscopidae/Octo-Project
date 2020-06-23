@@ -3904,11 +3904,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagentaPressurePlate
       objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3963,6 +3958,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -4111,6 +4111,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 570708568}
+    - target: {fileID: 267680676945727523, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428696450468553485, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df8cfc4ac7305e47a642d1470ddef00, type: 3}
 --- !u!114 &144300214 stripped
@@ -4140,6 +4150,18 @@ MonoBehaviour:
 --- !u!95 &144300216 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 69579442566245852, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+    type: 3}
+  m_PrefabInstance: {fileID: 144300213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &144300217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6428696450468553485, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+    type: 3}
+  m_PrefabInstance: {fileID: 144300213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &144300218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 267680676945727523, guid: 9df8cfc4ac7305e47a642d1470ddef00,
     type: 3}
   m_PrefabInstance: {fileID: 144300213}
   m_PrefabAsset: {fileID: 0}
@@ -6074,6 +6096,11 @@ PrefabInstance:
       propertyPath: colorMgr.currentColor
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8816966583896122814, guid: b16265f49fb3eae418c3a61c4aa730b6,
+        type: 3}
+      propertyPath: deposTuto
+      value: 
+      objectReference: {fileID: 144300217}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16265f49fb3eae418c3a61c4aa730b6, type: 3}
 --- !u!1 &185956825
@@ -11636,6 +11663,11 @@ PrefabInstance:
       propertyPath: colorMgr.currentColor
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8688886230047595088, guid: df369f7a7e04347408ab8313b4d4ec15,
+        type: 3}
+      propertyPath: deposTuto
+      value: 
+      objectReference: {fileID: 144300217}
     - target: {fileID: 8688886230047595092, guid: df369f7a7e04347408ab8313b4d4ec15,
         type: 3}
       propertyPath: Loop
@@ -15715,11 +15747,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'MagentaPressurePlate '
       objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15774,6 +15801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -19374,11 +19406,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagentaPressurePlate
       objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19433,6 +19460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -33731,6 +33763,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 220.88257
       objectReference: {fileID: 0}
+    - target: {fileID: 1315654349, guid: 3100c1243388b664bbad29d80a3716a4, type: 3}
+      propertyPath: colorSwapTuto
+      value: 
+      objectReference: {fileID: 144300218}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3100c1243388b664bbad29d80a3716a4, type: 3}
 --- !u!4 &917081935 stripped
@@ -34672,6 +34708,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 220.8825
       objectReference: {fileID: 0}
+    - target: {fileID: 1315654349, guid: 3100c1243388b664bbad29d80a3716a4, type: 3}
+      propertyPath: colorSwapTuto
+      value: 
+      objectReference: {fileID: 144300218}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3100c1243388b664bbad29d80a3716a4, type: 3}
 --- !u!4 &940787087 stripped
@@ -35041,6 +35081,11 @@ PrefabInstance:
       propertyPath: colorMgr.currentColor
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5253856636283239607, guid: f1139c30fa46f8842a382393e0a4a6e7,
+        type: 3}
+      propertyPath: deposTuto
+      value: 
+      objectReference: {fileID: 144300217}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1139c30fa46f8842a382393e0a4a6e7, type: 3}
 --- !u!4 &947409765 stripped
@@ -47173,6 +47218,11 @@ PrefabInstance:
       propertyPath: colorMgr.currentColor
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7406043205793502001, guid: 5e21b31969cf66147acb19b3302c4ee9,
+        type: 3}
+      propertyPath: deposTuto
+      value: 
+      objectReference: {fileID: 144300217}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e21b31969cf66147acb19b3302c4ee9, type: 3}
 --- !u!4 &1268853599 stripped
@@ -49328,6 +49378,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5000019
       objectReference: {fileID: 0}
+    - target: {fileID: 8816966583896122814, guid: b16265f49fb3eae418c3a61c4aa730b6,
+        type: 3}
+      propertyPath: deposTuto
+      value: 
+      objectReference: {fileID: 144300217}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16265f49fb3eae418c3a61c4aa730b6, type: 3}
 --- !u!4 &1322743883 stripped
@@ -53376,6 +53431,11 @@ PrefabInstance:
       propertyPath: colorMgr.currentColor
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8816966583896122814, guid: b16265f49fb3eae418c3a61c4aa730b6,
+        type: 3}
+      propertyPath: deposTuto
+      value: 
+      objectReference: {fileID: 144300217}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16265f49fb3eae418c3a61c4aa730b6, type: 3}
 --- !u!4 &1439060342 stripped
@@ -54328,6 +54388,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 220.88263
       objectReference: {fileID: 0}
+    - target: {fileID: 1315654349, guid: 3100c1243388b664bbad29d80a3716a4, type: 3}
+      propertyPath: colorSwapTuto
+      value: 
+      objectReference: {fileID: 144300218}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3100c1243388b664bbad29d80a3716a4, type: 3}
 --- !u!4 &1469369583 stripped
@@ -61952,11 +62016,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'MagentaPressurePlate '
       objectReference: {fileID: 0}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: range
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2257900043229749285, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62011,6 +62070,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: range
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
@@ -62277,16 +62341,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.040000014
       objectReference: {fileID: 0}
-    - target: {fileID: 7406043205793502001, guid: 5e21b31969cf66147acb19b3302c4ee9,
-        type: 3}
-      propertyPath: colorMgr.currentColor
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4797762519565911627, guid: 5e21b31969cf66147acb19b3302c4ee9,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7406043205793502001, guid: 5e21b31969cf66147acb19b3302c4ee9,
+        type: 3}
+      propertyPath: colorMgr.currentColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7406043205793502001, guid: 5e21b31969cf66147acb19b3302c4ee9,
+        type: 3}
+      propertyPath: deposTuto
+      value: 
+      objectReference: {fileID: 144300217}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e21b31969cf66147acb19b3302c4ee9, type: 3}
 --- !u!4 &1689658744 stripped
@@ -78301,6 +78370,11 @@ PrefabInstance:
       propertyPath: colorMgr.currentColor
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3682414183227759484, guid: 70aa88826d6b3c749819ebb744d7bb62,
+        type: 3}
+      propertyPath: deposTuto
+      value: 
+      objectReference: {fileID: 144300217}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70aa88826d6b3c749819ebb744d7bb62, type: 3}
 --- !u!4 &2101727706 stripped
@@ -79968,6 +80042,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 6425205554370886137}
+    - target: {fileID: 3682414183227759484, guid: 70aa88826d6b3c749819ebb744d7bb62,
+        type: 3}
+      propertyPath: deposTuto
+      value: 
+      objectReference: {fileID: 144300217}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70aa88826d6b3c749819ebb744d7bb62, type: 3}
 --- !u!143 &6425205554370886136 stripped

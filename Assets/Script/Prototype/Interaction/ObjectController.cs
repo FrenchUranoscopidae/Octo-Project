@@ -48,7 +48,11 @@ public class ObjectController : PlayerController
         if (!b_dialogueHappenned)
         {
             ThisObjectDialogueTrigger();
-        }   
+        }
+
+        //Tuto Depos
+        deposTuto.SetActive(true);
+        hasActivated = true;
 
         if (Input.GetKey(KeyCode.E) || Input.GetButton("Button B"))
         {
@@ -63,13 +67,6 @@ public class ObjectController : PlayerController
             Instantiate(smoke, obj.transform.position, obj.transform.rotation);
             Player.ControlObject(this, false, Player);
             Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
-        }
-
-        //Tuto Depos
-        if (!hasActivated)
-        {
-            deposTuto.SetActive(true);
-            hasActivated = true;
         }
     }
 
