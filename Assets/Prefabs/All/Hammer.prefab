@@ -25,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781614728822833506}
-  m_LocalRotation: {x: 0.00000011520232, y: 0.000000053385076, z: -0.7071067, w: 0.7071068}
-  m_LocalPosition: {x: -0.0036042903, y: 0, z: -0.08852069}
-  m_LocalScale: {x: 0.8076709, y: 0.49866697, z: 0.61378354}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.9766216, y: 0.00007341602, z: -2429.0898}
+  m_LocalScale: {x: 0.33523542, y: 0.55850303, z: 0.64173573}
   m_Children: []
   m_Father: {fileID: 3720382752997579547}
   m_RootOrder: 1
@@ -39,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781614728822833506}
-  m_Mesh: {fileID: 2534964839176971238, guid: 1a933deac1bd3d148a0b9b740cdff08c, type: 3}
+  m_Mesh: {fileID: 2534964839176971238, guid: 71b2e5f32cd8be3418de77fa905a87e3, type: 3}
 --- !u!23 &7082233688325637490
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7331cced39223824493fa64a5e1df51c, type: 2}
+  - {fileID: 670224309865224971, guid: 71b2e5f32cd8be3418de77fa905a87e3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,7 +102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6695790476753640511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0, z: 0}
+  m_LocalPosition: {x: -2000, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3720382752997579547}
@@ -140,15 +140,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8688886230047595094}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -5, y: 1.125, z: 0}
-  m_LocalScale: {x: 18.185863, y: 11.2282, z: 14.77507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -242.99117, y: 1.1760617, z: -52.5}
+  m_LocalScale: {x: 0.0027051722, y: 0.0016237503, z: 0.0014131508}
   m_Children:
   - {fileID: 6695790476753640508}
   - {fileID: 47983840877655606}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2977110454192816981
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -156,7 +156,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8688886230047595094}
-  m_Mesh: {fileID: -5495902117074765545, guid: 1a933deac1bd3d148a0b9b740cdff08c, type: 3}
+  m_Mesh: {fileID: -5495902117074765545, guid: 71b2e5f32cd8be3418de77fa905a87e3, type: 3}
 --- !u!23 &2612480076557170411
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -235,8 +235,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.12160044, y: 0.18133691, z: 0.44930542}
-  m_Center: {x: 0.004848182, y: 0.0014879025, z: -0.15140603}
+  m_Size: {x: 999.99994, y: 999.99976, z: 4536.936}
+  m_Center: {x: 0, y: 0, z: -1768.4681}
 --- !u!54 &8688886230047595090
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -267,7 +267,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: 
-    sentences: []
+    sentences:
+    - "Oui ! C\u2019est cela ! Tu es capable de prendre possession de ton environnement.
+      Ma th\xE9orie \xE9tait correcte ! Quel prodige je fais !\r\n"
+    - "Maintenant, tu es bien capable de sortir de cet \xE9tat par toi-m\xEAme\u2026
+      n\u2019est-ce pas ?"
 --- !u!82 &8688886230047595092
 AudioSource:
   m_ObjectHideFlags: 0
@@ -394,10 +398,10 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.17788425
-  m_Radius: 0.07358282
+  m_Height: 450
+  m_Radius: 450
   m_SlopeLimit: 45
   m_StepOffset: 1.5
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: -240}
