@@ -23,7 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601870126549760051}
-  m_LocalRotation: {x: 0.06645225, y: -0.9098438, z: 0.16042994, w: 0.37686962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -217.15001, y: 11.575, z: -25.7}
   m_LocalScale: {x: 0.5000011, y: 0.49999997, z: 0.9500022}
   m_Children:
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 25
-  rotationSpeed: 15
+  rotationSpeed: 2
   controller: {fileID: 0}
   securityCamera: {fileID: 6161746732842019185}
 --- !u!1 &9168019095274800972
