@@ -102,6 +102,7 @@ public class PlayerController : MonoBehaviour
             player.transform.parent = null;
             player.transform.position = objToControl.PlayerLeavePoint.position;
             player.GetComponent<BoxCollider>().enabled = true;
+            player.transform.localScale = new Vector3(1, 1, 1);
             controller.enabled = true;
             player.GetComponent<Rigidbody>().isKinematic = false;
             objToControl.Player = null;

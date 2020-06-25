@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Permissions;
 using System.Threading;
@@ -34,7 +34,7 @@ public class MenuPause : MonoBehaviour
      public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        //Time.timeScale = 0f;
+        Time.timeScale = 0f;
         GameIsPaused = true;
     }
 
