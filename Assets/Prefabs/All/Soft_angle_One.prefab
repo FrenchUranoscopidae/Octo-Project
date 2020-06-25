@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3757824734879402074}
   m_Layer: 0
   m_Name: Soft_angle_One
-  m_TagString: Untagged
+  m_TagString: CantDepos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

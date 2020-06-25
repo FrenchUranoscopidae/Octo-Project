@@ -14990,7 +14990,7 @@ GameObject:
   - component: {fileID: 3010631743047590486}
   m_Layer: 0
   m_Name: 'Magenta Barrier '
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

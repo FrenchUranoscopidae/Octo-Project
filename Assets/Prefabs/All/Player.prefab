@@ -1130,6 +1130,9 @@ MonoBehaviour:
   footstep: {fileID: 3173657882307755411}
   gravity: 8.91
   controller: {fileID: -645598042771048811}
+  deposTuto: {fileID: 1612807759223203924, guid: 4925ea14a2ab32b4eb8a15f827bfe65c,
+    type: 3}
+  hasActivated: 0
 --- !u!114 &4118269485489092446
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8804872386849633467}
   m_Layer: 0
   m_Name: Soft_Angle_Two
-  m_TagString: Untagged
+  m_TagString: CantDepos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -15068,7 +15068,7 @@ GameObject:
   - component: {fileID: 8775202452053494907}
   m_Layer: 0
   m_Name: Yellow Barrier
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -10,6 +10,7 @@ TagManager:
   - ControllableHeavy
   - ControllableLightweight
   - Barrier
+  - CantDepos
   layers:
   - Default
   - TransparentFX
