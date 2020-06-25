@@ -16,7 +16,7 @@ public class ColorChanger : MonoBehaviour
     [Header("VFX")]
     //public GameObject colorSwapThunder1;
     //public GameObject colorSwapThunder2;
-    public bool vfxActive = false;
+    //public bool vfxActive = false;
 
     public ParticleSystem Thunder1;
     public ParticleSystem Thunder2;
