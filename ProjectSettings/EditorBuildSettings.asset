@@ -9,15 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/UI/Menu Principal.unity
     guid: 79fde889a06f0174abde265e6aafa966
   - enabled: 1
-    path: Assets/Scenes/New Room/Room 1 Rework.unity
+    path: Assets/Scenes/Rework Room/Room 1 Rework.unity
     guid: 31d53ced0cb423e42ad1edbd25613ae8
   - enabled: 1
-    path: Assets/Scenes/New Room/Room 2 Rework.unity
+    path: Assets/Scenes/Rework Room/Room 2 Rework.unity
     guid: f5c21dbabfe388541894f2c815dbd2d6
   - enabled: 1
-    path: Assets/Scenes/New Room/Room 3 Rework.unity
+    path: Assets/Scenes/Rework Room/Room 3 Rework.unity
     guid: 75cdf5f5b70781f418c14099b21215af
   - enabled: 1
-    path: Assets/Scenes/New Room/Room 4 Rework.unity
+    path: Assets/Scenes/Rework Room/Room 4 Rework.unity
     guid: 67c4af0c61dc96640b783f5ad294ce95
   m_configObjects: {}
