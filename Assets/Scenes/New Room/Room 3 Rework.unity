@@ -55142,6 +55142,16 @@ PrefabInstance:
       propertyPath: colorSwapTuto
       value: 
       objectReference: {fileID: 144300218}
+    - target: {fileID: 1615675161236228076, guid: 3100c1243388b664bbad29d80a3716a4,
+        type: 3}
+      propertyPath: LightsModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656146739838510665, guid: 3100c1243388b664bbad29d80a3716a4,
+        type: 3}
+      propertyPath: LightsModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3100c1243388b664bbad29d80a3716a4, type: 3}
 --- !u!4 &1469369583 stripped

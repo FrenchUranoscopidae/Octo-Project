@@ -7899,6 +7899,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 433931459}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &436995659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2203417231607084563, guid: 51797eb42294f0742b80aef07cc38eb5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1276748054}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e11328dedd45845812f9cb76a8dec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &455687363
 GameObject:
   m_ObjectHideFlags: 0
@@ -16969,8 +16981,8 @@ Transform:
   - {fileID: 1197338518}
   - {fileID: 1397412848}
   - {fileID: 2454639639127276304}
-  - {fileID: 1563106019221780272}
   - {fileID: 1931489281}
+  - {fileID: 1563106019221780272}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32515,7 +32527,7 @@ Transform:
   - {fileID: 1845968650}
   - {fileID: 1741555427}
   m_Father: {fileID: 1071986980}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1943474997
 GameObject:
@@ -34802,7 +34814,7 @@ MonoBehaviour:
   room1: {fileID: 2046150015}
   room2: {fileID: 149559018}
   room3: {fileID: 1582600328}
-  room4: {fileID: 0}
+  room4: {fileID: 436995659}
   player: {fileID: 315328301341317124, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
   returnPoint: {fileID: 2454639639127276304}
 --- !u!114 &2073932778

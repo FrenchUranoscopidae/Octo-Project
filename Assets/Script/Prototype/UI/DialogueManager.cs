@@ -40,16 +40,9 @@ public class DialogueManager : MonoBehaviour
 
         if(nextSentenceTimer <= 0)
         {
-            /*if (Input.GetKeyDown(KeyCode.A))
-            {
-                DisplayNextSentence();
-                nextSentenceTimer = nextSentenceTimerReset;
-            }*/
             DisplayNextSentence();
             nextSentenceTimer = nextSentenceTimerReset;
         }
-
-        //Debug.Log(nextSentenceTimer);
     }
 
     public void StartDialogue(Dialogue dialogue)
