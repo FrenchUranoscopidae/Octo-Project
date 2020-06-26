@@ -6,12 +6,18 @@ public class PlayerManager : MonoBehaviour
     public ColorManager colorMgr;
     public PlayerController controller;
     public GameObject smoke;
+
+    [Header("Texture")]
     public Texture alienYellowTexture;
     public Texture alienMagentaTexture;
 
     [Header("Sound")]
     public AudioClip Pos;
     public float volume;
+
+    [Header("Checkpoint")]
+    public Transform respawnTarget;
+    public Vector3 respawnLocation;
 
     void Start()
     {
@@ -32,6 +38,7 @@ public class PlayerManager : MonoBehaviour
                 AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
                 Instantiate(smoke, obj.transform.position, obj.transform.rotation);
                 Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
+                Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);        
                 controller.ControlObject(obj, true, controller);
             }
         }
@@ -62,5 +69,20 @@ public class PlayerManager : MonoBehaviour
                 changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
             }      
         }
+    }
+
+    public void CheckPoint(Vector3 newLocation)
+    {
+        respawnLocation = newLocation;
+    }
+
+    public void CurrentSpawnPoint(Vector3 newSpawn)
+    {
+        respawnLocation = newSpawn;
+    }
+
+    public void SelectedContinue()
+    {
+        respawnTarget.transform.position = respawnLocation;
     }
 }

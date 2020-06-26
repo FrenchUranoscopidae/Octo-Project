@@ -1130,9 +1130,6 @@ MonoBehaviour:
   footstep: {fileID: 3173657882307755411}
   gravity: 8.91
   controller: {fileID: -645598042771048811}
-  deposTuto: {fileID: 1612807759223203924, guid: 4925ea14a2ab32b4eb8a15f827bfe65c,
-    type: 3}
-  hasActivated: 0
 --- !u!114 &4118269485489092446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,6 +1151,8 @@ MonoBehaviour:
   alienMagentaTexture: {fileID: 2800000, guid: 043a2a19fa0053d40ac76c8abcccb3e1, type: 3}
   Pos: {fileID: 8300000, guid: 8740a00c383c05c4fab94abd3a7b72f3, type: 3}
   volume: 7
+  respawnTarget: {fileID: 3733933972958445539}
+  respawnLocation: {x: 0, y: 0, z: 0}
 --- !u!143 &-645598042771048811
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1218,8 +1217,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.0638494, y: 6.243964, z: 4.005778}
-  m_Center: {x: 0.18188906, y: 4.304602, z: 0.097480536}
+  m_Size: {x: 4.0638494, y: 6.624608, z: 4.005778}
+  m_Center: {x: 0.18188906, y: 4.11428, z: 0.097480536}
 --- !u!1 &4311952816484685647
 GameObject:
   m_ObjectHideFlags: 0

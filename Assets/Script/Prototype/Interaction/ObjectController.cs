@@ -68,6 +68,7 @@ public class ObjectController : PlayerController
             Instantiate(smoke, obj.transform.position, obj.transform.rotation);
             Player.ControlObject(this, false, Player);
             Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
+            StopPlayFootstepSound();
         }
     }
 
