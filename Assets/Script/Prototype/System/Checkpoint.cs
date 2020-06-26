@@ -15,7 +15,6 @@ public class Checkpoint : MonoBehaviour
     void Update()
     {
         player = FindObjectOfType<PlayerManager>();
-        Debug.Log(player.respawnLocation);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,7 +22,6 @@ public class Checkpoint : MonoBehaviour
         if (other.gameObject.name == "Player(Clone)")
         {
             player.CheckPoint(transform.position);
-            Debug.Log(player.respawnLocation);
         }
     }
 }
