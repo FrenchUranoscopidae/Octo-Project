@@ -31,8 +31,8 @@ public class PlayerManager : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
                 Instantiate(smoke, obj.transform.position, obj.transform.rotation);
-                controller.ControlObject(obj, true, controller);
                 Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
+                controller.ControlObject(obj, true, controller);
             }
         }
         else if (col.CompareTag("ControllableLightweight"))
@@ -42,8 +42,8 @@ public class PlayerManager : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
                 Instantiate(smoke, obj.transform.position, obj.transform.rotation);
-                controller.ControlObject(obj, true, controller);
                 Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
+                controller.ControlObject(obj, true, controller);
             }
         }
         else
