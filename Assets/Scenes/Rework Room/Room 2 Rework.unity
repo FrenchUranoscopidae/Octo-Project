@@ -176,7 +176,7 @@ Transform:
   - {fileID: 7518991860884966224}
   - {fileID: 567301093}
   m_Father: {fileID: 1725889517}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3626185
 PrefabInstance:
@@ -8466,7 +8466,7 @@ Transform:
   - {fileID: 1835421413}
   - {fileID: 1979861541}
   m_Father: {fileID: 1725889517}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &433651043
 PrefabInstance:
@@ -14909,7 +14909,7 @@ Transform:
   - {fileID: 1814589850}
   - {fileID: 25069319}
   m_Father: {fileID: 1725889517}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &687076653
 PrefabInstance:
@@ -19506,7 +19506,7 @@ Transform:
   - {fileID: 5006512735897596166}
   - {fileID: 66362873}
   m_Father: {fileID: 1725889517}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927580126
 PrefabInstance:
@@ -24692,6 +24692,11 @@ PrefabInstance:
       propertyPath: colorSwapTuto
       value: 
       objectReference: {fileID: 833708473}
+    - target: {fileID: 2153119748284905330, guid: 3100c1243388b664bbad29d80a3716a4,
+        type: 3}
+      propertyPath: b_dialogueAllowed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2153119748284905328, guid: 3100c1243388b664bbad29d80a3716a4,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
@@ -25326,96 +25331,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1159630910}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1163919555
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1725889517}
-    m_Modifications:
-    - target: {fileID: 7760704134071303628, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_Name
-      value: DialogueTrigger_BeginningBox (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303628, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303628, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -235.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -15.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303626, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: dialogue.name
-      value: Scientifique
-      objectReference: {fileID: 0}
-    - target: {fileID: 7760704134071303626, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: "Ah, et n'esp\xE8res prendre un objet d'une salle \xE0 une autre, filou
-        ! Mon champ magn\xE9tique t'en emp\xEAchera"
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 10e2c4dd33a72694d9666d4f6d90c248, type: 3}
 --- !u!1 &1165197883
 GameObject:
   m_ObjectHideFlags: 0
@@ -26229,7 +26144,7 @@ Transform:
   - {fileID: 1268528473}
   - {fileID: 425677367}
   m_Father: {fileID: 1725889517}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1201239756
 GameObject:
@@ -27024,12 +26939,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1261575915}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1228650666 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7760704134071303627, guid: 10e2c4dd33a72694d9666d4f6d90c248,
-    type: 3}
-  m_PrefabInstance: {fileID: 1163919555}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1233772951
 GameObject:
   m_ObjectHideFlags: 0
@@ -27721,6 +27630,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7479412050200343237, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3748980670304175561, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27735,11 +27649,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7479412050200343237, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_CastShadows
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -29781,21 +29690,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3748980670304175561, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4395255590806489879, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7986190404296194425, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
       propertyPath: m_Size.x
       value: 3.356147
@@ -29815,6 +29709,21 @@ PrefabInstance:
     - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
       propertyPath: m_Center.z
       value: 0.0155108
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748980670304175561, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395255590806489879, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986190404296194425, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -33920,7 +33829,7 @@ PrefabInstance:
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -173.5
+      value: -150.5
       objectReference: {fileID: 0}
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
@@ -33930,7 +33839,7 @@ PrefabInstance:
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
@@ -33940,7 +33849,7 @@ PrefabInstance:
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
@@ -33950,7 +33859,7 @@ PrefabInstance:
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
@@ -33965,7 +33874,7 @@ PrefabInstance:
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8773930576018879093, guid: a6de9adfe34ba824fbc90be567797c20,
         type: 3}
@@ -37108,7 +37017,6 @@ Transform:
   - {fileID: 1485882428}
   - {fileID: 316847082}
   - {fileID: 1065731948}
-  - {fileID: 1228650666}
   - {fileID: 1922044049}
   - {fileID: 427760096}
   - {fileID: 1200025371}
@@ -42230,7 +42138,7 @@ PrefabInstance:
     - target: {fileID: 835106427938933278, guid: b339a29de65fee64f89b2091f833f3cf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 835106427938933278, guid: b339a29de65fee64f89b2091f833f3cf,
         type: 3}
@@ -42251,6 +42159,15 @@ PrefabInstance:
         type: 3}
       propertyPath: b_dialogueAllowed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Ah, et n'esp\xE8re pas prendre un objet d'une salle \xE0 une autre,
+        filou ! Mon champ magn\xE9tique t'en emp\xEAchera."
       objectReference: {fileID: 0}
     - target: {fileID: 835106427938933276, guid: b339a29de65fee64f89b2091f833f3cf,
         type: 3}
@@ -42281,15 +42198,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: "Ah, et n'esp\xE8re pas prendre un objet d'une salle \xE0 une autre,
-        filou ! Mon champ magn\xE9tique t'en emp\xEAchera."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
@@ -46989,6 +46897,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 1919651770}
+    - target: {fileID: 8688886230047595088, guid: df369f7a7e04347408ab8313b4d4ec15,
+        type: 3}
+      propertyPath: b_dialogueAllowed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2612480076557170411, guid: df369f7a7e04347408ab8313b4d4ec15,
         type: 3}
       propertyPath: m_CastShadows

@@ -8,6 +8,7 @@ public class ColorChanger : MonoBehaviour
 
     //Introductions DialogueTriggering
     public bool b_dialogueHappenned = false;
+    public bool b_dialogueAllowed = false;
     public DialogueTrigger dialogueTrigger;
 
     public AudioClip colorSwapSound;
@@ -38,7 +39,7 @@ public class ColorChanger : MonoBehaviour
         Thunder2.Play();
 
         //DialogueTriggering
-        if (!b_dialogueHappenned)
+        if (!b_dialogueHappenned & b_dialogueAllowed)
         {
             ThisObjectDialogueTrigger();
         }

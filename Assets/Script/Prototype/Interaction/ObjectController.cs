@@ -10,6 +10,7 @@ public class ObjectController : PlayerController
 
     //Introductions DialogueTriggering
     public bool b_dialogueHappenned = false;
+    public bool b_dialogueAllowed = false;
     public DialogueTrigger dialogueTrigger;
 
     //Animation props
@@ -45,7 +46,7 @@ public class ObjectController : PlayerController
         ObjectController obj = this.GetComponent<ObjectController>();
 
         //DialogueTriggering
-        if (!b_dialogueHappenned)
+        if (!b_dialogueHappenned & b_dialogueAllowed)
         {
             ThisObjectDialogueTrigger();
         }

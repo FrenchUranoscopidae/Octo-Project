@@ -81173,6 +81173,27 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 3682414183227759484, guid: 70aa88826d6b3c749819ebb744d7bb62,
+        type: 3}
+      propertyPath: b_dialogueAllowed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 193218704674175350, guid: 70aa88826d6b3c749819ebb744d7bb62,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 193218704674175350, guid: 70aa88826d6b3c749819ebb744d7bb62,
+        type: 3}
+      propertyPath: dialogue.name
+      value: Scientifique
+      objectReference: {fileID: 0}
+    - target: {fileID: 193218704674175350, guid: 70aa88826d6b3c749819ebb744d7bb62,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Puisque tu as pu contr\xF4ler un petit vaisseau spatial, tu pourras
+        certainement contr\xF4ler un lit ! \u2026 Rien de plus logique !"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70aa88826d6b3c749819ebb744d7bb62, type: 3}
 --- !u!143 &6425205554370886136 stripped
