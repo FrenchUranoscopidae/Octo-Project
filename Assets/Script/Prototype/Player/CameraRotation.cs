@@ -30,7 +30,7 @@ public class CameraRotation : MonoBehaviour
                 Vector3 dir = controller.position - securityCamera.transform.position;
                 Quaternion lookRotation = Quaternion.LookRotation(dir);
                 Vector3 rotation = Quaternion.Lerp(securityCamera.rotation, lookRotation, Time.deltaTime * rotationSpeed).eulerAngles;
-                securityCamera.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+                securityCamera.rotation = Quaternion.Euler(rotation.x, rotation.y, 0f);
             }
         }
     }
