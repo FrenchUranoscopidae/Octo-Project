@@ -30,9 +30,9 @@ public class PlayerController : MonoBehaviour
         if (isControlled)       
         {
             // Get the horizontal axis value and scale it by time and speed (used for player rotation)
-            float horizontal = Input.GetAxisRaw("Horizontal")   ;
+            float horizontal = Input.GetAxisRaw("Vertical")   ;
             // Get the vertical axis value and scale it by time and speed (used for player translation)
-            float vertical = Input.GetAxisRaw("Vertical");
+            float vertical = Input.GetAxisRaw("Horizontal");
 
             //Apply Movement
             Vector3 direction = new Vector3(vertical, 0f, horizontal).normalized;
