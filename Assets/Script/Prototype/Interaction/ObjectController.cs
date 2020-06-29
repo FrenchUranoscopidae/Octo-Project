@@ -88,7 +88,7 @@ public class ObjectController : PlayerController
         {
             ObjectController obj = this.GetComponent<ObjectController>();
 
-            if (Input.GetKeyDown(KeyCode.A) && isControlled)
+            if (Input.GetKey(KeyCode.A) && isControlled)
             {
                 ColorChanger changer = other.GetComponent<ColorChanger>();
                 changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
