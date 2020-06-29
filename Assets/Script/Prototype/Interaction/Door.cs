@@ -47,14 +47,17 @@ public class Door : MonoBehaviour
     public void OpenDoor()
     {   
         doorIsOpen = true;
-        diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
-        diodeLightColor.color = Color.green;
 
         if (!alreadyPlayed)
         {
             AudioSource.PlayClipAtPoint(doorSound, transform.position);
             alreadyPlayed = true;
         }
+
+        diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+        diodeLightColor.color = Color.green;
+
+       
     }
 
     public void CloseDoor()

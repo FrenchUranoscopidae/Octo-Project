@@ -381,6 +381,7 @@ MonoBehaviour:
     currentColor: 5
   smoke: {fileID: 382208630272409109, guid: 863dde0f4db81ac4bb21c3b90775fa87, type: 3}
   b_dialogueHappenned: 0
+  b_dialogueAllowed: 0
   dialogueTrigger: {fileID: 193218704674175350}
   animator: {fileID: 3498120599319525062}
   Pos: {fileID: 8300000, guid: 8740a00c383c05c4fab94abd3a7b72f3, type: 3}
@@ -532,7 +533,7 @@ CharacterController:
   m_Height: 1.599513
   m_Radius: 4
   m_SlopeLimit: 45
-  m_StepOffset: 1.5
+  m_StepOffset: 1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 15.81, z: 0}
