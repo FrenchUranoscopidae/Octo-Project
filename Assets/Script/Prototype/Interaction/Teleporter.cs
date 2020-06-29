@@ -7,6 +7,7 @@ public class Teleporter : MonoBehaviour
 {
 	public int y = SceneManager.GetActiveScene().buildIndex;
 	public AudioClip teleporterSound;
+	public Animator transition;
 	public GameObject teleporterVisualEffect;
 	public bool alreadyPlayed = false;
 	public Transform vfxSpawnPoint;
@@ -29,6 +30,7 @@ public class Teleporter : MonoBehaviour
 
 	IEnumerator Teleport()
 	{
+		transition.SetTrigger("Start");
 		yield return new WaitForSeconds(2f);
 		SceneManager.LoadScene(y);
 	}
