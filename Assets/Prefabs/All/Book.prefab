@@ -109,6 +109,10 @@ MonoBehaviour:
     alienMaterial: {fileID: 0}
     currentColor: 4
   smoke: {fileID: 382208630272409109, guid: 863dde0f4db81ac4bb21c3b90775fa87, type: 3}
+  yellowSmoke: {fileID: 382208630272409109, guid: 682d139c6d61e9045bb3955c8d71260e,
+    type: 3}
+  magentaSmoke: {fileID: 382208630272409109, guid: 28752e58c9a82004fae1bedeefacc743,
+    type: 3}
   b_dialogueHappenned: 0
   b_dialogueAllowed: 0
   dialogueTrigger: {fileID: 2143537619542159376}

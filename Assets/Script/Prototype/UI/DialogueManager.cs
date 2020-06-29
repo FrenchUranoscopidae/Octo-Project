@@ -32,7 +32,7 @@ public class DialogueManager : MonoBehaviour
             nextSentenceTimer -= Time.deltaTime;
         }
 
-        if(Input.GetKeyDown(KeyCode.A) || Input.GetButton("Button A"))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             DisplayNextSentence();
             nextSentenceTimer = nextSentenceTimerReset;

@@ -93,10 +93,6 @@ public class ColorManager
 
     public void SwapObjectColors(ColorManager obj)
     {
-        /*ObjectColor temp = obj1.GetCurrentColor();
-        obj1.SetCurrentColor(obj2.GetCurrentColor());
-        obj2.SetCurrentColor(temp);*/
-        
         if(obj.currentColor == ObjectColor.YELLOW)
         {
             obj.SetCurrentColor(ObjectColor.MAGENTA);

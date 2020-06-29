@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
     public ColorManager colorMgr;
     public PlayerController controller;
     public GameObject smoke;
+    public GameObject yellowSmoke;
+    public GameObject magentaSmoke;
 
     [Header("Texture")]
     public Texture alienYellowTexture;
@@ -63,10 +64,21 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.CompareTag("ColorSwap"))
         {
-            if(Input.GetKey(KeyCode.Space) && controller.isControlled || Input.GetButton("Button A") && controller.isControlled)
+            if (Input.GetKeyDown(KeyCode.A) && controller.isControlled)
             {
                 ColorChanger changer = other.GetComponent<ColorChanger>();
                 changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
+
+                if (colorMgr.GetCurrentColor() == ObjectColor.YELLOW)
+                {
+                    Instantiate(yellowSmoke, controller.transform.position, controller.transform.rotation);
+                    Destroy(GameObject.Find("Rework Yellow Smoke(Clone)"), 2f);
+                }
+                else if (colorMgr.GetCurrentColor() == ObjectColor.MAGENTA)
+                {
+                    Instantiate(magentaSmoke, controller.transform.position, controller.transform.rotation);
+                    Destroy(GameObject.Find("Rework Magenta Smoke(Clone)"), 2f);
+                }      
             }      
         }
     }

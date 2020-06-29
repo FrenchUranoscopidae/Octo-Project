@@ -7,6 +7,8 @@ public class ObjectController : PlayerController
     public Transform PlayerLeavePoint { get; private set; }
     public PlayerController Player { get; set; }
     public GameObject smoke;
+    public GameObject yellowSmoke;
+    public GameObject magentaSmoke;
 
     //Introductions DialogueTriggering
     public bool b_dialogueHappenned = false;
@@ -55,7 +57,7 @@ public class ObjectController : PlayerController
         deposTuto.SetActive(true);
         hasActivated = true;
 
-        if (Input.GetKey(KeyCode.E) || Input.GetButton("Button B"))
+        if (Input.GetKey(KeyCode.E))
         {
             AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
 
@@ -84,11 +86,24 @@ public class ObjectController : PlayerController
     {
         if (other.CompareTag("ColorSwap"))
         {
-            if(Input.GetKey(KeyCode.Space) && isControlled || Input.GetButton("Button A") && isControlled)
+            ObjectController obj = this.GetComponent<ObjectController>();
+
+            if (Input.GetKeyDown(KeyCode.A) && isControlled)
             {
                 ColorChanger changer = other.GetComponent<ColorChanger>();
                 changer?.SwapColors(colorMgr); // Check if the changer exists and swap colors
                 Player.GetComponent<PlayerManager>().colorMgr.SetCurrentColor(colorMgr.GetCurrentColor()); // Update the player color
+
+                if (colorMgr.GetCurrentColor() == ObjectColor.YELLOW)
+                {
+                    Instantiate(yellowSmoke, obj.transform.position, obj.transform.rotation);
+                    Destroy(GameObject.Find("Rework Yellow Smoke(Clone)"), 2f);
+                }
+                else if (colorMgr.GetCurrentColor() == ObjectColor.MAGENTA)
+                {
+                    Instantiate(magentaSmoke, obj.transform.position, obj.transform.rotation);
+                    Destroy(GameObject.Find("Rework Magenta Smoke(Clone)"), 2f);
+                }
             } 
         }
         else
