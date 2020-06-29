@@ -8109,13 +8109,24 @@ PrefabInstance:
     - target: {fileID: 8452433773092156761, guid: dc7bd94b54c67c045bb592fa5221c7b2,
         type: 3}
       propertyPath: displayPlateCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8452433773092156761, guid: dc7bd94b54c67c045bb592fa5221c7b2,
         type: 3}
       propertyPath: PlateCountUI
       value: 
       objectReference: {fileID: 461131942}
+    - target: {fileID: 8452433773092156761, guid: dc7bd94b54c67c045bb592fa5221c7b2,
+        type: 3}
+      propertyPath: PressurePlateManager
+      value: 
+      objectReference: {fileID: 2083002479306180005, guid: 4931cb2e8486e7242af52d3827815760,
+        type: 3}
+    - target: {fileID: 8452433773092156761, guid: dc7bd94b54c67c045bb592fa5221c7b2,
+        type: 3}
+      propertyPath: PlateCountTxt
+      value: 
+      objectReference: {fileID: 461131944}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc7bd94b54c67c045bb592fa5221c7b2, type: 3}
 --- !u!4 &400434286 stripped
@@ -9396,6 +9407,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 69579440945468365}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &461131944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6782231030283172028, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+    type: 3}
+  m_PrefabInstance: {fileID: 69579440945468365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461131942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &463097409
 GameObject:
   m_ObjectHideFlags: 0
@@ -10888,6 +10911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162901908709848547, guid: af33471ae548b964a860d7ec4fc3aa00,
+        type: 3}
+      propertyPath: range
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af33471ae548b964a860d7ec4fc3aa00, type: 3}
@@ -37592,6 +37620,7 @@ MonoBehaviour:
   - {fileID: 1049348704}
   - {fileID: 1485320469}
   door: {fileID: 900788531}
+  PlateCountNumber: 0
 --- !u!114 &1733744080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37608,6 +37637,7 @@ MonoBehaviour:
   - {fileID: 799923677}
   - {fileID: 725146068}
   door: {fileID: 1734481843}
+  PlateCountNumber: 0
 --- !u!114 &1733744081
 MonoBehaviour:
   m_ObjectHideFlags: 0

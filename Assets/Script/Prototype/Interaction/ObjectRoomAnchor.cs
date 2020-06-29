@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectRoomAnchor : MonoBehaviour
 {
     public BoxCollider anchorCollider;
 
     [Header("PlateCount")]
-    public bool displayPlateCount = false;
     public GameObject PlateCountUI;
+    //public bool displayPlateCount = false;
+
+    public int PlateCount;
+    public Text PlateCountTxt;
 
     void Start()
     {
@@ -17,23 +21,22 @@ public class ObjectRoomAnchor : MonoBehaviour
 
     void Update()
     {
-        
+        //PlateCountTxt.text = PlateCount.ToString();
     }
 
     private void OnTriggerEnter(Collider col)
     {
         if(col.tag == "Player")
         {
-            if (displayPlateCount)
+            /*if (displayPlateCount)
             {
                 PlateCountUI.SetActive(true);
-                Debug.Log("PlateCountDisplay");
             }
 
             if(!displayPlateCount)
             {
                 PlateCountUI.SetActive(false);
-            }
+            }*/
         }
     }
 

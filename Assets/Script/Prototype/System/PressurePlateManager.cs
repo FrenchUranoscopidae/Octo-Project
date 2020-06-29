@@ -5,6 +5,7 @@ public class PressurePlateManager : MonoBehaviour
 {
     public List<PressurePlateController> plates;
     public Door door;
+    public int PlateCountNumber;
 
     void Start()
     {
@@ -12,6 +13,11 @@ public class PressurePlateManager : MonoBehaviour
         {
             p.OnPressurePlateActivated += CheckPressurePlate;
         }
+    }
+
+    void Update()
+    {
+        PlateCountNumber = plates.Count;
     }
 
     void CheckPressurePlate()
