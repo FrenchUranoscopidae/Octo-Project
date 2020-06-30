@@ -388,12 +388,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2.267844
-  m_Radius: 1.27
+  m_Radius: 3
   m_SlopeLimit: 45
   m_StepOffset: 1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -1.71, z: 0}
 --- !u!1 &9213271212175815608
 GameObject:
   m_ObjectHideFlags: 0
