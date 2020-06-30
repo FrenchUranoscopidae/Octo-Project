@@ -39,6 +39,8 @@ public class PlayerManager : MonoBehaviour
 
         canPos = true;
         canDepos = false;
+
+        posTuto = GameObject.Find("Canvas UI Text Scientist/Pos_Tuto");
     }
 
     private void OnTriggerEnter(Collider col)

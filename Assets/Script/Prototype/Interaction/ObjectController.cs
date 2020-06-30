@@ -26,13 +26,17 @@ public class ObjectController : PlayerController
 
     [Header("Tuto Depos")]
     public GameObject deposTuto;
-    public bool hasActivated = false;
+    public bool hasActivatedDepos = false;
+
+    [Header("Tuto Pos")]
+    public GameObject posTuto;
+    public bool hasActivatedPos = false;
 
     // override the player controller start method
     protected override void Start()
     {
         //Tuto Depos
-        hasActivated = false;
+        hasActivatedDepos = false;
 
         base.Start(); // Call the player controller start
         colorMgr.Initialize(GetComponent<SkinnedMeshRenderer>());
@@ -56,7 +60,8 @@ public class ObjectController : PlayerController
 
         //Tuto Depos
         deposTuto.SetActive(true);
-        hasActivated = true;
+        posTuto.SetActive(false);
+        hasActivatedDepos = true;
 
         if (Input.GetKey(KeyCode.E) && isControlled && player.canDepos && !player.canPos)
         {
@@ -66,7 +71,7 @@ public class ObjectController : PlayerController
             AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
 
             //Tuto Depos
-            if (hasActivated)
+            if (hasActivatedDepos)
             {
                 deposTuto.SetActive(false);
             }
@@ -89,6 +94,14 @@ public class ObjectController : PlayerController
         dialogueTrigger.TriggerDialogue();
         b_dialogueHappenned = true;
         Debug.Log(b_dialogueHappenned);
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag==("Player"))
+        {
+            posTuto.SetActive(true);
+        }
     }
 
     void OnTriggerStay(Collider other)
@@ -118,6 +131,14 @@ public class ObjectController : PlayerController
         else
         {
             return;
+        }
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.tag == ("Player"))
+        {
+            posTuto.SetActive(false);
         }
     }
 }

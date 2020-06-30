@@ -1160,7 +1160,7 @@ MonoBehaviour:
   volume: 7
   respawnTarget: {fileID: 3733933972958445539}
   respawnLocation: {x: 0, y: 0, z: 0}
-  posTuto: {fileID: 5192119166790902665, guid: ab961314a5c633346bd8eb0cf40e246c, type: 3}
+  posTuto: {fileID: 0}
   hasActivated: 0
 --- !u!143 &-645598042771048811
 CharacterController:
