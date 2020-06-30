@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 
-// Extends the player controller class to be controllable
 public class ObjectController : PlayerController
 {
     public ColorManager colorMgr;
     public Transform PlayerLeavePoint { get; private set; }
     public PlayerController Player { get; set; }
+
     public GameObject smoke;
     public GameObject yellowSmoke;
     public GameObject magentaSmoke;
+    public PlayerManager player;
 
     //Introductions DialogueTriggering
     public bool b_dialogueHappenned = false;
@@ -45,7 +46,7 @@ public class ObjectController : PlayerController
         if (!isControlled) return;
         base.Update();
 
-        ObjectController obj = this.GetComponent<ObjectController>();
+        ObjectController obj = GetComponent<ObjectController>();
 
         //DialogueTriggering
         if (!b_dialogueHappenned & b_dialogueAllowed)
@@ -57,8 +58,11 @@ public class ObjectController : PlayerController
         deposTuto.SetActive(true);
         hasActivated = true;
 
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E) && isControlled && player.canDepos && !player.canPos)
         {
+            player.canPos = true;
+            player.canDepos = false;
+
             AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
 
             //Tuto Depos
@@ -72,6 +76,11 @@ public class ObjectController : PlayerController
             Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
             StopPlayFootstepSound();
         }
+    }
+
+    public void LateUpdate()
+    {
+        player = FindObjectOfType<PlayerManager>();
     }
 
     //Function to trigger the dialogue of this object only once
@@ -104,7 +113,7 @@ public class ObjectController : PlayerController
                     Instantiate(magentaSmoke, obj.transform.position, obj.transform.rotation);
                     Destroy(GameObject.Find("Rework Magenta Smoke(Clone)"), 2f);
                 }
-            } 
+            }
         }
         else
         {

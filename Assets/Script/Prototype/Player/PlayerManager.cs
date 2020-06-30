@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    public bool canPos;
+    public bool canDepos;
     public ColorManager colorMgr;
     public PlayerController controller;
     public GameObject smoke;
@@ -26,38 +29,9 @@ public class PlayerManager : MonoBehaviour
         colorMgr.Initialize(GetComponent<SkinnedMeshRenderer>());
         colorMgr.InitializeObjectRenderer(GetComponent<MeshRenderer>());
         controller = GetComponent<PlayerController>();
-    }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        Collider col = collision.collider;
-        if (col.CompareTag("ControllableHeavy"))
-        {
-            ObjectController obj = col.GetComponent<ObjectController>();
-            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
-            {
-                AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
-                Instantiate(smoke, obj.transform.position, obj.transform.rotation);
-                Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
-                Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);        
-                controller.ControlObject(obj, true, controller);
-            }
-        }
-        else if (col.CompareTag("ControllableLightweight"))
-        {
-            ObjectController obj = col.GetComponent<ObjectController>();
-            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
-            {
-                AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
-                Instantiate(smoke, obj.transform.position, obj.transform.rotation);
-                Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
-                controller.ControlObject(obj, true, controller);
-            }
-        }
-        else
-        {
-            return;
-        }
+        canPos = true;
+        canDepos = false;
     }
 
     private void OnTriggerStay(Collider other)
@@ -81,6 +55,49 @@ public class PlayerManager : MonoBehaviour
                 }      
             }      
         }
+
+        if(Input.GetKey(KeyCode.E) && controller.isControlled && canPos && !canDepos)
+        {
+            if (other.CompareTag("ControllableHeavy"))
+            {
+                StartCoroutine("PosObject");
+
+                ObjectController obj = other.GetComponent<ObjectController>();
+
+                if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
+                {
+                    AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
+                    Instantiate(smoke, obj.transform.position, obj.transform.rotation);
+                    Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
+                    controller.ControlObject(obj, true, controller);
+                }
+            }
+            else if (other.CompareTag("ControllableLightweight"))
+            {
+                StartCoroutine("PosObject");
+
+                ObjectController obj = other.GetComponent<ObjectController>();
+
+                if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
+                {
+                    AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
+                    Instantiate(smoke, obj.transform.position, obj.transform.rotation);
+                    Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
+                    controller.ControlObject(obj, true, controller);
+                }
+            }
+            else
+            {
+                return;
+            }
+        }        
+    }
+
+    IEnumerator PosObject()
+    {
+        yield return new WaitForSeconds(2);
+        canPos = false;
+        canDepos = true;
     }
 
     public void CheckPoint(Vector3 newLocation)

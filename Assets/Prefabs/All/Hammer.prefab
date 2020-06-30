@@ -102,7 +102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6695790476753640511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2000, y: 0, z: 0}
+  m_LocalPosition: {x: -2500, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3720382752997579547}
@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 8688886230047595092}
   - component: {fileID: 8688886230047595095}
   - component: {fileID: 5713454546704217629}
+  - component: {fileID: 3142936573423291470}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: ControllableHeavy
@@ -221,6 +222,7 @@ MonoBehaviour:
     type: 3}
   magentaSmoke: {fileID: 382208630272409109, guid: 28752e58c9a82004fae1bedeefacc743,
     type: 3}
+  player: {fileID: 4118269485489092446, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
   b_dialogueHappenned: 0
   b_dialogueAllowed: 0
   dialogueTrigger: {fileID: 8688886230047595093}
@@ -410,3 +412,16 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: -240}
+--- !u!65 &3142936573423291470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8688886230047595094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1594.6252, y: 999.99976, z: 5518.568}
+  m_Center: {x: -9.287245, y: 0, z: -1631.9438}
