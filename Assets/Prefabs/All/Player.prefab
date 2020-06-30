@@ -1142,6 +1142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 031f9e46d1987fb4d817077332da7e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPos: 0
+  canDepos: 0
   colorMgr:
     alienMaterial: {fileID: 4118269485489092446}
     currentColor: 4
@@ -1151,12 +1153,15 @@ MonoBehaviour:
     type: 3}
   magentaSmoke: {fileID: 382208630272409109, guid: 28752e58c9a82004fae1bedeefacc743,
     type: 3}
+  delayPos: 0.4
   alienYellowTexture: {fileID: 2800000, guid: 572525c189148f546bf67c6e4a95a0f6, type: 3}
   alienMagentaTexture: {fileID: 2800000, guid: 043a2a19fa0053d40ac76c8abcccb3e1, type: 3}
   Pos: {fileID: 8300000, guid: 8740a00c383c05c4fab94abd3a7b72f3, type: 3}
   volume: 7
   respawnTarget: {fileID: 3733933972958445539}
   respawnLocation: {x: 0, y: 0, z: 0}
+  posTuto: {fileID: 5192119166790902665, guid: ab961314a5c633346bd8eb0cf40e246c, type: 3}
+  hasActivated: 0
 --- !u!143 &-645598042771048811
 CharacterController:
   m_ObjectHideFlags: 0

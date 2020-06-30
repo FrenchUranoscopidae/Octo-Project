@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    [Header("Pos/Depos")]
     public bool canPos;
     public bool canDepos;
     public ColorManager colorMgr;
@@ -10,6 +11,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject smoke;
     public GameObject yellowSmoke;
     public GameObject magentaSmoke;
+    public float delayPos;
 
     [Header("Texture")]
     public Texture alienYellowTexture;
@@ -23,6 +25,11 @@ public class PlayerManager : MonoBehaviour
     public Transform respawnTarget;
     public Vector3 respawnLocation;
 
+    [Header("Tuto Pos")]
+    public GameObject posTuto;
+    public bool hasActivated = false;
+    //fghjk
+
     void Start()
     {
         // Initialize the color manager with the mesh renderer
@@ -32,6 +39,15 @@ public class PlayerManager : MonoBehaviour
 
         canPos = true;
         canDepos = false;
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.tag==("ControllableHeavy"))
+        {
+            posTuto.SetActive(true);
+            Debug.Log("PosTuto");
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -95,7 +111,7 @@ public class PlayerManager : MonoBehaviour
 
     IEnumerator PosObject()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(delayPos);
         canPos = false;
         canDepos = true;
     }
