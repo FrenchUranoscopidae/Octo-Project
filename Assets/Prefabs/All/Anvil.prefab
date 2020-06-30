@@ -82,6 +82,7 @@ MonoBehaviour:
   volume: 7
   deposTuto: {fileID: 0}
   hasActivatedDepos: 0
+  delayDepos: 0.4
   posTuto: {fileID: 0}
   hasActivatedPos: 0
 --- !u!65 &6686990274290239164
@@ -92,11 +93,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2345571632483102992}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.3586254, y: 0.6186886, z: 1.8702997}
-  m_Center: {x: 0.8342011, y: 0.3093443, z: 2.3561407e-15}
+  m_Size: {x: 5.560209, y: 0.6186886, z: 2.9906948}
+  m_Center: {x: 0.7854886, y: 0.3093443, z: 0.008118629}
 --- !u!114 &2977318994611680565
 MonoBehaviour:
   m_ObjectHideFlags: 0

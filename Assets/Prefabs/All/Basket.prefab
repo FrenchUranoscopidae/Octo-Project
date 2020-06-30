@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8788638377918839578}
   - component: {fileID: 1209589721395012605}
   - component: {fileID: 8816966583896122814}
+  - component: {fileID: 4323007355692174055}
   m_Layer: 0
   m_Name: Basket
   m_TagString: ControllableLightweight
@@ -31,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3421158365092316961}
   m_LocalRotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -97.5, y: 2, z: -322.5}
+  m_LocalPosition: {x: -95, y: 2, z: -322.5}
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children:
   - {fileID: 3285731645987526818}
@@ -267,8 +268,22 @@ MonoBehaviour:
   volume: 7
   deposTuto: {fileID: 0}
   hasActivatedDepos: 0
+  delayDepos: 0.4
   posTuto: {fileID: 0}
   hasActivatedPos: 0
+--- !u!65 &4323007355692174055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421158365092316961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.022215, y: 2.444055, z: 4.2427506}
+  m_Center: {x: -0.016140342, y: -0.018482607, z: 0.023540735}
 --- !u!1 &6040348134835788260
 GameObject:
   m_ObjectHideFlags: 0

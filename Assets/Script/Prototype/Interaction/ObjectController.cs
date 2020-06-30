@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class ObjectController : PlayerController
 {
@@ -27,6 +28,7 @@ public class ObjectController : PlayerController
     [Header("Tuto Depos")]
     public GameObject deposTuto;
     public bool hasActivatedDepos = false;
+    public float delayDepos;
 
     [Header("Tuto Pos")]
     public GameObject posTuto;
@@ -65,8 +67,7 @@ public class ObjectController : PlayerController
 
         if (Input.GetKey(KeyCode.E) && isControlled && player.canDepos && !player.canPos)
         {
-            player.canPos = true;
-            player.canDepos = false;
+            StartCoroutine("DeposObject");
 
             AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
 
@@ -132,6 +133,13 @@ public class ObjectController : PlayerController
         {
             return;
         }
+    }
+
+    IEnumerator DeposObject()
+    {
+        yield return new WaitForSeconds(delayDepos);
+        player.canPos = true;
+        player.canDepos = false;
     }
 
     void OnTriggerExit(Collider col)

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 227077109729363961}
   - component: {fileID: 3429392672349563119}
   - component: {fileID: 1953274374568761238}
+  - component: {fileID: 1160574728539539687}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: ControllableLightweight
@@ -82,6 +83,7 @@ MonoBehaviour:
   volume: 7
   deposTuto: {fileID: 0}
   hasActivatedDepos: 0
+  delayDepos: 0.4
   posTuto: {fileID: 0}
   hasActivatedPos: 0
 --- !u!114 &-41616503615132006
@@ -270,6 +272,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: -0.61, z: 0}
+--- !u!65 &1160574728539539687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57384269555118301}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 38.1621, y: 24.40499, z: 45.288265}
+  m_Center: {x: -0.5938389, y: 2.2713351, z: 0.98973966}
 --- !u!1 &5810350894285175496
 GameObject:
   m_ObjectHideFlags: 0

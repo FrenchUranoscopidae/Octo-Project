@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2143537619542159376}
   - component: {fileID: 1593771493410366725}
   - component: {fileID: 4829958994949186013}
+  - component: {fileID: 4072974551895075426}
   m_Layer: 0
   m_Name: Book
   m_TagString: ControllableLightweight
@@ -121,6 +122,7 @@ MonoBehaviour:
   volume: 7
   deposTuto: {fileID: 0}
   hasActivatedDepos: 0
+  delayDepos: 0.4
   posTuto: {fileID: 0}
   hasActivatedPos: 0
 --- !u!143 &7581771482869903189
@@ -271,6 +273,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &4072974551895075426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6320694875305946998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 47555.273, y: 11610.105, z: 50464.75}
+  m_Center: {x: 683.23865, y: -2250.004, z: -1145.4441}
 --- !u!1 &8789845393554430121
 GameObject:
   m_ObjectHideFlags: 0

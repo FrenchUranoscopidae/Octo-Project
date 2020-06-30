@@ -30,7 +30,7 @@ public class Teleporter : MonoBehaviour
 
 	IEnumerator Teleport()
 	{
-		transition.SetTrigger("Start");
+		transition.SetTrigger("Start");	
 		yield return new WaitForSeconds(2f);
 		SceneManager.LoadScene(y);
 	}

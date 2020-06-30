@@ -601,11 +601,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5452955723388293300}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 240.00008, y: 342.89236, z: 469.75696}
-  m_Center: {x: -130.00005, y: 21.446276, z: 50.12158}
+  m_Size: {x: 421.0405, y: 342.89236, z: 636.5688}
+  m_Center: {x: -136.64156, y: 21.446276, z: 51.84434}
 --- !u!114 &5253856636283239607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,6 +641,7 @@ MonoBehaviour:
   volume: 7
   deposTuto: {fileID: 0}
   hasActivatedDepos: 0
+  delayDepos: 0.4
   posTuto: {fileID: 0}
   hasActivatedPos: 0
 --- !u!114 &-3395515904085974699
@@ -790,7 +791,7 @@ CharacterController:
   m_StepOffset: 1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 80, z: 55}
+  m_Center: {x: -130, y: 80, z: 55}
 --- !u!1 &6796438721734508775
 GameObject:
   m_ObjectHideFlags: 0
