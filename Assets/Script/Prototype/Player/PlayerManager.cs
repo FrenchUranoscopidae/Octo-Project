@@ -58,41 +58,43 @@ public class PlayerManager : MonoBehaviour
             }      
         }
 
-        if(Input.GetKey(KeyCode.E) && controller.isControlled && canPos && !canDepos)
+        
+        if (other.CompareTag("ControllableHeavy"))
         {
-            if (other.CompareTag("ControllableHeavy"))
+            ObjectController obj = other.GetComponent<ObjectController>();
+
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
             {
-                StartCoroutine("PosObject");
-
-                ObjectController obj = other.GetComponent<ObjectController>();
-
-                if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
+                if (Input.GetKey(KeyCode.E) && controller.isControlled && canPos && !canDepos)
                 {
+                    StartCoroutine("PosObject");
                     AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
                     Instantiate(smoke, obj.transform.position, obj.transform.rotation);
                     Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
                     controller.ControlObject(obj, true, controller);
-                }
+                }          
             }
-            else if (other.CompareTag("ControllableLightweight"))
+        }
+        else if (other.CompareTag("ControllableLightweight"))
+        {
+            ObjectController obj = other.GetComponent<ObjectController>();
+
+            if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
             {
-                StartCoroutine("PosObject");
-
-                ObjectController obj = other.GetComponent<ObjectController>();
-
-                if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()) // If the player has the same color than the object
+                if (Input.GetKey(KeyCode.E) && controller.isControlled && canPos && !canDepos)
                 {
+                    StartCoroutine("PosObject");
                     AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
                     Instantiate(smoke, obj.transform.position, obj.transform.rotation);
                     Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
                     controller.ControlObject(obj, true, controller);
-                }
+                }                    
             }
-            else
-            {
-                return;
-            }
-        }        
+        }
+        else
+        {
+            return;
+        }
     }
 
     IEnumerator PosObject()

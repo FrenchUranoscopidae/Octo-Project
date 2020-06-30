@@ -99,7 +99,7 @@ public class ObjectController : PlayerController
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag==("Player"))
+        if (col.gameObject.tag==("Player") && player.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
         {
             posTuto.SetActive(true);
         }
