@@ -277,7 +277,6 @@ GameObject:
   - component: {fileID: 6824696670056838844}
   - component: {fileID: 9016817749962784079}
   - component: {fileID: 3682414183227759484}
-  - component: {fileID: 8781423316838726885}
   - component: {fileID: 7637460747191004461}
   - component: {fileID: 3498120599319525062}
   - component: {fileID: 3721085106440013356}
@@ -384,6 +383,7 @@ MonoBehaviour:
     type: 3}
   magentaSmoke: {fileID: 382208630272409109, guid: 28752e58c9a82004fae1bedeefacc743,
     type: 3}
+  player: {fileID: 4118269485489092446, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
   b_dialogueHappenned: 0
   b_dialogueAllowed: 0
   dialogueTrigger: {fileID: 193218704674175350}
@@ -391,23 +391,9 @@ MonoBehaviour:
   Pos: {fileID: 8300000, guid: 8740a00c383c05c4fab94abd3a7b72f3, type: 3}
   volume: 7
   deposTuto: {fileID: 0}
-  hasActivated: 0
---- !u!54 &8781423316838726885
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6827557452647720824}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
+  hasActivatedDepos: 0
+  posTuto: {fileID: 0}
+  hasActivatedPos: 0
 --- !u!82 &7637460747191004461
 AudioSource:
   m_ObjectHideFlags: 0

@@ -3063,6 +3063,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 2172928695045624069, guid: 80860d43685592148bb5baf1abf66746,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 144300219}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80860d43685592148bb5baf1abf66746, type: 3}
 --- !u!4 &104604482 stripped
@@ -4163,11 +4168,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6428696450468553485, guid: 9df8cfc4ac7305e47a642d1470ddef00,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 69579441299486083, guid: 9df8cfc4ac7305e47a642d1470ddef00,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4273,6 +4273,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 267680676945727523, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428696450468553485, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1576423506279988649, guid: 9df8cfc4ac7305e47a642d1470ddef00,
         type: 3}
       propertyPath: pauseMenu
@@ -4283,16 +4293,16 @@ PrefabInstance:
       propertyPath: pauseFirstButton
       value: 
       objectReference: {fileID: 1564501200}
-    - target: {fileID: 267680676945727523, guid: 9df8cfc4ac7305e47a642d1470ddef00,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 69579441099148536, guid: 9df8cfc4ac7305e47a642d1470ddef00,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 570708568}
+    - target: {fileID: 7093687308067081280, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df8cfc4ac7305e47a642d1470ddef00, type: 3}
 --- !u!114 &144300214 stripped
@@ -4334,6 +4344,12 @@ GameObject:
 --- !u!1 &144300218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 267680676945727523, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+    type: 3}
+  m_PrefabInstance: {fileID: 144300213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &144300219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6988382164729077965, guid: 9df8cfc4ac7305e47a642d1470ddef00,
     type: 3}
   m_PrefabInstance: {fileID: 144300213}
   m_PrefabAsset: {fileID: 0}
@@ -6273,6 +6289,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 8816966583896122814, guid: b16265f49fb3eae418c3a61c4aa730b6,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 144300219}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b16265f49fb3eae418c3a61c4aa730b6, type: 3}
 --- !u!1 &185956825
@@ -11983,6 +12004,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 8688886230047595088, guid: df369f7a7e04347408ab8313b4d4ec15,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 144300219}
     - target: {fileID: 8688886230047595092, guid: df369f7a7e04347408ab8313b4d4ec15,
         type: 3}
       propertyPath: Loop
@@ -15004,6 +15030,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 2172928695045624069, guid: 80860d43685592148bb5baf1abf66746,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 144300219}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80860d43685592148bb5baf1abf66746, type: 3}
 --- !u!4 &382270827 stripped
@@ -36222,6 +36253,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 5253856636283239607, guid: f1139c30fa46f8842a382393e0a4a6e7,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 144300219}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1139c30fa46f8842a382393e0a4a6e7, type: 3}
 --- !u!4 &947409765 stripped
@@ -48553,6 +48589,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 7406043205793502001, guid: 5e21b31969cf66147acb19b3302c4ee9,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 144300219}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e21b31969cf66147acb19b3302c4ee9, type: 3}
 --- !u!4 &1268853599 stripped
@@ -79100,6 +79141,7 @@ MonoBehaviour:
   - {fileID: 1183197183}
   - {fileID: 1485682689}
   door: {fileID: 3566104}
+  PlateCountNumber: 0
 --- !u!114 &2073373635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79118,6 +79160,7 @@ MonoBehaviour:
   - {fileID: 1684006179}
   - {fileID: 1500861996}
   door: {fileID: 601404509}
+  PlateCountNumber: 0
 --- !u!1 &2075910835
 GameObject:
   m_ObjectHideFlags: 0
@@ -80458,6 +80501,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 3682414183227759484, guid: 70aa88826d6b3c749819ebb744d7bb62,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 144300219}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70aa88826d6b3c749819ebb744d7bb62, type: 3}
 --- !u!4 &2101727706 stripped
@@ -82129,6 +82177,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 144300217}
+    - target: {fileID: 4988857596882820424, guid: f4c9281812b077149b47cc56d315f475,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 144300219}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4c9281812b077149b47cc56d315f475, type: 3}
 --- !u!4 &1026582066784712797 stripped
@@ -82299,6 +82352,11 @@ PrefabInstance:
       propertyPath: b_dialogueAllowed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3682414183227759484, guid: 70aa88826d6b3c749819ebb744d7bb62,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 144300219}
     - target: {fileID: 193218704674175350, guid: 70aa88826d6b3c749819ebb744d7bb62,
         type: 3}
       propertyPath: dialogue.sentences.Array.size

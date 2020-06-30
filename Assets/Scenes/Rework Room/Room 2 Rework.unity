@@ -28389,6 +28389,10 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 1919651770}
+    - target: {fileID: 636628024, guid: 2f2bc16a038f2c84abf8a906583bbb0f, type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 11042050}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f2bc16a038f2c84abf8a906583bbb0f, type: 3}
 --- !u!1 &1265264910
@@ -31050,7 +31054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381946006}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -245, y: 1, z: -50}
+  m_LocalPosition: {x: -330, y: 1, z: -60}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 463097410}
@@ -34633,6 +34637,11 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 1919651770}
+    - target: {fileID: 8688886230047595088, guid: df369f7a7e04347408ab8313b4d4ec15,
+        type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 11042050}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df369f7a7e04347408ab8313b4d4ec15, type: 3}
 --- !u!4 &1553187667 stripped
@@ -47823,6 +47832,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 317572152}
+    - target: {fileID: 7093687308067081280, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4212577219651278552, guid: 9df8cfc4ac7305e47a642d1470ddef00,
         type: 3}
       propertyPath: m_RootOrder
@@ -47837,11 +47851,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7093687308067081280, guid: 9df8cfc4ac7305e47a642d1470ddef00,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df8cfc4ac7305e47a642d1470ddef00, type: 3}
@@ -47928,6 +47937,10 @@ PrefabInstance:
       propertyPath: deposTuto
       value: 
       objectReference: {fileID: 1919651770}
+    - target: {fileID: 636628024, guid: 2f2bc16a038f2c84abf8a906583bbb0f, type: 3}
+      propertyPath: posTuto
+      value: 
+      objectReference: {fileID: 11042050}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f2bc16a038f2c84abf8a906583bbb0f, type: 3}
 --- !u!1001 &1625543883611316751

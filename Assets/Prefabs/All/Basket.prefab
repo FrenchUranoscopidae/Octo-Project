@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1810795255016584498}
   - component: {fileID: 7240163190656913156}
   - component: {fileID: 5244320657061136165}
-  - component: {fileID: 8816966583896122812}
   - component: {fileID: 2477524165035234991}
   - component: {fileID: -3342812380382811986}
   - component: {fileID: 8788638377918839578}
@@ -85,22 +84,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!54 &8816966583896122812
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3421158365092316961}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!143 &2477524165035234991
 CharacterController:
   m_ObjectHideFlags: 0
@@ -275,6 +258,7 @@ MonoBehaviour:
     type: 3}
   magentaSmoke: {fileID: 382208630272409109, guid: 28752e58c9a82004fae1bedeefacc743,
     type: 3}
+  player: {fileID: 4118269485489092446, guid: 8f65eb1b34bc48744aa37c0d7d573c00, type: 3}
   b_dialogueHappenned: 0
   b_dialogueAllowed: 0
   dialogueTrigger: {fileID: 1209589721395012605}
@@ -282,7 +266,9 @@ MonoBehaviour:
   Pos: {fileID: 8300000, guid: 8740a00c383c05c4fab94abd3a7b72f3, type: 3}
   volume: 7
   deposTuto: {fileID: 0}
-  hasActivated: 0
+  hasActivatedDepos: 0
+  posTuto: {fileID: 0}
+  hasActivatedPos: 0
 --- !u!1 &6040348134835788260
 GameObject:
   m_ObjectHideFlags: 0

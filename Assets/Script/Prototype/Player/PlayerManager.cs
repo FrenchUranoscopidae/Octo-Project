@@ -25,11 +25,6 @@ public class PlayerManager : MonoBehaviour
     public Transform respawnTarget;
     public Vector3 respawnLocation;
 
-    [Header("Tuto Pos")]
-    public GameObject posTuto;
-    public bool hasActivated = false;
-    //fghjk
-
     void Start()
     {
         // Initialize the color manager with the mesh renderer
@@ -39,17 +34,6 @@ public class PlayerManager : MonoBehaviour
 
         canPos = true;
         canDepos = false;
-
-        posTuto = GameObject.Find("Canvas UI Text Scientist/Pos_Tuto");
-    }
-
-    private void OnTriggerEnter(Collider col)
-    {
-        if(col.gameObject.tag==("ControllableHeavy"))
-        {
-            posTuto.SetActive(true);
-            Debug.Log("PosTuto");
-        }
     }
 
     private void OnTriggerStay(Collider other)
