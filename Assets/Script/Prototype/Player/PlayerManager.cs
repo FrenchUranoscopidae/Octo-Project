@@ -13,6 +13,11 @@ public class PlayerManager : MonoBehaviour
     public GameObject magentaSmoke;
     public float delayPos;
 
+    //Camera
+    private FollowCamera followCam;
+    public GameObject cameraPlayer;
+    public Vector3 offset;
+
     [Header("Texture")]
     public Texture alienYellowTexture;
     public Texture alienMagentaTexture;
@@ -34,6 +39,9 @@ public class PlayerManager : MonoBehaviour
 
         canPos = true;
         canDepos = false;
+
+        //cameraPlayer = GameObject.Find("Camera");
+        offset = new Vector3(0, 30, -15);
     }
 
     private void OnTriggerStay(Collider other)
@@ -72,6 +80,15 @@ public class PlayerManager : MonoBehaviour
                     Instantiate(smoke, obj.transform.position, obj.transform.rotation);
                     Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
                     controller.ControlObject(obj, true, controller);
+
+                    followCam.controllingObject = true;
+
+                    if (cameraPlayer == null)
+                    {
+                        Debug.Log("Centrage Camera");
+                        //cameraPlayer = GameObject.Find("Player(Clone)").transform;
+                        cameraPlayer.transform.position = new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z);
+                    }
                 }          
             }
         }

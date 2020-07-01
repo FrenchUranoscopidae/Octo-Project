@@ -1130,6 +1130,7 @@ MonoBehaviour:
   footstep: {fileID: 3173657882307755411}
   gravity: 8.91
   controller: {fileID: -645598042771048811}
+  isControlObject: 0
 --- !u!114 &4118269485489092446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,14 +1155,16 @@ MonoBehaviour:
   magentaSmoke: {fileID: 382208630272409109, guid: 28752e58c9a82004fae1bedeefacc743,
     type: 3}
   delayPos: 0.4
+  followCam: {fileID: 0}
+  cameraPlayer: {fileID: 7975442869972756463, guid: 4e774919710739944b10f22ce9c210a4,
+    type: 3}
+  offset: {x: 0, y: 0, z: 0}
   alienYellowTexture: {fileID: 2800000, guid: 572525c189148f546bf67c6e4a95a0f6, type: 3}
   alienMagentaTexture: {fileID: 2800000, guid: 043a2a19fa0053d40ac76c8abcccb3e1, type: 3}
   Pos: {fileID: 8300000, guid: 8740a00c383c05c4fab94abd3a7b72f3, type: 3}
   volume: 7
   respawnTarget: {fileID: 3733933972958445539}
   respawnLocation: {x: 0, y: 0, z: 0}
-  posTuto: {fileID: 0}
-  hasActivated: 0
 --- !u!143 &-645598042771048811
 CharacterController:
   m_ObjectHideFlags: 0

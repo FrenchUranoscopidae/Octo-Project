@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     public float gravity = 8.91f;
     public CharacterController controller;
 
+    //Test
+    public bool isControlObject = false;
+
     // This method is protected to be accessed from child classes and virtual to be overriden in child classes
     protected virtual void Start()
     {
@@ -92,7 +95,9 @@ public class PlayerController : MonoBehaviour
             controller.enabled = false;
             player.transform.parent = objToControl.transform;
             player.GetComponent<Rigidbody>().isKinematic = true;
-            StopPlayFootstepSound(); 
+            StopPlayFootstepSound();
+
+            isControlObject = true;
         }
         else
         {
@@ -106,6 +111,8 @@ public class PlayerController : MonoBehaviour
             controller.enabled = true;
             player.GetComponent<Rigidbody>().isKinematic = false;
             objToControl.Player = null;
+
+            isControlObject = false;
         }
     }
 

@@ -10,6 +10,7 @@ public class PressurePlateController : MonoBehaviour
 
     public int lightOnPlateCount = 0;
     public bool playerOnPlate = false;
+    public bool playerOnPlatePos = false;
 
     public GameObject diodeColor;
     public GameObject diodeColor1;
@@ -58,9 +59,9 @@ public class PressurePlateController : MonoBehaviour
                     if (!b_HasActivated)
                     {
                         AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
-                        Debug.Log("Activated");
                         b_HasActivated = true;
                     }
+
                 }
             }
         }
@@ -83,7 +84,6 @@ public class PressurePlateController : MonoBehaviour
                     if (!b_HasActivated)
                     {
                         AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
-                        Debug.Log("Activated");
                         b_HasActivated = true;
                     }
                 }
@@ -207,6 +207,6 @@ public class PressurePlateController : MonoBehaviour
     {
         dialogueTrigger.TriggerDialogue();
         b_dialogueHappenned = true;
-        Debug.Log(b_dialogueHappenned);
+        //Debug.Log(b_dialogueHappenned);
     }
 }

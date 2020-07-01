@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 3721085106440013356}
   - component: {fileID: 193218704674175350}
   - component: {fileID: 5514372108866906221}
+  - component: {fileID: 3175242734562660948}
   m_Layer: 0
   m_Name: Bed
   m_TagString: ControllableHeavy
@@ -371,6 +372,7 @@ MonoBehaviour:
   footstep: {fileID: 6827557452647720824}
   gravity: 8.91
   controller: {fileID: 3721085106440013356}
+  isControlObject: 0
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 5
@@ -518,12 +520,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.599513
-  m_Radius: 10
+  m_Radius: 5
   m_SlopeLimit: 45
   m_StepOffset: 1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 32.64, z: 0}
+  m_Center: {x: 0, y: 15, z: 0}
 --- !u!114 &193218704674175350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,5 +552,18 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 16.190811, y: 15.951971, z: 18.801529}
-  m_Center: {x: 0.5106354, y: 10.882956, z: -0.5915756}
+  m_Size: {x: 17, y: 35.95443, z: 20}
+  m_Center: {x: 0, y: 20.884184, z: -0}
+--- !u!65 &3175242734562660948
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827557452647720824}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.467418, y: 18.91183, z: 14.780294}
+  m_Center: {x: 0, y: 20, z: -0.17668319}
