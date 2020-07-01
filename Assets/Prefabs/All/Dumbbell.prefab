@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 2660103891447466069}
   - component: {fileID: 869898349007075137}
   - component: {fileID: 4931062515449034861}
+  - component: {fileID: 3061801760493076362}
   m_Layer: 0
   m_Name: Dumbbell
   m_TagString: ControllableHeavy
@@ -175,6 +176,7 @@ MonoBehaviour:
   footstep: {fileID: 8189434503683881453}
   gravity: 8.91
   controller: {fileID: 4931062515449034861}
+  isControlObject: 0
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 5
@@ -206,8 +208,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.9209843, y: 2.2481794, z: 10.248237}
-  m_Center: {x: -0.036773317, y: -0.17837216, z: 0.046951294}
+  m_Size: {x: 6.0000014, y: 6.503529, z: 12}
+  m_Center: {x: 0.017799383, y: -2.3060465, z: 0.046951294}
 --- !u!114 &-7432501464190118198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,12 +390,25 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2.267844
-  m_Radius: 2.75
+  m_Radius: 2
   m_SlopeLimit: 45
   m_StepOffset: 1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: -1.71, z: 0}
+  m_Center: {x: 0, y: -0.82, z: 0}
+--- !u!65 &3061801760493076362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8189434503683881453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2878342, y: 2.2878335, z: 7.2473407}
+  m_Center: {x: -0.00287062, y: -0.009994804, z: 0}
 --- !u!1 &9213271212175815608
 GameObject:
   m_ObjectHideFlags: 0

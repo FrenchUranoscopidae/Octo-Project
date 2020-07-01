@@ -604,8 +604,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 421.0405, y: 342.89236, z: 636.5688}
-  m_Center: {x: -136.64156, y: 21.446276, z: 51.84434}
+  m_Size: {x: 657.3192, y: 755.3608, z: 881.79877}
+  m_Center: {x: -131.19327, y: 227.68059, z: 46.606762}
 --- !u!114 &5253856636283239607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,6 +624,7 @@ MonoBehaviour:
   footstep: {fileID: 5452955723388293300}
   gravity: 8.91
   controller: {fileID: 6228716122985023608}
+  isControlObject: 0
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 4

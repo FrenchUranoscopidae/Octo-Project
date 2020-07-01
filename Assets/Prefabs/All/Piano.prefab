@@ -261,6 +261,7 @@ MonoBehaviour:
   footstep: {fileID: 4665314613650701329}
   gravity: 8.91
   controller: {fileID: 4665314613650701330}
+  isControlObject: 0
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 5
@@ -292,8 +293,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 16.83051, y: 7.9489655, z: 9.8569565}
-  m_Center: {x: -0.055461884, y: 3.9744442, z: -0.62508774}
+  m_Size: {x: 20, y: 13.801746, z: 15}
+  m_Center: {x: -0.055461884, y: 6.900834, z: -0.62508774}
 --- !u!82 &4665314613650701333
 AudioSource:
   m_ObjectHideFlags: 0
@@ -441,7 +442,7 @@ CharacterController:
   m_StepOffset: 1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 6.5, z: 0}
+  m_Center: {x: 0, y: 6, z: 0}
 --- !u!1 &6453006381572841458
 GameObject:
   m_ObjectHideFlags: 0

@@ -83,12 +83,12 @@ public class PlayerManager : MonoBehaviour
 
                     followCam.controllingObject = true;
 
-                    if (cameraPlayer == null)
+                    /*if (cameraPlayer == null)
                     {
                         Debug.Log("Centrage Camera");
                         //cameraPlayer = GameObject.Find("Player(Clone)").transform;
                         cameraPlayer.transform.position = new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z);
-                    }
+                    }*/
                 }          
             }
         }

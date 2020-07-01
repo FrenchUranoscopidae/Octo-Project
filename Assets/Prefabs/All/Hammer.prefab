@@ -213,6 +213,7 @@ MonoBehaviour:
   footstep: {fileID: 8688886230047595094}
   gravity: 8.91
   controller: {fileID: 5713454546704217629}
+  isControlObject: 0
   colorMgr:
     alienMaterial: {fileID: 0}
     currentColor: 4
@@ -409,5 +410,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1594.6252, y: 999.99976, z: 5518.568}
-  m_Center: {x: -9.287245, y: 0, z: -1631.9438}
+  m_Size: {x: 2561.8184, y: 3721.5737, z: 7357.9033}
+  m_Center: {x: 1.7513175, y: 1360.7874, z: -1701.7133}
