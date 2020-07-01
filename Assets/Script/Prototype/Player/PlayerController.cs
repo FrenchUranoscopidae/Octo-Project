@@ -96,8 +96,8 @@ public class PlayerController : MonoBehaviour
             player.transform.parent = objToControl.transform;
             player.GetComponent<Rigidbody>().isKinematic = true;
             StopPlayFootstepSound();
-
             isControlObject = true;
+            player.transform.position = objToControl.transform.position;
         }
         else
         {
@@ -111,7 +111,6 @@ public class PlayerController : MonoBehaviour
             controller.enabled = true;
             player.GetComponent<Rigidbody>().isKinematic = false;
             objToControl.Player = null;
-
             isControlObject = false;
         }
     }
