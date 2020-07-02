@@ -16,7 +16,7 @@ public class FollowCamera : MonoBehaviour
 
 	void LateUpdate()
 	{
-        if(!controllingObject)
+        if (!controllingObject)
         {
             if (player == null)
             {
@@ -26,19 +26,6 @@ public class FollowCamera : MonoBehaviour
             {
                 transform.position = player.transform.position + offset;
             }
-        }
-		/*if (player == null)
-		{
-			player = GameObject.Find("Player(Clone)").transform;
-		}
-		else
-		{
-			transform.position = player.transform.position + offset;
-		}*/
-
-        if(controllingObject)
-        {
-
         }
 	}
 }

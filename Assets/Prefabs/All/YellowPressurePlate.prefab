@@ -168,10 +168,10 @@ GameObject:
   - component: {fileID: 7479412049631947891}
   - component: {fileID: 7479412050200343236}
   - component: {fileID: 7479412050200343237}
-  - component: {fileID: 7479412050200343259}
   - component: {fileID: 425677370}
   - component: {fileID: 7806436296342781276}
   - component: {fileID: 3110005805621586768}
+  - component: {fileID: 5236494817975724386}
   m_Layer: 0
   m_Name: YellowPressurePlate
   m_TagString: Untagged
@@ -243,38 +243,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &7479412050200343259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7479412050200343239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dffb10b4fd030a4408713ab38554530d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorMgr:
-    alienMaterial: {fileID: 0}
-    currentColor: 4
-  isActive: 0
-  pressurePlateValue: 0
-  lightOnPlateCount: 0
-  playerOnPlate: 0
-  diodeColor: {fileID: 414573311618780850}
-  diodeColor1: {fileID: 8336792961193510550}
-  pressurePlate: {fileID: 4591962546079979906}
-  initialMaterial: {fileID: -6478536213147159724, guid: d351f3046123c7940924af977283ce2c,
-    type: 3}
-  PlateActivation: {fileID: 8300000, guid: 4154b7a48b22e3a44aea0e85b0dcb1d7, type: 3}
-  volume: 1
-  b_HasActivated: 0
-  b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: 0}
-  b_All: 1
-  loweringValue1: -0.35
-  loweringValue2: -0.75
 --- !u!65 &425677370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -321,6 +289,45 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -8803937527578110353, guid: 39dea217b0e4ed249a49d47232f21fef, type: 3}
+--- !u!114 &5236494817975724386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7479412050200343239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9d3e1955553434ca6da99354c63808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorMgr:
+    alienMaterial: {fileID: 0}
+    currentColor: 4
+  isActive: 0
+  isSemiActive: 0
+  isColliding: 0
+  pressurePlateValue: 0
+  listObjectColliding: []
+  lightOnPlateCount: 0
+  playerOnPlate: 0
+  playerOnPlatePos: 0
+  diodeColor: {fileID: 414573311618780850}
+  diodeColor1: {fileID: 8336792961193510550}
+  pressurePlate: {fileID: 4591962546079979906}
+  initialMaterial: {fileID: -6478536213147159724, guid: d351f3046123c7940924af977283ce2c,
+    type: 3}
+  playerController: {fileID: 315328301341317124, guid: 8f65eb1b34bc48744aa37c0d7d573c00,
+    type: 3}
+  door: {fileID: 0}
+  PlateActivation: {fileID: 8300000, guid: 4154b7a48b22e3a44aea0e85b0dcb1d7, type: 3}
+  volume: 0
+  b_HasActivated: 0
+  b_dialogueHappenned: 0
+  dialogueTrigger: {fileID: 0}
+  b_All: 1
+  loweringValue1: -0.35
+  loweringValue2: -0.75
 --- !u!1 &8336792961193510550
 GameObject:
   m_ObjectHideFlags: 0

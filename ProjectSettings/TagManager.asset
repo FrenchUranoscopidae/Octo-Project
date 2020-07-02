@@ -11,6 +11,7 @@ TagManager:
   - ControllableLightweight
   - Barrier
   - CantDepos
+  - PressurePlate
   layers:
   - Default
   - TransparentFX

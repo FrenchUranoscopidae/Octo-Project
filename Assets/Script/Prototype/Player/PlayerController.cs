@@ -68,14 +68,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Move(float horizontal, float vertical)
-    {
-        /*transform.Rotate(new Vector3(0f, horizontal, 0f)); // Rotate arround the Y axis
-        transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f); // Constraint the rotation
-        rb.MovePosition(rb.position + transform.forward * vertical); // Move along the player forward
-        transform.Translate(vertical / 5, 0f, horizontal / 5);*/
-    }
-
     public void SetIsControlled(bool val)
     {
         isControlled = val;
@@ -96,7 +88,6 @@ public class PlayerController : MonoBehaviour
             player.transform.parent = objToControl.transform;
             player.GetComponent<Rigidbody>().isKinematic = true;
             StopPlayFootstepSound();
-            isControlObject = true;
             player.transform.position = objToControl.transform.position;
         }
         else
@@ -111,7 +102,6 @@ public class PlayerController : MonoBehaviour
             controller.enabled = true;
             player.GetComponent<Rigidbody>().isKinematic = false;
             objToControl.Player = null;
-            isControlObject = false;
         }
     }
 

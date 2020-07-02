@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PressurePlateManager : MonoBehaviour
 {
-    public List<PressurePlateController> plates;
+    public List<PressurePlateControllerUpdate> plates;
     public Door door;
     public int PlateCountNumber;
 
