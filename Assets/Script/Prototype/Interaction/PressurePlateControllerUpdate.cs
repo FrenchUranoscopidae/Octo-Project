@@ -21,6 +21,8 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     public Material initialMaterial;
     public PlayerController playerController;
 
+    //private bool isNotPossessing = GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled;
+
     //Puzzle End
     public GameObject door;
 
@@ -51,6 +53,14 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     private void FixedUpdate()
     {
         isColliding = false;
+        //Debug.Log(playerController.isControlled);
+        //listObjectColliding.Clear();
+
+        /*if (playerController.isControlled && listObjectColliding.Contains(playerController.GetComponent<CharacterController>()))
+        {
+            RemoveToObjectCollidingList(playerController.GetComponent<CharacterController>());
+            //listObjectColliding.Remove(playerController.GetComponent<CharacterController>());
+        }*/
     }
 
     public void OnTriggerStay(Collider collider)
@@ -59,17 +69,19 @@ public class PressurePlateControllerUpdate : MonoBehaviour
         
         if(collider.CompareTag("Player"))
         {
+            Debug.Log("TriggerStay");
             PlayerManager player = collider.GetComponent<PlayerManager>();
 
             if (player.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
-                if(!playerController.isControlObject && !listObjectColliding.Contains(collider))
+                if (GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled)
                 {
                     AddToObjectCollidingList(collider);
+                    //listObjectColliding.Remove(playerController.GetComponent<CharacterController>());
                 }
-                else if(playerController.isControlObject && listObjectColliding.Contains(collider))
+                else if (GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled == false/* && listObjectColliding.Contains(collider)*/)
                 {
-                    listObjectColliding.Remove(collider);
+                    RemoveToObjectCollidingList(collider);
                 }
             }
         }
@@ -92,15 +104,24 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     {
         listObjectColliding.Remove(collider);
         HasSoundActivated = false;
-        Debug.Log("Trace");
+        Debug.Log(collider);
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Debug.Log(GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled);
         pressurePlateValue = 0;
 
-        if(isColliding)
+        if (GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled == false)
+        {
+            RemoveToObjectCollidingList(GameObject.Find("Player(Clone)").GetComponent<CharacterController>());
+            Debug.Log("Update");
+        }
+
+        //listObjectColliding.Remove(playerController.GetComponent<CharacterController>());
+        //Debug.Log(listObjectColliding.Count);
+
+        if (isColliding)
         {
             if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableLightweight"))
             {
@@ -166,6 +187,18 @@ public class PressurePlateControllerUpdate : MonoBehaviour
         else
         {
             listObjectColliding.Add(collider);
+        }
+    }
+
+    public void RemoveToObjectCollidingList(Collider collider)
+    {
+        if (listObjectColliding.Contains(collider))
+        {
+            listObjectColliding.Remove(collider);
+        }
+        else
+        {
+            return;
         }
     }
 
