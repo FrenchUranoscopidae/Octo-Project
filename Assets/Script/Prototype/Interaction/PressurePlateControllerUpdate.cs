@@ -27,7 +27,7 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     [Header("Sound")]
     public AudioClip PlateActivation;
     public float volume;
-    public bool b_HasActivated = false;
+    public bool HasSoundActivated = false;
 
     [Header("Dialogue")]
     public bool b_dialogueHappenned = false;
@@ -91,14 +91,14 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     public void OnTriggerExit(Collider collider)
     {
         listObjectColliding.Remove(collider);
+        HasSoundActivated = false;
+        Debug.Log("Trace");
     }
 
     // Update is called once per frame
     void Update()
     {
         pressurePlateValue = 0;
-
-        Debug.Log(isColliding);
 
         if(isColliding)
         {
@@ -125,7 +125,7 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     {
         if(state == 0)
         {
-            Debug.Log("Button Desactivate");
+            //Debug.Log("Button Desactivate");
             isActive = false;
             pressurePlate.transform.position = transform.position + new Vector3(0, 0, 0);
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
@@ -133,7 +133,7 @@ public class PressurePlateControllerUpdate : MonoBehaviour
         }
         else if(state == 1)
         {
-            Debug.Log("Button Semi Activate");
+            //Debug.Log("Button Semi Activate");
             isSemiActive = true;
             pressurePlate.transform.position = transform.position + new Vector3(0, loweringValue1, 0);
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
@@ -141,12 +141,19 @@ public class PressurePlateControllerUpdate : MonoBehaviour
         }
         else if(state == 2)
         {
-            Debug.Log("Button Activate");
+            //Debug.Log("Button Activate");
             isActive = true;
             OnPressurePlateActivated?.Invoke();
             diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
             diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
             pressurePlate.transform.position = transform.position + new Vector3(0, loweringValue2, 0);
+
+            //Sound
+            if (!HasSoundActivated)
+            {
+                AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
+                HasSoundActivated = true;
+            }
         }
     }
 

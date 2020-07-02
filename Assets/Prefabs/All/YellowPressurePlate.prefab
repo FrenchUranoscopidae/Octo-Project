@@ -321,7 +321,7 @@ MonoBehaviour:
     type: 3}
   door: {fileID: 0}
   PlateActivation: {fileID: 8300000, guid: 4154b7a48b22e3a44aea0e85b0dcb1d7, type: 3}
-  volume: 0
+  volume: 5
   b_HasActivated: 0
   b_dialogueHappenned: 0
   dialogueTrigger: {fileID: 0}

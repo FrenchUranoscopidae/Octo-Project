@@ -13,7 +13,6 @@ public class DialogueTriggerBeginningBox : MonoBehaviour
     {
         dialogueTrigger.TriggerDialogue();
         b_dialogueHappenned = true;
-        Debug.Log(b_dialogueHappenned);
     }
 
     private void OnTriggerEnter(Collider col)

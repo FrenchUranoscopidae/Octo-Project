@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
             player.GetComponent<SkinnedMeshRenderer>().enabled = false;
             objToControl.SetIsControlled(true);
             player.SetIsControlled(false);
-            player.GetComponent<BoxCollider>().enabled = false;
+            //player.GetComponent<BoxCollider>().enabled = false;
             controller.enabled = false;
             player.transform.parent = objToControl.transform;
             player.GetComponent<Rigidbody>().isKinematic = true;
@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
             player.SetIsControlled(true);
             player.transform.parent = null;
             player.transform.position = objToControl.PlayerLeavePoint.position;
-            player.GetComponent<BoxCollider>().enabled = true;
+            //player.GetComponent<BoxCollider>().enabled = true;
             player.transform.localScale = new Vector3(1, 1, 1);
             controller.enabled = true;
             player.GetComponent<Rigidbody>().isKinematic = false;
