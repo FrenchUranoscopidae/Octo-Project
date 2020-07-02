@@ -21,8 +21,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     public Material initialMaterial;
     public PlayerController playerController;
 
-    //private bool isNotPossessing = GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled;
-
     //Puzzle End
     public GameObject door;
 
@@ -53,14 +51,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     private void FixedUpdate()
     {
         isColliding = false;
-        //Debug.Log(playerController.isControlled);
-        //listObjectColliding.Clear();
-
-        /*if (playerController.isControlled && listObjectColliding.Contains(playerController.GetComponent<CharacterController>()))
-        {
-            RemoveToObjectCollidingList(playerController.GetComponent<CharacterController>());
-            //listObjectColliding.Remove(playerController.GetComponent<CharacterController>());
-        }*/
     }
 
     public void OnTriggerStay(Collider collider)
@@ -77,9 +67,8 @@ public class PressurePlateControllerUpdate : MonoBehaviour
                 if (GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled)
                 {
                     AddToObjectCollidingList(collider);
-                    //listObjectColliding.Remove(playerController.GetComponent<CharacterController>());
                 }
-                else if (GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled == false/* && listObjectColliding.Contains(collider)*/)
+                else if (GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled == false)
                 {
                     RemoveToObjectCollidingList(collider);
                 }
@@ -117,9 +106,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
             RemoveToObjectCollidingList(GameObject.Find("Player(Clone)").GetComponent<CharacterController>());
             Debug.Log("Update");
         }
-
-        //listObjectColliding.Remove(playerController.GetComponent<CharacterController>());
-        //Debug.Log(listObjectColliding.Count);
 
         if (isColliding)
         {
