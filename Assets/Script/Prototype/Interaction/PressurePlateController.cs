@@ -17,6 +17,9 @@ public class PressurePlateController : MonoBehaviour
     public GameObject pressurePlate;
     public Material initialMaterial;
 
+    //Puzzle End
+    public GameObject door;
+
     [Header("Sound")]
     public AudioClip PlateActivation;
     public float volume;
@@ -39,6 +42,17 @@ public class PressurePlateController : MonoBehaviour
     {
         pressurePlate.transform.position = transform.position + new Vector3(0, 0, 0);
     }
+
+    private void Update()
+    {
+        if (door.GetComponent<Door>().doorIsOpen /*&& pressurePlateValue == 2*/)
+        {
+            diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+            diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+            ActivatePressurePlate();
+        }
+    }
+
     public void OnTriggerStay(Collider collider)
     {
         if (collider.CompareTag("Player"))
