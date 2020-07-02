@@ -4122,6 +4122,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 601404510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &140424563 stripped
@@ -16328,6 +16333,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 601404510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &416086858 stripped
@@ -20240,6 +20250,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 582186352}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!114 &529365030 stripped
@@ -24741,6 +24756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowPressurePlate
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1217007315}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42710,6 +42730,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowPressurePlate
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 582186352}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52319,6 +52344,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'YellowPressurePlate '
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 582186352}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57600,6 +57630,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowPressurePlate
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 601404510}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -64014,6 +64049,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 601404510}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &1684006178 stripped
