@@ -440,6 +440,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4648331791592119183, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648331791592119183, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648331791592119183, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4648331790553926663, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -465,26 +480,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4648331791592119183, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4648331791592119183, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4648331791592119183, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4648331790553926657, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
-        type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 4648331791306801925, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -499,6 +494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648331790553926657, guid: 17a0b4e0d9afa4644a656ce4b47416f1,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a0b4e0d9afa4644a656ce4b47416f1, type: 3}
@@ -519,6 +519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594860447049926051, guid: 1a5eb479027ce5546856e24702b02063,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3697526492578421081, guid: 1a5eb479027ce5546856e24702b02063,
         type: 3}

@@ -14954,12 +14954,6 @@ Transform:
   m_Father: {fileID: 283493415}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &380125618 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 414573311618780850, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-    type: 3}
-  m_PrefabInstance: {fileID: 631542080}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &382270826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19847,45 +19841,6 @@ MonoBehaviour:
     - "Est-ce la fin ? Es-tu bloqu\xE9 ?? Est-ce un obstacle impossible ??? "
     - "Ou est-ce que la solution aurait un rapport avec \u2026 cet autre objet au
       fond de la pi\xE8ce ? Le suspense est \xE0 son comble !"
---- !u!114 &520077690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520077688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd9d3e1955553434ca6da99354c63808, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorMgr:
-    alienMaterial: {fileID: 0}
-    currentColor: 4
-  isActive: 0
-  isSemiActive: 0
-  isColliding: 0
-  pressurePlateValue: 0
-  listObjectColliding: []
-  lightOnPlateCount: 0
-  playerOnPlate: 0
-  playerOnPlatePos: 0
-  diodeColor: {fileID: 380125618}
-  diodeColor1: {fileID: 575633797}
-  pressurePlate: {fileID: 766604309}
-  initialMaterial: {fileID: -6478536213147159724, guid: d351f3046123c7940924af977283ce2c,
-    type: 3}
-  playerController: {fileID: 315328301341317124, guid: 8f65eb1b34bc48744aa37c0d7d573c00,
-    type: 3}
-  door: {fileID: 1217007315}
-  PlateActivation: {fileID: 8300000, guid: 4154b7a48b22e3a44aea0e85b0dcb1d7, type: 3}
-  volume: 0
-  HasSoundActivated: 0
-  b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: 520077689}
-  b_All: 1
-  loweringValue1: -0.35
-  loweringValue2: -0.75
 --- !u!114 &520077696 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
@@ -22671,12 +22626,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575264732}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &575633797 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8336792961193510550, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-    type: 3}
-  m_PrefabInstance: {fileID: 631542080}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &576841444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5855558420204004135, guid: 92a1f50e19bcc35438b2c6a704e89a3e,
@@ -24761,6 +24710,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1217007315}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: dialogueTrigger
+      value: 
+      objectReference: {fileID: 520077689}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29428,12 +29382,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 819712850331784025, guid: 51ba3fc2c28c143489f478acd8525766,
     type: 3}
   m_PrefabInstance: {fileID: 764596010}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &766604309 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4591962546079979906, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-    type: 3}
-  m_PrefabInstance: {fileID: 631542080}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &766844264 stripped
 Transform:
