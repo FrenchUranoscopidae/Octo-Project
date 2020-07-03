@@ -33,12 +33,12 @@ public class PlayerController : MonoBehaviour
         if (isControlled)       
         {
             // Get the horizontal axis value and scale it by time and speed (used for player rotation)
-            float horizontal = Input.GetAxisRaw("Vertical")   ;
+            float horizontal = Input.GetAxisRaw("Horizontal")   ;
             // Get the vertical axis value and scale it by time and speed (used for player translation)
-            float vertical = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
 
             //Apply Movement
-            Vector3 direction = new Vector3(vertical, 0f, horizontal).normalized;
+            Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
             transform.TransformDirection(direction);
             
             //Apply gravity
@@ -83,7 +83,6 @@ public class PlayerController : MonoBehaviour
             player.GetComponent<SkinnedMeshRenderer>().enabled = false;
             objToControl.SetIsControlled(true);
             player.SetIsControlled(false);
-            //player.GetComponent<BoxCollider>().enabled = false;
             controller.enabled = false;
             player.transform.parent = objToControl.transform;
             player.GetComponent<Rigidbody>().isKinematic = true;
@@ -97,7 +96,6 @@ public class PlayerController : MonoBehaviour
             player.SetIsControlled(true);
             player.transform.parent = null;
             player.transform.position = objToControl.PlayerLeavePoint.position;
-            //player.GetComponent<BoxCollider>().enabled = true;
             player.transform.localScale = new Vector3(1, 1, 1);
             controller.enabled = true;
             player.GetComponent<Rigidbody>().isKinematic = false;

@@ -59,7 +59,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
         
         if(collider.CompareTag("Player"))
         {
-            //Debug.Log("TriggerStay");
             PlayerManager player = collider.GetComponent<PlayerManager>();
 
             if (player.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
@@ -99,7 +98,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log(GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled);
         pressurePlateValue = 0;
 
         if (GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled == false)
@@ -112,24 +110,27 @@ public class PressurePlateControllerUpdate : MonoBehaviour
         {
             Debug.Log("Colliding");
 
-            PlayerManager player = GameObject.Find("Player(Clone)").GetComponent<PlayerManager>();
-            ObjectController obj = FindObjectOfType<ObjectController>();
-
-            if (listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableLightweight")/* && obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()*/)
+            if (listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableLightweight"))
             {
+                //Dialogue
+                if (!b_dialogueHappenned)
+                {
+                    ThisObjectDialogueTrigger();
+                }
+
                 pressurePlateValue = 1;
             }
-            else if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableHeavy")/* && obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()*/)
+            else if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableHeavy"))
             {
                 Debug.Log("HeavyDetected");
                 pressurePlateValue = 2;
             }
-            else if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("Player")/* && player.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()*/)
+            else if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("Player"))
             {
                 Debug.Log("PlayerDetected");
                 pressurePlateValue = 2;
             }
-            else if (listObjectColliding.Count == 2 && listObjectColliding[0].CompareTag("ControllableLightweight")/* && listObjectColliding[1].CompareTag("ControllableLightweight") && obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor()*/)
+            else if (listObjectColliding.Count == 2 && listObjectColliding[0].CompareTag("ControllableLightweight"))
             {
                 pressurePlateValue = 2;
             }
