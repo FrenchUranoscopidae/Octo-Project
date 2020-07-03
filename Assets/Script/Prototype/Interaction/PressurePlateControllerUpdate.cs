@@ -109,14 +109,26 @@ public class PressurePlateControllerUpdate : MonoBehaviour
 
         if (isColliding)
         {
-            if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableLightweight"))
+            PlayerManager player = GameObject.Find("Player(Clone)").GetComponent<PlayerManager>();
+            ObjectController obj = FindObjectOfType<ObjectController>();
+
+            if (listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableLightweight") && obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
                 pressurePlateValue = 1;
             }
-            else
+            else if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableHeavy") && obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
                 pressurePlateValue = 2;
             }
+            else if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("Player") && player.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
+            {
+                pressurePlateValue = 2;
+            }
+            else if (listObjectColliding.Count == 2 && listObjectColliding[0].CompareTag("ControllableLightweight") && listObjectColliding[1].CompareTag("ControllableLightweight") && obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
+            {
+                pressurePlateValue = 2;
+            }
+
         }
 
         PressurePlateState(pressurePlateValue);
