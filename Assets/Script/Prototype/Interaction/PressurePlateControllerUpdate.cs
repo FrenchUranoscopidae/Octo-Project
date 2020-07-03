@@ -122,7 +122,7 @@ public class PressurePlateControllerUpdate : MonoBehaviour
         PressurePlateState(pressurePlateValue);
 
 
-        if (door.GetComponent<Door>().doorIsOpen )
+        if (door.GetComponent<Door>().doorIsOpen)
         {
             PressurePlateState(2);
         } 

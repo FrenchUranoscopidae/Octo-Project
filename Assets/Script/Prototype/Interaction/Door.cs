@@ -28,11 +28,7 @@ public class Door : MonoBehaviour
             openDoor.SetBool("openDoor", true);
             doorCollider.enabled = false;
 
-            //DialogueTriggering
-            if (!b_dialogueHappenned & b_dialogueAllowed)
-            {
-                ThisObjectDialogueTrigger();
-            }
+          
         }
     }
 
@@ -57,7 +53,12 @@ public class Door : MonoBehaviour
         diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
         diodeLightColor.color = Color.green;
 
-       
+        //DialogueTriggering
+        if (!b_dialogueHappenned & b_dialogueAllowed)
+        {
+            ThisObjectDialogueTrigger();
+        }
+
     }
 
     public void CloseDoor()
