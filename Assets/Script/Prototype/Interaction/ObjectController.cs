@@ -94,7 +94,7 @@ public class ObjectController : PlayerController
     {
         dialogueTrigger.TriggerDialogue();
         b_dialogueHappenned = true;
-        Debug.Log(b_dialogueHappenned);
+        //Debug.Log(b_dialogueHappenned);
     }
 
     void OnTriggerEnter(Collider col)

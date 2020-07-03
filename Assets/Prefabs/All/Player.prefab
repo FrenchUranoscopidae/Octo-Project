@@ -1130,7 +1130,6 @@ MonoBehaviour:
   footstep: {fileID: 3173657882307755411}
   gravity: 8.91
   controller: {fileID: -645598042771048811}
-  pressurePlate: {fileID: 0}
   isControlObject: 0
 --- !u!114 &4118269485489092446
 MonoBehaviour:

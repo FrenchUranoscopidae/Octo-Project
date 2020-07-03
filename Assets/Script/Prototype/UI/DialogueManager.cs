@@ -47,6 +47,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        //Debug.Log("Trace");
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
