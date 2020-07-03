@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2257900043263053083}
   - component: {fileID: 1456463437505111526}
   - component: {fileID: -3540639181587820294}
+  - component: {fileID: -1605937589259925859}
   m_Layer: 0
   m_Name: MagentaPressurePlate
   m_TagString: Untagged
@@ -147,10 +148,25 @@ MonoBehaviour:
   volume: 5
   HasSoundActivated: 0
   b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: 0}
+  dialogueTrigger: {fileID: -1605937589259925859}
   b_All: 1
   loweringValue1: -0.35
   loweringValue2: -0.75
+--- !u!114 &-1605937589259925859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2257900043263053081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
 --- !u!1 &5398721609960120716
 GameObject:
   m_ObjectHideFlags: 0

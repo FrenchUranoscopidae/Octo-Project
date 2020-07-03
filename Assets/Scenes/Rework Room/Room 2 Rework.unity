@@ -8654,6 +8654,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1648097287}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: PressurePlateManager
+      value: 
+      objectReference: {fileID: 1725889519}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8710,11 +8720,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: door
-      value: 
-      objectReference: {fileID: 1648097287}
-    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: door
       value: 
@@ -14298,6 +14303,16 @@ PrefabInstance:
       propertyPath: posTuto
       value: 
       objectReference: {fileID: 11042050}
+    - target: {fileID: 8688886230047595095, guid: df369f7a7e04347408ab8313b4d4ec15,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0e07530cd1dbd8e4bbecf4468bdf06c3, type: 2}
+    - target: {fileID: 8688886230047595095, guid: df369f7a7e04347408ab8313b4d4ec15,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df369f7a7e04347408ab8313b4d4ec15, type: 3}
 --- !u!1 &649486331
@@ -23144,6 +23159,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'YellowPressurePlate '
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1634703927}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23200,11 +23220,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: door
-      value: 
-      objectReference: {fileID: 1634703927}
-    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: door
       value: 
@@ -28359,6 +28374,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1648097287}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: PressurePlateManager
+      value: 
+      objectReference: {fileID: 1725889519}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28419,16 +28444,6 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1648097287}
-    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: door
-      value: 
-      objectReference: {fileID: 1648097287}
-    - target: {fileID: 7479412050200343237, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_CastShadows
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3748980670304175561, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28443,6 +28458,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7479412050200343237, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -28722,6 +28742,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1291015956}
+  - component: {fileID: 1291015958}
+  - component: {fileID: 1291015957}
   m_Layer: 0
   m_Name: 'Puzzle 3 '
   m_TagString: Untagged
@@ -28753,6 +28775,38 @@ Transform:
   m_Father: {fileID: 463097410}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1291015957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291015955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plates:
+  - {fileID: 1908480998}
+  - {fileID: 472169884}
+  door: {fileID: 1734481843}
+  pressurePlateCountText: {fileID: 461131944}
+  plateCountNumber: 0
+  activatePlateCountNumber: 0
+--- !u!65 &1291015958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291015955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 85.796326, y: 13.63475, z: 65.10587}
+  m_Center: {x: -130.17963, y: 6.317375, z: -29.16602}
 --- !u!1001 &1291787025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30448,6 +30502,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 663983549}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30508,11 +30567,21 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 663983549}
-    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+    - target: {fileID: 3748980670304175561, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
-      propertyPath: door
-      value: 
-      objectReference: {fileID: 663983549}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395255590806489879, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986190404296194425, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
       propertyPath: m_Size.x
       value: 3.356147
@@ -30532,21 +30601,6 @@ PrefabInstance:
     - target: {fileID: 425677370, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
       propertyPath: m_Center.z
       value: 0.0155108
-      objectReference: {fileID: 0}
-    - target: {fileID: 3748980670304175561, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4395255590806489879, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7986190404296194425, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a13d83d265b6da4689475c1dc9dc5df, type: 3}
@@ -32841,6 +32895,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1634703927}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32897,11 +32956,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: door
-      value: 
-      objectReference: {fileID: 1634703927}
-    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: door
       value: 
@@ -38017,6 +38071,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1725889517}
+  - component: {fileID: 1725889518}
+  - component: {fileID: 1725889519}
   m_Layer: 0
   m_Name: 'Puzzle 2 '
   m_TagString: Untagged
@@ -38047,6 +38103,38 @@ Transform:
   m_Father: {fileID: 463097410}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1725889518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725889516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 60.62903, y: 15.08466, z: 54.314514}
+  m_Center: {x: -236.24695, y: 7.04233, z: -45.042633}
+--- !u!114 &1725889519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725889516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plates:
+  - {fileID: 239806205}
+  - {fileID: 316294960}
+  door: {fileID: 1139928990}
+  pressurePlateCountText: {fileID: 461131944}
+  plateCountNumber: 0
+  activatePlateCountNumber: 0
 --- !u!1 &1727546477
 GameObject:
   m_ObjectHideFlags: 0
@@ -38313,7 +38401,13 @@ PrefabInstance:
       propertyPath: plates.Array.data[1]
       value: 
       objectReference: {fileID: 316294960}
-    m_RemovedComponents: []
+    - target: {fileID: 2083002479306180007, guid: 4931cb2e8486e7242af52d3827815760,
+        type: 3}
+      propertyPath: pressurePlateCountText
+      value: 
+      objectReference: {fileID: 461131944}
+    m_RemovedComponents:
+    - {fileID: 2083002479306180007, guid: 4931cb2e8486e7242af52d3827815760, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4931cb2e8486e7242af52d3827815760, type: 3}
 --- !u!1 &1733744078 stripped
 GameObject:
@@ -38321,41 +38415,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1733744077}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1733744079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733744078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plates:
-  - {fileID: 729846495}
-  - {fileID: 784944245}
-  - {fileID: 845203850}
-  door: {fileID: 900788531}
-  PlateCountNumber: 0
---- !u!114 &1733744080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733744078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plates:
-  - {fileID: 1908480998}
-  - {fileID: 472169884}
-  door: {fileID: 1734481843}
-  PlateCountNumber: 0
 --- !u!114 &1733744081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42553,6 +42612,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1908656288}
+  - component: {fileID: 1908656289}
+  - component: {fileID: 1908656290}
   m_Layer: 0
   m_Name: 'Puzzle 4 '
   m_TagString: Untagged
@@ -42583,6 +42644,39 @@ Transform:
   m_Father: {fileID: 463097410}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1908656289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908656287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plates:
+  - {fileID: 729846495}
+  - {fileID: 784944245}
+  - {fileID: 845203850}
+  door: {fileID: 900788531}
+  pressurePlateCountText: {fileID: 461131944}
+  plateCountNumber: 0
+  activatePlateCountNumber: 0
+--- !u!65 &1908656290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908656287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 82.88843, y: 13.654865, z: 66.937744}
+  m_Center: {x: -340.22058, y: 6.3274326, z: -160.51828}
 --- !u!1 &1911811601
 GameObject:
   m_ObjectHideFlags: 0
@@ -43195,15 +43289,11 @@ PrefabInstance:
       propertyPath: b_dialogueAllowed
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: "Ah, et n'esp\xE8re pas prendre un objet d'une salle \xE0 une autre,
-        filou ! Mon champ magn\xE9tique t'en emp\xEAchera."
-      objectReference: {fileID: 0}
+    - target: {fileID: 835106427938933279, guid: b339a29de65fee64f89b2091f833f3cf,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 1725889519}
     - target: {fileID: 835106427938933276, guid: b339a29de65fee64f89b2091f833f3cf,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -43233,6 +43323,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Ah, et n'esp\xE8re pas prendre un objet d'une salle \xE0 une autre,
+        filou ! Mon champ magn\xE9tique t'en emp\xEAchera."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
@@ -45878,6 +45977,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1634703927}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45934,11 +46038,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7479412050200343259, guid: 4a13d83d265b6da4689475c1dc9dc5df,
-        type: 3}
-      propertyPath: door
-      value: 
-      objectReference: {fileID: 1634703927}
-    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: door
       value: 
@@ -47680,6 +47779,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 948233549344707683, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6782231030283172028, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6782231030283172028, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 267680676945727523, guid: 9df8cfc4ac7305e47a642d1470ddef00,
         type: 3}
       propertyPath: m_IsActive
@@ -47729,6 +47843,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858075306797877558, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 393.09192
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858075306797877558, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 865.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858075306797877558, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 189.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df8cfc4ac7305e47a642d1470ddef00, type: 3}

@@ -1,31 +1,49 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PressurePlateManager : MonoBehaviour
 {
     public List<PressurePlateControllerUpdate> plates;
     public Door door;
-    public int PlateCountNumber;
+    public Text pressurePlateCountText;
+    public int plateCountNumber;
+    public int activatePlateCountNumber;
 
     void Start()
     {
-        foreach (var p in plates)
+        pressurePlateCountText = pressurePlateCountText.GetComponent<Text>();
+
+        foreach (var plate in plates)
         {
-            p.OnPressurePlateActivated += CheckPressurePlate;
+            plate.OnPressurePlateActivated += CheckPressurePlate;
         }
     }
 
-    void Update()
+     private void OnTriggerEnter(Collider collider)
     {
-        PlateCountNumber = plates.Count;
+        if(collider.CompareTag("Player"))
+        {
+            plateCountNumber = plates.Count;          
+            pressurePlateCountText.text = activatePlateCountNumber + "/" + plateCountNumber;
+        }   
+    }
+
+    private void OnTriggerExit(Collider collider)
+    {
+        if (collider.CompareTag("Player"))
+        {
+            pressurePlateCountText.text = null;
+        }
     }
 
     void CheckPressurePlate()
     {
         bool canOpen = true;
-        foreach(var p in plates)
+        foreach(var plate in plates)
         {
-            if (!p.isActive)
+            if (!plate.isActive)
             {
                 canOpen = false;
                 break;

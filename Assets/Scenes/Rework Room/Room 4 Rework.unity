@@ -8120,7 +8120,8 @@ PrefabInstance:
       propertyPath: plates.Array.data[2]
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083002479306180007, guid: 4931cb2e8486e7242af52d3827815760, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4931cb2e8486e7242af52d3827815760, type: 3}
 --- !u!1 &158960275 stripped
 GameObject:
@@ -8128,44 +8129,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 158960274}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &158960276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158960275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plates:
-  - {fileID: 1112794234}
-  - {fileID: 1731652216}
-  - {fileID: 1086394353}
-  door: {fileID: 1694952190}
-  PlateCountNumber: 0
---- !u!114 &158960277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158960275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plates:
-  - {fileID: 981960818}
-  - {fileID: 1409533309}
-  - {fileID: 772173667}
-  - {fileID: 1516545402}
-  - {fileID: 329915490}
-  door: {fileID: 1605939834}
-  PlateCountNumber: 0
 --- !u!114 &158960278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16327,6 +16290,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 317277638}
+  - component: {fileID: 317277640}
+  - component: {fileID: 317277639}
   m_Layer: 0
   m_Name: Puzzle 10
   m_TagString: Untagged
@@ -16358,6 +16323,41 @@ Transform:
   m_Father: {fileID: 1862800483}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &317277639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317277637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 227.51024, y: 13.453888, z: 132.71704}
+  m_Center: {x: -119.00616, y: 6.226944, z: 627.015}
+--- !u!114 &317277640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317277637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plates:
+  - {fileID: 981960818}
+  - {fileID: 1409533309}
+  - {fileID: 772173667}
+  - {fileID: 1516545402}
+  - {fileID: 329915490}
+  door: {fileID: 1605939834}
+  pressurePlateCountText: {fileID: 606101419}
+  plateCountNumber: 0
+  activatePlateCountNumber: 0
 --- !u!1 &318564607
 GameObject:
   m_ObjectHideFlags: 0
@@ -26907,6 +26907,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 546712380}
+  - component: {fileID: 546712382}
+  - component: {fileID: 546712381}
   m_Layer: 0
   m_Name: Puzzle 8
   m_TagString: Untagged
@@ -26939,6 +26941,38 @@ Transform:
   m_Father: {fileID: 1862800483}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &546712381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546712379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 94.22577, y: 13.404808, z: 105.17205}
+  m_Center: {x: -192.74982, y: 6.202404, z: -9.964802}
+--- !u!114 &546712382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546712379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plates:
+  - {fileID: 1083794851}
+  - {fileID: 1756436961}
+  door: {fileID: 2128570787}
+  pressurePlateCountText: {fileID: 606101419}
+  plateCountNumber: 0
+  activatePlateCountNumber: 0
 --- !u!1001 &549178443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29808,6 +29842,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 948233549344707683, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 267680676945727523, guid: 9df8cfc4ac7305e47a642d1470ddef00,
         type: 3}
       propertyPath: m_IsActive
@@ -29898,6 +29937,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0c598305fe67c04db44e7227f3a4457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &606101419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6782231030283172028, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+    type: 3}
+  m_PrefabInstance: {fileID: 606101411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &606292732
@@ -48260,12 +48311,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 8061870491629212217}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
@@ -53797,12 +53848,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 2128570788}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
@@ -55344,11 +55395,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
-        type: 3}
-      propertyPath: door
-      value: 
-      objectReference: {fileID: 1694952191}
     - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: nbLightObjects.Array.size
@@ -55365,6 +55411,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1980173689}
     - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1694952191}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
@@ -55845,6 +55896,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1125998194}
+  - component: {fileID: 1125998196}
+  - component: {fileID: 1125998195}
   m_Layer: 0
   m_Name: Puzzle 9
   m_TagString: Untagged
@@ -55877,6 +55930,39 @@ Transform:
   m_Father: {fileID: 1862800483}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1125998195
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125998193}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 142.15692, y: 13.790848, z: 135.98401}
+  m_Center: {x: -230.00531, y: 6.395424, z: 265.77228}
+--- !u!114 &1125998196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125998193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plates:
+  - {fileID: 1112794234}
+  - {fileID: 1731652216}
+  - {fileID: 1086394353}
+  door: {fileID: 1694952190}
+  pressurePlateCountText: {fileID: 606101419}
+  plateCountNumber: 0
+  activatePlateCountNumber: 0
 --- !u!1 &1127581869
 GameObject:
   m_ObjectHideFlags: 0
@@ -56375,6 +56461,16 @@ PrefabInstance:
       propertyPath: alreadyPlayed
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5613203787985695254, guid: b339a29de65fee64f89b2091f833f3cf,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613203787985695254, guid: b339a29de65fee64f89b2091f833f3cf,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 5
@@ -56404,16 +56500,6 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[0]
       value: "Et\u2026 voil\xE0 pour la salle n\xB04 ! Le test est fini. Le dernier
         puzzle n\u2019est pas encore pr\xEAt.\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5613203787985695254, guid: b339a29de65fee64f89b2091f833f3cf,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5613203787985695254, guid: b339a29de65fee64f89b2091f833f3cf,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5074051638629869238, guid: b339a29de65fee64f89b2091f833f3cf,
         type: 3}
@@ -70268,12 +70354,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 8061870491629212217}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
@@ -88160,12 +88246,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 1694952191}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
@@ -89268,12 +89354,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 2128570788}
-    - target: {fileID: 2257900043263053082, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
         type: 3}
       propertyPath: door
       value: 

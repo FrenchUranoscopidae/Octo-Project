@@ -19655,6 +19655,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 948233549344707683, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6428696450468553485, guid: 9df8cfc4ac7305e47a642d1470ddef00,
         type: 3}
       propertyPath: m_IsActive
@@ -23923,6 +23928,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1397412848}
+  - component: {fileID: 1397412850}
+  - component: {fileID: 1397412849}
   m_Layer: 0
   m_Name: Jail
   m_TagString: Untagged
@@ -23949,6 +23956,37 @@ Transform:
   m_Father: {fileID: 1071986980}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1397412849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397412847}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 55.12655, y: 12.686096, z: 54.64852}
+  m_Center: {x: 17.39611, y: -5.843048, z: 23.297935}
+--- !u!114 &1397412850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397412847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c131334159c19f2438faa14e94e574c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plates:
+  - {fileID: 2083998883}
+  door: {fileID: 1570429541}
+  pressurePlateCountText: {fileID: 1707409248}
+  plateCountNumber: 0
+  activatePlateCountNumber: 0
 --- !u!1001 &1398426212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28850,6 +28888,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693438624}
   m_CullTransparentMesh: 0
+--- !u!114 &1707409248 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6782231030283172028, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1216828097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1710008801
 GameObject:
   m_ObjectHideFlags: 0
@@ -35470,7 +35520,8 @@ PrefabInstance:
       propertyPath: plates.Array.data[0]
       value: 
       objectReference: {fileID: 2083998883}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2083002479306180007, guid: 4931cb2e8486e7242af52d3827815760, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4931cb2e8486e7242af52d3827815760, type: 3}
 --- !u!1 &2073932776 stripped
 GameObject:

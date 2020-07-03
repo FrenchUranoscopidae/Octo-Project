@@ -26,9 +26,7 @@ public class Door : MonoBehaviour
         if(doorIsOpen == true)
         {
             openDoor.SetBool("openDoor", true);
-            doorCollider.enabled = false;
-
-          
+            doorCollider.enabled = false;        
         }
     }
 
@@ -58,7 +56,6 @@ public class Door : MonoBehaviour
         {
             ThisObjectDialogueTrigger();
         }
-
     }
 
     public void CloseDoor()

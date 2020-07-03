@@ -83,7 +83,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
 
             if (obj.colorMgr.GetCurrentColor() == colorMgr.GetCurrentColor())
             {
-                Debug.Log(collider + "Enter");
                 AddToObjectCollidingList(collider);
             }
         } 
@@ -93,7 +92,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     {
         listObjectColliding.Remove(collider);
         HasSoundActivated = false;
-        Debug.Log(collider + "Exit");
     }
 
     void Update()
@@ -102,14 +100,11 @@ public class PressurePlateControllerUpdate : MonoBehaviour
 
         if (GameObject.Find("Player(Clone)").GetComponent<PlayerController>().isControlled == false)
         {
-            RemoveToObjectCollidingList(GameObject.Find("Player(Clone)").GetComponent<CharacterController>());
-            //Debug.Log("Update");
+            RemoveToObjectCollidingList(GameObject.Find("Player(Clone)").GetComponent<CharacterController>());  
         }
 
         if (isColliding)
         {
-            Debug.Log("Colliding");
-
             if (listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableLightweight"))
             {
                 //Dialogue
@@ -122,12 +117,10 @@ public class PressurePlateControllerUpdate : MonoBehaviour
             }
             else if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("ControllableHeavy"))
             {
-                Debug.Log("HeavyDetected");
                 pressurePlateValue = 2;
             }
             else if(listObjectColliding.Count == 1 && listObjectColliding[0].CompareTag("Player"))
             {
-                Debug.Log("PlayerDetected");
                 pressurePlateValue = 2;
             }
             else if (listObjectColliding.Count == 2 && listObjectColliding[0].CompareTag("ControllableLightweight"))
@@ -150,7 +143,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     {
         if(state == 0)
         {
-            //Debug.Log("Button Desactivate");
             isActive = false;
             pressurePlate.transform.position = transform.position + new Vector3(0, 0, 0);
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
@@ -158,7 +150,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
         }
         else if(state == 1)
         {
-            //Debug.Log("Button Semi Activate");
             isSemiActive = true;
             pressurePlate.transform.position = transform.position + new Vector3(0, loweringValue1, 0);
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
@@ -166,7 +157,6 @@ public class PressurePlateControllerUpdate : MonoBehaviour
         }
         else if(state == 2)
         {
-            Debug.Log("Button Activate");
             isActive = true;
             OnPressurePlateActivated?.Invoke();
             diodeColor.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);

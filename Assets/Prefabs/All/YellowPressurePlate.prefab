@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 7806436296342781276}
   - component: {fileID: 3110005805621586768}
   - component: {fileID: 5236494817975724386}
+  - component: {fileID: 5676186532363210460}
   m_Layer: 0
   m_Name: YellowPressurePlate
   m_TagString: Untagged
@@ -319,17 +320,30 @@ MonoBehaviour:
     type: 3}
   playerController: {fileID: 315328301341317124, guid: 8f65eb1b34bc48744aa37c0d7d573c00,
     type: 3}
-  playerTest: {fileID: 3733933972958445471, guid: 8f65eb1b34bc48744aa37c0d7d573c00,
-    type: 3}
   door: {fileID: 0}
   PlateActivation: {fileID: 8300000, guid: 4154b7a48b22e3a44aea0e85b0dcb1d7, type: 3}
   volume: 5
   HasSoundActivated: 0
   b_dialogueHappenned: 0
-  dialogueTrigger: {fileID: 0}
+  dialogueTrigger: {fileID: 5676186532363210460}
   b_All: 1
   loweringValue1: -0.35
   loweringValue2: -0.75
+--- !u!114 &5676186532363210460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7479412050200343239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c2641da551c24cacc2800bf77156f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
 --- !u!1 &8336792961193510550
 GameObject:
   m_ObjectHideFlags: 0
