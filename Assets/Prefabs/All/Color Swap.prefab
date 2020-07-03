@@ -167,10 +167,9 @@ MonoBehaviour:
     alienMaterial: {fileID: 0}
     currentColor: 0
   b_dialogueHappenned: 0
+  b_dialogueAllowed: 0
   dialogueTrigger: {fileID: 2153119748284905328}
   colorSwapSound: {fileID: 8300000, guid: f13197cf1518c884a9f068c4c1a88b5c, type: 3}
-  colorSwapVisualEffect: {fileID: 8167432666545861015, guid: 2f41e042585f20340a8f0eef1280ada8,
-    type: 3}
   vfxActive: 0
   Thunder1: {fileID: 1615675161236228076}
   Thunder2: {fileID: 8656146739838510665}
@@ -324,8 +323,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8186901710849636706}
   m_LocalRotation: {x: -0, y: 0.7071067, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.0007334977, y: -0.0000139891645, z: 0.0020998998}
-  m_LocalScale: {x: 0.00089795474, y: 0.004527289, z: 0.0013581867}
+  m_LocalPosition: {x: 0.0002394144, y: 0.0003530287, z: 0.002100017}
+  m_LocalScale: {x: 0.0014131652, y: 0, z: 0.0021374598}
   m_Children: []
   m_Father: {fileID: 6607347438543864413}
   m_RootOrder: 2
@@ -543,6 +542,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 8167432666545861014, guid: 2f41e042585f20340a8f0eef1280ada8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 8167432666545861009, guid: 2f41e042585f20340a8f0eef1280ada8,
         type: 3}
       propertyPath: startDelay.scalar
@@ -648,11 +652,6 @@ PrefabInstance:
       propertyPath: ShapeModule.radiusThickness
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8167432666545861014, guid: 2f41e042585f20340a8f0eef1280ada8,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7887643351390959558, guid: 2f41e042585f20340a8f0eef1280ada8,
         type: 3}
       propertyPath: m_Intensity
@@ -782,12 +781,12 @@ PrefabInstance:
     - target: {fileID: 3971282786099866924, guid: 85798818746f92342adde71a365d05a6,
         type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3971282786099866924, guid: 85798818746f92342adde71a365d05a6,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3971282786099866924, guid: 85798818746f92342adde71a365d05a6,
         type: 3}
@@ -914,6 +913,16 @@ PrefabInstance:
       propertyPath: InitialModule.startColor.maxColor.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3971282786099866924, guid: 85798818746f92342adde71a365d05a6,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971282786099866924, guid: 85798818746f92342adde71a365d05a6,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85798818746f92342adde71a365d05a6, type: 3}
 --- !u!4 &7405051535654973145 stripped
@@ -994,6 +1003,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8167432666545861014, guid: 2f41e042585f20340a8f0eef1280ada8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 8167432666545861009, guid: 2f41e042585f20340a8f0eef1280ada8,
         type: 3}
       propertyPath: startDelay.scalar
@@ -1094,11 +1108,6 @@ PrefabInstance:
       propertyPath: ShapeModule.radiusThickness
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8167432666545861014, guid: 2f41e042585f20340a8f0eef1280ada8,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7887643351390959558, guid: 2f41e042585f20340a8f0eef1280ada8,
         type: 3}
       propertyPath: m_Intensity

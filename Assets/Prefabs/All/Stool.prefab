@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  xSpeed: 15
+  xSpeed: 18
   weight: 1
   footstep: {fileID: 3375740547135772202}
   gravity: 8.91

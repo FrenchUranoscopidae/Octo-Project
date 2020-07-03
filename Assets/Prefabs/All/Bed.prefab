@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 3721085106440013356}
   - component: {fileID: 193218704674175350}
   - component: {fileID: 5514372108866906221}
+  - component: {fileID: 3175242734562660948}
   m_Layer: 0
   m_Name: Bed
   m_TagString: ControllableHeavy
@@ -366,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isControlled: 0
-  xSpeed: 15
+  xSpeed: 12
   weight: 2
   footstep: {fileID: 6827557452647720824}
   gravity: 8.91
