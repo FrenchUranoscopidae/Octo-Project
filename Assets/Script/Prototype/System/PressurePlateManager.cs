@@ -8,8 +8,8 @@ public class PressurePlateManager : MonoBehaviour
     public List<PressurePlateControllerUpdate> plates;
     public Door door;
     public Text pressurePlateCountText;
-    public int plateCountNumber;
-    public int activatePlateCountNumber;
+    public int plateCountNumber = 0;
+    public int activatePlateCountNumber = 0;
 
     void Start()
     {
@@ -21,11 +21,11 @@ public class PressurePlateManager : MonoBehaviour
         }
     }
 
-     private void OnTriggerEnter(Collider collider)
+     private void OnTriggerStay(Collider collider)
     {
         if(collider.CompareTag("Player"))
         {
-            plateCountNumber = plates.Count;          
+            plateCountNumber = plates.Count;
             pressurePlateCountText.text = activatePlateCountNumber + "/" + plateCountNumber;
         }   
     }

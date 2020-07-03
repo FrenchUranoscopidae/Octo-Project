@@ -20,6 +20,8 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     public GameObject pressurePlate;
     public Material initialMaterial;
     public PlayerController playerController;
+    public PressurePlateManager pressurePlateManager;
+    public bool isPressed = false;
 
     //Puzzle End
     public GameObject door;
@@ -147,6 +149,12 @@ public class PressurePlateControllerUpdate : MonoBehaviour
             pressurePlate.transform.position = transform.position + new Vector3(0, 0, 0);
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material = initialMaterial;
+            
+            if (isPressed)
+            {
+                isPressed = false;
+                pressurePlateManager.activatePlateCountNumber--;
+            }
         }
         else if(state == 1)
         {
@@ -154,6 +162,12 @@ public class PressurePlateControllerUpdate : MonoBehaviour
             pressurePlate.transform.position = transform.position + new Vector3(0, loweringValue1, 0);
             diodeColor.GetComponent<MeshRenderer>().material = initialMaterial;
             diodeColor1.GetComponent<MeshRenderer>().material.SetColor("_Color", Color.green);
+
+            if (isPressed)
+            {
+                isPressed = false;
+                pressurePlateManager.activatePlateCountNumber--;
+            }
         }
         else if(state == 2)
         {
@@ -168,6 +182,12 @@ public class PressurePlateControllerUpdate : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
                 HasSoundActivated = true;
+            }
+
+            if(!isPressed)
+            {
+                isPressed = true;
+                pressurePlateManager.activatePlateCountNumber++;
             }
         }
     }

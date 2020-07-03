@@ -17118,6 +17118,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 8061870491629212217}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 317277640}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37313,6 +37318,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 8061870491629212217}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 317277640}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48224,6 +48234,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 8061870491629212217}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 317277640}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &981960817 stripped
@@ -50408,7 +50423,7 @@ Transform:
   - {fileID: 472073006}
   - {fileID: 2081064943}
   m_Father: {fileID: 1125998194}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1018902544
 PrefabInstance:
@@ -53447,7 +53462,7 @@ Transform:
   - {fileID: 1731652215}
   - {fileID: 1086394352}
   m_Father: {fileID: 1125998194}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1081265859
 PrefabInstance:
@@ -53761,6 +53776,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 2128570788}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 546712382}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &1083794850 stripped
@@ -53966,6 +53986,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1694952191}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 1125998196}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -55323,6 +55348,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1694952191}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 1125998196}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &1112794233 stripped
@@ -55828,8 +55858,8 @@ Transform:
   - {fileID: 1341619507}
   - {fileID: 1457539864}
   - {fileID: 1694952189}
-  - {fileID: 1016990676}
   - {fileID: 1080585292}
+  - {fileID: 1016990676}
   m_Father: {fileID: 1862800483}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -70267,6 +70297,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 8061870491629212217}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 317277640}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &1409533308 stripped
@@ -75762,6 +75797,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 8061870491629212217}
+    - target: {fileID: 5236494817975724386, guid: 4a13d83d265b6da4689475c1dc9dc5df,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 317277640}
     - target: {fileID: 7479412049631947891, guid: 4a13d83d265b6da4689475c1dc9dc5df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -88252,6 +88292,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1694952191}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 1125998196}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &1731652215 stripped
@@ -89360,6 +89405,11 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 2128570788}
+    - target: {fileID: -3540639181587820294, guid: c1d9dfce01ae2df43afa9692d1f58edf,
+        type: 3}
+      propertyPath: pressurePlateManager
+      value: 
+      objectReference: {fileID: 546712382}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d9dfce01ae2df43afa9692d1f58edf, type: 3}
 --- !u!4 &1756436960 stripped
