@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] protected float xSpeed = 15f;
     [SerializeField] public int weight;
     public GameObject footstep;
-    private Animator alienAnimation;
     private float turnSmoothTime = 0.1f;
     private float turnSmoothVelocity;
     public float gravity = 8.91f;
@@ -23,7 +22,6 @@ public class PlayerController : MonoBehaviour
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody>();
-        alienAnimation = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
     }
 
@@ -55,10 +53,9 @@ public class PlayerController : MonoBehaviour
                 controller.Move(direction * xSpeed * Time.deltaTime);
             }
 
-            //Play Sound and animation
+            //Play Sound
             if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
             {
-                alienAnimation.SetTrigger("isWalking"); 
                 PlayFootstepSound();
             }
             else
