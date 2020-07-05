@@ -7,13 +7,13 @@ public class MenuHighlight : MonoBehaviour,ISelectHandler, IDeselectHandler
 {
     public void OnSelect(BaseEventData pointerEventData)
     {
-        gameObject.GetComponentInChildren<Text>().color = Color.red;
+        gameObject.GetComponentInChildren<Text>().color = Color.white;
 
 
     }
     public void OnDeselect(BaseEventData pointerEventData)
     {
-        gameObject.GetComponentInChildren<Text>().color = Color.white;
+        gameObject.GetComponentInChildren<Text>().color = Color.black;
 
     }
    
