@@ -13165,7 +13165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zqsdTuto: {fileID: 1329149395}
   hasActivated: 0
-  ZQSDTutoTimer: 1.7
+  ZQSDTutoTimer: 3
 --- !u!65 &770200697
 BoxCollider:
   m_ObjectHideFlags: 0
