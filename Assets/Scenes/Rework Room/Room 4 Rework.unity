@@ -86624,8 +86624,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
-      value: "..Chambre d\u2019ami, retourne donc dans ta chambre d\u2019ami. Nous
-        aurons beaucoup \xE0 faire demain\u2026 A plus tard !"
+      value: "..Chambre d\u2019ami, retourne donc dans ta chambre d\u2019amis. Nous
+        aurons beaucoup \xE0 faire demain\u2026 \xC0 plus tard !\r"
       objectReference: {fileID: 0}
     - target: {fileID: 222987807, guid: b339a29de65fee64f89b2091f833f3cf, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
