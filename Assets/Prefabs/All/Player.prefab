@@ -1217,15 +1217,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 3733933972958445471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d011215cd665564bb3a64d3ec355e75, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e25fc46f4d2f124f824a95c5435bbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialOffsetZ: -25
-  initialOffsetY: -30
-  rotationAmountZ: 2.5
-  rotationAmountY: 3
-  rootBone: {fileID: 3461347910846350602}
-  switchDirection: 20
+  initialOffsetZ: 0
+  initialOffsetY: 0
+  rotationAmountZ: 0
+  rotationAmountY: 0
+  rootBone: {fileID: 0}
+  switchDirection: 0
 --- !u!1 &4311952816484685647
 GameObject:
   m_ObjectHideFlags: 0
