@@ -19690,6 +19690,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 9197393702003496091, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 69579441299486081, guid: 9df8cfc4ac7305e47a642d1470ddef00,
         type: 3}
       propertyPath: m_UiScaleMode
@@ -21507,6 +21512,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2926879610482367695, guid: 94735399f5d3f694e849b902b2112c0c,
     type: 3}
   m_PrefabInstance: {fileID: 1285185991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1288230421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6003713329669010639, guid: 9df8cfc4ac7305e47a642d1470ddef00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1216828097}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1295315285
 PrefabInstance:
@@ -23987,6 +23998,7 @@ MonoBehaviour:
   pressurePlateCountText: {fileID: 1707409248}
   plateCountNumber: 0
   activatePlateCountNumber: 0
+  plateCountIcon: {fileID: 1288230421}
 --- !u!1001 &1398426212
 PrefabInstance:
   m_ObjectHideFlags: 0
