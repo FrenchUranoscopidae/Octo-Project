@@ -4,7 +4,7 @@ public class Door : MonoBehaviour
 {
     public BoxCollider doorCollider;
     public bool doorIsOpen = false;
-    public AudioClip doorSound;
+    public AudioSource doorSound;
     public GameObject diodeColor;
     public Light diodeLightColor;
     public bool alreadyPlayed = false;
@@ -44,7 +44,7 @@ public class Door : MonoBehaviour
 
         if (!alreadyPlayed)
         {
-            AudioSource.PlayClipAtPoint(doorSound, transform.position);
+            doorSound.Play();
             alreadyPlayed = true;
         }
 
