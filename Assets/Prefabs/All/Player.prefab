@@ -1220,12 +1220,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d011215cd665564bb3a64d3ec355e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialOffsetX: -2.5
   initialOffsetZ: -25
   initialOffsetY: -30
+  rotationAmountX: 0.25
   rotationAmountZ: 2.5
   rotationAmountY: 3
   rootBone: {fileID: 3461347910846350602}
   switchDirection: 20
+  switchDirection2: 40
 --- !u!1 &4311952816484685647
 GameObject:
   m_ObjectHideFlags: 0
