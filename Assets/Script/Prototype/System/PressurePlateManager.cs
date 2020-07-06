@@ -11,13 +11,8 @@ public class PressurePlateManager : MonoBehaviour
     public int plateCountNumber = 0;
     public int activatePlateCountNumber = 0;
 
-    public GameObject plateCountIcon;
-
     void Start()
     {
-        plateCountIcon.SetActive(false);
-        Debug.Log(plateCountIcon);
-
         pressurePlateCountText = pressurePlateCountText.GetComponent<Text>();
 
         foreach (var plate in plates)
@@ -30,8 +25,6 @@ public class PressurePlateManager : MonoBehaviour
     {
         if(collider.CompareTag("Player"))
         {
-            plateCountIcon.SetActive(true);
-
             plateCountNumber = plates.Count;
             pressurePlateCountText.text = activatePlateCountNumber + "/" + plateCountNumber;
         }   
@@ -39,8 +32,6 @@ public class PressurePlateManager : MonoBehaviour
 
     private void OnTriggerExit(Collider collider)
     {
-        plateCountIcon.SetActive(false);
-
         if (collider.CompareTag("Player"))
         {
             pressurePlateCountText.text = null;

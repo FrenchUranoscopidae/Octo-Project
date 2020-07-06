@@ -18,8 +18,8 @@ public class PlayerManager : MonoBehaviour
     public Texture alienMagentaTexture;
 
     [Header("Sound")]
-    public AudioSource PosSound;
-    //public float volume;
+    public AudioClip Pos;
+    public float volume;
 
     [Header("Checkpoint")]
     public Transform respawnTarget;
@@ -68,7 +68,7 @@ public class PlayerManager : MonoBehaviour
                 if (Input.GetKey(KeyCode.E) && controller.isControlled && canPos && !canDepos)
                 {
                     StartCoroutine("PosObject");
-                    PosSound.Play();
+                    AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
                     Instantiate(smoke, obj.transform.position, obj.transform.rotation);
                     Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
                     controller.ControlObject(obj, true, controller);
@@ -84,7 +84,7 @@ public class PlayerManager : MonoBehaviour
                 if (Input.GetKey(KeyCode.E) && controller.isControlled && canPos && !canDepos)
                 {
                     StartCoroutine("PosObject");
-                    PosSound.Play();
+                    AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
                     Instantiate(smoke, obj.transform.position, obj.transform.rotation);
                     Destroy(GameObject.Find("Rework Smoke(Clone)"), 2f);
                     controller.ControlObject(obj, true, controller);

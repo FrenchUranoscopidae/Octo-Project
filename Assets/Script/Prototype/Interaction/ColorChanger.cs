@@ -11,7 +11,7 @@ public class ColorChanger : MonoBehaviour
     public bool b_dialogueAllowed = false;
     public DialogueTrigger dialogueTrigger;
 
-    public AudioSource colorSwapSound;
+    public AudioClip colorSwapSound;
 
     [Header("VFX")]
     public bool vfxActive = false;
@@ -33,7 +33,7 @@ public class ColorChanger : MonoBehaviour
         if (!canSwap) return; // Do nothing if we can't swap colors
         colorMgr.SwapObjectColors(playerColorMgr);
         StartCoroutine(SwapColorsTimer()); // Start the canSwap timer
-        colorSwapSound.Play();
+        AudioSource.PlayClipAtPoint(colorSwapSound, transform.position);
 
         Thunder1.Play();
         Thunder2.Play();

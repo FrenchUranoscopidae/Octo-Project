@@ -21,9 +21,9 @@ public class ObjectController : PlayerController
     public Animator animator;
     //public Animation propsWalk;
 
-    /*[Header("Sound")]
-    public AudioSource PosSound;
-    //public float volume;*/
+    [Header("Sound")]
+    public AudioClip Pos;
+    public float volume;
 
     [Header("Tuto Depos")]
     public GameObject deposTuto;
@@ -69,7 +69,7 @@ public class ObjectController : PlayerController
         {
             StartCoroutine("DeposObject");
 
-            //PosSound.Play();
+            AudioSource.PlayClipAtPoint(Pos, transform.position, volume);
 
             //Tuto Depos
             if (hasActivatedDepos)

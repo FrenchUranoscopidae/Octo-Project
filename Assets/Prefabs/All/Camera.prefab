@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7975442869972756463}
   m_LocalRotation: {x: 0.5213224, y: 0, z: 0, w: 0.8533598}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,8 +44,8 @@ Camera:
   m_GameObject: {fileID: 7975442869972756463}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -100,7 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
-  controllingObject: 0
 --- !u!114 &-3183294064717718790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,11 +170,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8a50e52cc42d9b04f8cadf90b2f24bf5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 016d2c3a98da0644e91a6fbf75a6f822, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.015
+  m_Volume: 0
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

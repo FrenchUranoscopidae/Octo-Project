@@ -27,9 +27,8 @@ public class PressurePlateControllerUpdate : MonoBehaviour
     public GameObject door;
 
     [Header("Sound")]
-    public AudioSource PlateActivation2;
-    //public AudioClip PlateActivation;
-    //public float volume;
+    public AudioClip PlateActivation;
+    public float volume;
     public bool HasSoundActivated = false;
 
     [Header("Dialogue")]
@@ -181,8 +180,7 @@ public class PressurePlateControllerUpdate : MonoBehaviour
             //Sound
             if (!HasSoundActivated)
             {
-                PlateActivation2.Play();
-                //AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
+                AudioSource.PlayClipAtPoint(PlateActivation, transform.position, volume);
                 HasSoundActivated = true;
             }
 
