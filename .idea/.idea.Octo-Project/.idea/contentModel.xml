@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Philippine\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Philippine\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Octo-Project.1993723179.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Philippine\Documents\Programmation\Octo-Project" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Rendu" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Cel_Shader.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Script" t="Include">
+          <e p="IA" t="Include">
+            <e p="ConnectedWaypoint.cs" t="Include" />
+            <e p="EnemyPatrol.cs" t="Include" />
+            <e p="EnemyStateMachine.cs" t="Include" />
+            <e p="IdleState.cs" t="Include" />
+            <e p="Waypoint.cs" t="Include" />
+          </e>
+          <e p="MovingBones.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="Prototype" t="Include">
+            <e p="Interaction" t="Include">
+              <e p="BarrierController.cs" t="Include" />
+              <e p="ColorChanger.cs" t="Include" />
+              <e p="ColorSwapTuto.cs" t="Include" />
+              <e p="DeposTuto.cs" t="Include" />
+              <e p="Door.cs" t="Include" />
+              <e p="ObjectAnimation.cs" t="Include" />
+              <e p="ObjectController.cs" t="Include" />
+              <e p="ObjectRoomAnchor.cs" t="Include" />
+              <e p="PressurePlateController.cs" t="Include" />
+              <e p="PressurePlateControllerUpdate.cs" t="Include" />
+              <e p="Teleporter.cs" t="Include" />
+            </e>
+            <e p="Player" t="Include">
+              <e p="CameraRotation.cs" t="Include" />
+              <e p="FollowCamera.cs" t="Include" />
+              <e p="PlayerController.cs" t="Include" />
+              <e p="PlayerManager.cs" t="Include" />
+              <e p="PushController.cs" t="Include" />
+              <e p="SpawnPlayer.cs" t="Include" />
+            </e>
+            <e p="system" t="Include">
+              <e p="Checkpoint.cs" t="Include" />
+              <e p="ColorManager.cs" t="Include" />
+              <e p="KillZone.cs" t="Include" />
+              <e p="ObjectColor.cs" t="Include" />
+              <e p="PressurePlateManager.cs" t="Include" />
+              <e p="RoomControl.cs" t="Include" />
+              <e p="UnlockNextRoom.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="Dialogue.cs" t="Include" />
+              <e p="DialogueManager.cs" t="Include" />
+              <e p="DialogueTrigger.cs" t="Include" />
+              <e p="DialogueTriggerBeginningBox.cs" t="Include" />
+              <e p="MenuHighlight.cs" t="Include" />
+              <e p="MenuManager.cs" t="Include" />
+              <e p="MenuPause.cs" t="Include" />
+            </e>
+          </e>
+          <e p="TestAnimation.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Octo-Project.sln" t="IncludeFlat" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
